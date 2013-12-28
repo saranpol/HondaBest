@@ -115,6 +115,14 @@
     [mViewTab setSelectedIndex:1];
 }
 
+- (IBAction)clickInterior:(id)sender {
+    [mViewTab setSelectedIndex:2];
+}
+
+- (IBAction)clickExterior:(id)sender {
+    [mViewTab setSelectedIndex:3];
+}
+
 - (IBAction)clickE:(id)sender {
     [UIView animateWithDuration:0.3
                           delay:0.3
@@ -144,13 +152,7 @@
 }
 
 
-- (IBAction)clickInterior:(id)sender {
-    [mViewTab setSelectedIndex:2];
-}
 
-- (IBAction)clickExterior:(id)sender {
-    [mViewTab setSelectedIndex:3];
-}
 
 
 

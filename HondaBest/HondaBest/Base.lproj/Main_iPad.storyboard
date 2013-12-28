@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="2580" y="1949"/>
         </scene>
-        <!--View Controller - B-->
+        <!--ViewB - B-->
         <scene sceneID="jlB-Mx-VLe">
             <objects>
-                <viewController id="DOI-zr-CK3" sceneMemberID="viewController">
+                <viewController id="DOI-zr-CK3" customClass="ViewB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yMd-bX-xZf"/>
                         <viewControllerLayoutGuide type="bottom" id="R28-eD-fAN"/>
@@ -254,11 +254,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-S8-P8O">
+                                <rect key="frame" x="242" y="180" width="512" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beyond the class design package" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-72-Pfw">
+                                        <rect key="frame" x="79" y="146" width="379" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="B" id="PSq-CY-J0P"/>
+                    <connections>
+                        <outlet property="mViewMeaning" destination="MtW-S8-P8O" id="VZ7-Z8-j1L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMo-yD-bK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

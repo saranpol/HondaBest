@@ -29,13 +29,12 @@ enum {
 @property (nonatomic, weak) IBOutlet UIView *mViewT;
 
 - (IBAction)clickB:(id)sender;
+- (IBAction)clickInterior:(id)sender;
+- (IBAction)clickExterior:(id)sender;
+
 - (IBAction)clickE:(id)sender;
 - (IBAction)clickS:(id)sender;
 - (IBAction)clickT:(id)sender;
-
-// B
-- (IBAction)clickInterior:(id)sender;
-- (IBAction)clickExterior:(id)sender;
 
 
 @end

@@ -28,6 +28,7 @@
 		43D63E2C186F5E670070530E /* ViewMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E2A186F5E670070530E /* ViewMenu.m */; };
 		43D63E2D186F5E670070530E /* ViewMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D63E2B186F5E670070530E /* ViewMenu.xib */; };
 		43D63E32186F71F30070530E /* ViewUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E31186F71F30070530E /* ViewUtil.m */; };
+		43D63E36186F7E780070530E /* ViewB.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E35186F7E780070530E /* ViewB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		43D63E2B186F5E670070530E /* ViewMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewMenu.xib; sourceTree = "<group>"; };
 		43D63E30186F71F30070530E /* ViewUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewUtil.h; sourceTree = "<group>"; };
 		43D63E31186F71F30070530E /* ViewUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewUtil.m; sourceTree = "<group>"; };
+		43D63E34186F7E780070530E /* ViewB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewB.h; sourceTree = "<group>"; };
+		43D63E35186F7E780070530E /* ViewB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,7 @@
 				43D63E24186F58A00070530E /* ViewTab */,
 				43D63E1C186F4FFE0070530E /* ViewTVC */,
 				43D63E20186F53B20070530E /* ViewLanding */,
+				43D63E33186F7E6A0070530E /* ViewB */,
 				43D63DFF186F4C310070530E /* Images.xcassets */,
 				43D63DEB186F4C310070530E /* Supporting Files */,
 			);
@@ -229,6 +233,15 @@
 				43D63E31186F71F30070530E /* ViewUtil.m */,
 			);
 			path = ViewUtil;
+			sourceTree = "<group>";
+		};
+		43D63E33186F7E6A0070530E /* ViewB */ = {
+			isa = PBXGroup;
+			children = (
+				43D63E34186F7E780070530E /* ViewB.h */,
+				43D63E35186F7E780070530E /* ViewB.m */,
+			);
+			path = ViewB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +350,7 @@
 				43D63E27186F58CD0070530E /* ViewTab.m in Sources */,
 				43D63DFE186F4C310070530E /* HBViewController.m in Sources */,
 				43D63DF5186F4C310070530E /* HBAppDelegate.m in Sources */,
+				43D63E36186F7E780070530E /* ViewB.m in Sources */,
 				43D63E32186F71F30070530E /* ViewUtil.m in Sources */,
 				43D63DF1186F4C310070530E /* main.m in Sources */,
 			);
