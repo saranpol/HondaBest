@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43D63DE5186F4C310070530E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE4186F4C310070530E /* Foundation.framework */; };
+		43D63DE7186F4C310070530E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE6186F4C310070530E /* CoreGraphics.framework */; };
+		43D63DE9186F4C310070530E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE8186F4C310070530E /* UIKit.framework */; };
+		43D63DEF186F4C310070530E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43D63DED186F4C310070530E /* InfoPlist.strings */; };
+		43D63DF1186F4C310070530E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63DF0186F4C310070530E /* main.m */; };
+		43D63DF5186F4C310070530E /* HBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63DF4186F4C310070530E /* HBAppDelegate.m */; };
+		43D63DF8186F4C310070530E /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D63DF6186F4C310070530E /* Main_iPhone.storyboard */; };
+		43D63DFB186F4C310070530E /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D63DF9186F4C310070530E /* Main_iPad.storyboard */; };
+		43D63DFE186F4C310070530E /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63DFD186F4C310070530E /* HBViewController.m */; };
+		43D63E00186F4C310070530E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D63DFF186F4C310070530E /* Images.xcassets */; };
+		43D63E07186F4C310070530E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63E06186F4C310070530E /* XCTest.framework */; };
+		43D63E08186F4C310070530E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE4186F4C310070530E /* Foundation.framework */; };
+		43D63E09186F4C310070530E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE8186F4C310070530E /* UIKit.framework */; };
+		43D63E11186F4C310070530E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 43D63E0F186F4C310070530E /* InfoPlist.strings */; };
+		43D63E13186F4C310070530E /* HondaBestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D63E12186F4C310070530E /* HondaBestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43D63E0A186F4C310070530E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43D63DD9186F4C310070530E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D63DE0186F4C310070530E;
+			remoteInfo = HondaBest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43D63DE1186F4C310070530E /* HondaBest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HondaBest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D63DE4186F4C310070530E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43D63DE6186F4C310070530E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43D63DE8186F4C310070530E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		43D63DEC186F4C310070530E /* HondaBest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HondaBest-Info.plist"; sourceTree = "<group>"; };
+		43D63DEE186F4C310070530E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43D63DF0186F4C310070530E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43D63DF2186F4C310070530E /* HondaBest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HondaBest-Prefix.pch"; sourceTree = "<group>"; };
+		43D63DF3186F4C310070530E /* HBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBAppDelegate.h; sourceTree = "<group>"; };
+		43D63DF4186F4C310070530E /* HBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBAppDelegate.m; sourceTree = "<group>"; };
+		43D63DF7186F4C310070530E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		43D63DFA186F4C310070530E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		43D63DFC186F4C310070530E /* HBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBViewController.h; sourceTree = "<group>"; };
+		43D63DFD186F4C310070530E /* HBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBViewController.m; sourceTree = "<group>"; };
+		43D63DFF186F4C310070530E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43D63E05186F4C310070530E /* HondaBestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondaBestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D63E06186F4C310070530E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		43D63E0E186F4C310070530E /* HondaBestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HondaBestTests-Info.plist"; sourceTree = "<group>"; };
+		43D63E10186F4C310070530E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		43D63E12186F4C310070530E /* HondaBestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HondaBestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43D63DDE186F4C310070530E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D63DE7186F4C310070530E /* CoreGraphics.framework in Frameworks */,
+				43D63DE9186F4C310070530E /* UIKit.framework in Frameworks */,
+				43D63DE5186F4C310070530E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D63E02186F4C310070530E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D63E07186F4C310070530E /* XCTest.framework in Frameworks */,
+				43D63E09186F4C310070530E /* UIKit.framework in Frameworks */,
+				43D63E08186F4C310070530E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43D63DD8186F4C310070530E = {
+			isa = PBXGroup;
+			children = (
+				43D63DEA186F4C310070530E /* HondaBest */,
+				43D63E0C186F4C310070530E /* HondaBestTests */,
+				43D63DE3186F4C310070530E /* Frameworks */,
+				43D63DE2186F4C310070530E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43D63DE2186F4C310070530E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43D63DE1186F4C310070530E /* HondaBest.app */,
+				43D63E05186F4C310070530E /* HondaBestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43D63DE3186F4C310070530E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43D63DE4186F4C310070530E /* Foundation.framework */,
+				43D63DE6186F4C310070530E /* CoreGraphics.framework */,
+				43D63DE8186F4C310070530E /* UIKit.framework */,
+				43D63E06186F4C310070530E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43D63DEA186F4C310070530E /* HondaBest */ = {
+			isa = PBXGroup;
+			children = (
+				43D63DF3186F4C310070530E /* HBAppDelegate.h */,
+				43D63DF4186F4C310070530E /* HBAppDelegate.m */,
+				43D63DF6186F4C310070530E /* Main_iPhone.storyboard */,
+				43D63DF9186F4C310070530E /* Main_iPad.storyboard */,
+				43D63DFC186F4C310070530E /* HBViewController.h */,
+				43D63DFD186F4C310070530E /* HBViewController.m */,
+				43D63DFF186F4C310070530E /* Images.xcassets */,
+				43D63DEB186F4C310070530E /* Supporting Files */,
+			);
+			path = HondaBest;
+			sourceTree = "<group>";
+		};
+		43D63DEB186F4C310070530E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D63DEC186F4C310070530E /* HondaBest-Info.plist */,
+				43D63DED186F4C310070530E /* InfoPlist.strings */,
+				43D63DF0186F4C310070530E /* main.m */,
+				43D63DF2186F4C310070530E /* HondaBest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43D63E0C186F4C310070530E /* HondaBestTests */ = {
+			isa = PBXGroup;
+			children = (
+				43D63E12186F4C310070530E /* HondaBestTests.m */,
+				43D63E0D186F4C310070530E /* Supporting Files */,
+			);
+			path = HondaBestTests;
+			sourceTree = "<group>";
+		};
+		43D63E0D186F4C310070530E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D63E0E186F4C310070530E /* HondaBestTests-Info.plist */,
+				43D63E0F186F4C310070530E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43D63DE0186F4C310070530E /* HondaBest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D63E16186F4C310070530E /* Build configuration list for PBXNativeTarget "HondaBest" */;
+			buildPhases = (
+				43D63DDD186F4C310070530E /* Sources */,
+				43D63DDE186F4C310070530E /* Frameworks */,
+				43D63DDF186F4C310070530E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HondaBest;
+			productName = HondaBest;
+			productReference = 43D63DE1186F4C310070530E /* HondaBest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43D63E04186F4C310070530E /* HondaBestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D63E19186F4C310070530E /* Build configuration list for PBXNativeTarget "HondaBestTests" */;
+			buildPhases = (
+				43D63E01186F4C310070530E /* Sources */,
+				43D63E02186F4C310070530E /* Frameworks */,
+				43D63E03186F4C310070530E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43D63E0B186F4C310070530E /* PBXTargetDependency */,
+			);
+			name = HondaBestTests;
+			productName = HondaBestTests;
+			productReference = 43D63E05186F4C310070530E /* HondaBestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43D63DD9186F4C310070530E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Honda;
+				TargetAttributes = {
+					43D63E04186F4C310070530E = {
+						TestTargetID = 43D63DE0186F4C310070530E;
+					};
+				};
+			};
+			buildConfigurationList = 43D63DDC186F4C310070530E /* Build configuration list for PBXProject "HondaBest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43D63DD8186F4C310070530E;
+			productRefGroup = 43D63DE2186F4C310070530E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43D63DE0186F4C310070530E /* HondaBest */,
+				43D63E04186F4C310070530E /* HondaBestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43D63DDF186F4C310070530E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D63DFB186F4C310070530E /* Main_iPad.storyboard in Resources */,
+				43D63E00186F4C310070530E /* Images.xcassets in Resources */,
+				43D63DF8186F4C310070530E /* Main_iPhone.storyboard in Resources */,
+				43D63DEF186F4C310070530E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D63E03186F4C310070530E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D63E11186F4C310070530E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43D63DDD186F4C310070530E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D63DFE186F4C310070530E /* HBViewController.m in Sources */,
+				43D63DF5186F4C310070530E /* HBAppDelegate.m in Sources */,
+				43D63DF1186F4C310070530E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D63E01186F4C310070530E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D63E13186F4C310070530E /* HondaBestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43D63E0B186F4C310070530E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D63DE0186F4C310070530E /* HondaBest */;
+			targetProxy = 43D63E0A186F4C310070530E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43D63DED186F4C310070530E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D63DEE186F4C310070530E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		43D63DF6186F4C310070530E /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D63DF7186F4C310070530E /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		43D63DF9186F4C310070530E /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D63DFA186F4C310070530E /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		43D63E0F186F4C310070530E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D63E10186F4C310070530E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43D63E14186F4C310070530E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43D63E15186F4C310070530E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43D63E17186F4C310070530E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HondaBest/HondaBest-Prefix.pch";
+				INFOPLIST_FILE = "HondaBest/HondaBest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		43D63E18186F4C310070530E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HondaBest/HondaBest-Prefix.pch";
+				INFOPLIST_FILE = "HondaBest/HondaBest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		43D63E1A186F4C310070530E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HondaBest.app/HondaBest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HondaBest/HondaBest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HondaBestTests/HondaBestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		43D63E1B186F4C310070530E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HondaBest.app/HondaBest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HondaBest/HondaBest-Prefix.pch";
+				INFOPLIST_FILE = "HondaBestTests/HondaBestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43D63DDC186F4C310070530E /* Build configuration list for PBXProject "HondaBest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D63E14186F4C310070530E /* Debug */,
+				43D63E15186F4C310070530E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D63E16186F4C310070530E /* Build configuration list for PBXNativeTarget "HondaBest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D63E17186F4C310070530E /* Debug */,
+				43D63E18186F4C310070530E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43D63E19186F4C310070530E /* Build configuration list for PBXNativeTarget "HondaBestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D63E1A186F4C310070530E /* Debug */,
+				43D63E1B186F4C310070530E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43D63DD9186F4C310070530E /* Project object */;
+}
