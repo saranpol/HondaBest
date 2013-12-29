@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43CE9C8818709D4000AAD780 /* Test_VideoTransparent.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 43CE9C8518709D4000AAD780 /* Test_VideoTransparent.mp4 */; };
 		43D63DE5186F4C310070530E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE4186F4C310070530E /* Foundation.framework */; };
 		43D63DE7186F4C310070530E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE6186F4C310070530E /* CoreGraphics.framework */; };
 		43D63DE9186F4C310070530E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D63DE8186F4C310070530E /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43CE9C8518709D4000AAD780 /* Test_VideoTransparent.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test_VideoTransparent.mp4; sourceTree = "<group>"; };
 		43D63DE1186F4C310070530E /* HondaBest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HondaBest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D63DE4186F4C310070530E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		43D63DE6186F4C310070530E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43CE9C8218709D4000AAD780 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				43CE9C8518709D4000AAD780 /* Test_VideoTransparent.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		43D63DD8186F4C310070530E = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		43D63DEA186F4C310070530E /* HondaBest */ = {
 			isa = PBXGroup;
 			children = (
+				43CE9C8218709D4000AAD780 /* Videos */,
 				43D63E2E186F71F30070530E /* Libs */,
 				43D63DF3186F4C310070530E /* HBAppDelegate.h */,
 				43D63DF4186F4C310070530E /* HBAppDelegate.m */,
@@ -321,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43CE9C8818709D4000AAD780 /* Test_VideoTransparent.mp4 in Resources */,
 				43D63DFB186F4C310070530E /* Main_iPad.storyboard in Resources */,
 				43D63E2D186F5E670070530E /* ViewMenu.xib in Resources */,
 				43D63E00186F4C310070530E /* Images.xcassets in Resources */,
@@ -571,6 +583,7 @@
 				43D63E18186F4C310070530E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43D63E19186F4C310070530E /* Build configuration list for PBXNativeTarget "HondaBestTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +592,7 @@
 				43D63E1B186F4C310070530E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

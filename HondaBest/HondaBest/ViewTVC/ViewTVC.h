@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewTVC : UIViewController
+
+@property (nonatomic, strong) MPMoviePlayerController *mPlayer;
 
 - (IBAction)clickBack:(id)sender;
 

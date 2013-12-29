@@ -9,7 +9,10 @@
 #import "ViewTVC.h"
 
 
+
 @implementation ViewTVC
+
+@synthesize mPlayer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,6 +27,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test_VideoTransparent" ofType:@"mp4"];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"sample_mpeg4" ofType:@"mp4"];
+    self.mPlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
+    mPlayer.view.frame = CGRectMake(184, 200, 400, 300);
+    [mPlayer.view setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:mPlayer.view];
+    [mPlayer setControlStyle:MPMovieControlStyleNone];
+    [mPlayer setRepeatMode:MPMovieRepeatModeOne];
+    [mPlayer play];
+    
 }
 
 - (void)didReceiveMemoryWarning
