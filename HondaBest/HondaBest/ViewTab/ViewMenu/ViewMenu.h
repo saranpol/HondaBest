@@ -33,8 +33,23 @@ enum {
 - (IBAction)clickExterior:(id)sender;
 
 - (IBAction)clickE:(id)sender;
+- (IBAction)clickE85:(id)sender;
+- (IBAction)clickiVTEC:(id)sender;
+- (IBAction)clickCTV:(id)sender;
+- (IBAction)clickECON:(id)sender;
+- (IBAction)clickPaddleShift:(id)sender;
+
+
 - (IBAction)clickS:(id)sender;
+- (IBAction)clickSideRSR:(id)sender;
+- (IBAction)clickSideCertain:(id)sender;
+- (IBAction)clickVSA:(id)sender;
+- (IBAction)clickESS:(id)sender;
+    
 - (IBAction)clickT:(id)sender;
+- (IBAction)clickTouchSC:(id)sender;
+- (IBAction)clickMirrorLink:(id)sender;
+- (IBAction)clickCruise:(id)sender;
 
 
 @end

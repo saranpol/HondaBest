@@ -39,7 +39,7 @@
     [mViewMenu.view setFrame:f];
     [self.view addSubview:mViewMenu.view];
     
-    UIButton *b = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+    UIButton *b = [[UIButton alloc] initWithFrame:CGRectMake(0, 50, 100, 50)];
     [b setTitle:@"BACK" forState:UIControlStateNormal];
     [b setBackgroundColor:[UIColor redColor]];
     [b setTitle:@"BACKKK" forState:UIControlStateHighlighted];
@@ -54,7 +54,8 @@
     
     
     UIView *fromView = self.selectedViewController.view;
-    UIView *toView = [[self.viewControllers objectAtIndex:selectedIndex] view];
+    UIViewController *toVC = [self.viewControllers objectAtIndex:selectedIndex];
+    UIView *toView = [toVC view];
     if(fromView == toView)
         return;
     [toView setFrame:fromView.frame];
@@ -66,6 +67,9 @@
                     completion:^(BOOL finished) {
                         if (finished) {
                             [super setSelectedIndex:selectedIndex];
+                            if(toVC.navigationController)
+                                [toVC.navigationController setNavigationBarHidden:YES];
+
                         }
                     }];
 
