@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="-2142" y="30"/>
         </scene>
-        <!--View Controller - Interior-->
+        <!--View Interior - Interior-->
         <scene sceneID="Rbl-pF-mUu">
             <objects>
-                <viewController id="UhO-gG-Rjd" sceneMemberID="viewController">
+                <viewController id="UhO-gG-Rjd" customClass="ViewInterior" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9vv-JP-Kvs"/>
                         <viewControllerLayoutGuide type="bottom" id="IRK-cG-icg"/>
@@ -48,21 +48,6 @@
                     <view key="view" contentMode="scaleToFill" id="f8J-sD-nDm">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interior" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulx-0A-hRZ">
-                                <rect key="frame" x="425" y="349" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBN-UA-Gim">
-                                <rect key="frame" x="233" y="276" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -112,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TG-io-1Ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2142" y="1014"/>
+            <point key="canvasLocation" x="1386" y="30"/>
         </scene>
         <!--View Tab-->
         <scene sceneID="D4N-Wk-0cj">
@@ -141,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="195" y="30"/>
         </scene>
-        <!--View Controller - Exterior-->
+        <!--View Exterior - Exterior-->
         <scene sceneID="iqt-LJ-VoA">
             <objects>
-                <viewController id="v1e-8j-7RA" sceneMemberID="viewController">
+                <viewController id="v1e-8j-7RA" customClass="ViewExterior" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XCl-KO-Hyc"/>
                         <viewControllerLayoutGuide type="bottom" id="qPQ-Yf-Tju"/>
@@ -154,25 +139,40 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exterior" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVc-60-14W">
-                                <rect key="frame" x="157" y="240" width="60" height="21"/>
+                                <rect key="frame" x="482" y="57" width="60" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-je-F3e">
-                                <rect key="frame" x="328" y="354" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
+                                <rect key="frame" x="39" y="170" width="815" height="523"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-ST-wQ7">
+                                <rect key="frame" x="120" y="127" width="815" height="523"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                                <color key="backgroundColor" red="0.26537933359999999" green="0.48340276500000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="naG-yl-Wpt" appends="YES" id="HcE-XH-Slt"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exterior" id="Ryv-r0-OF9"/>
+                    <connections>
+                        <outlet property="mImageRotate" destination="ViS-sI-Ydo" id="b2H-Es-cJj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FA4-kM-fOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="naG-yl-Wpt">
+                    <connections>
+                        <action selector="panView:" destination="v1e-8j-7RA" id="dye-2v-JSf"/>
+                        <outlet property="delegate" destination="v1e-8j-7RA" id="GFd-rg-VKM"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="195" y="1009"/>
         </scene>
