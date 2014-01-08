@@ -19,6 +19,10 @@
 @synthesize mViewE;
 @synthesize mViewS;
 @synthesize mViewT;
+@synthesize mButtonB0;
+@synthesize mButtonE0;
+@synthesize mButtonS0;
+@synthesize mButtonT0;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,41 +70,57 @@
     }
 }
 
+#define BW 112
+#define BWA 400
+
 - (void)hideAllMenu {
     self.mMenuState = MENU_STATE_HIDE_ALL;
-    [mViewB setFrame:CGRectMake(300, 10, 30, 33)];
-    [mViewE setFrame:CGRectMake(300+30, 10, 30, 33)];
-    [mViewS setFrame:CGRectMake(300+30+30, 10, 30, 33)];
-    [mViewT setFrame:CGRectMake(300+30+30+30, 10, 30, 33)];
+    [mViewB setFrame:CGRectMake(300, 10, BW, 74)];
+    [mViewE setFrame:CGRectMake(300+BW, 10, 30, 74)];
+    [mViewS setFrame:CGRectMake(300+BW+30, 10, 30, 74)];
+    [mViewT setFrame:CGRectMake(300+BW+30+30, 10, 30, 74)];
+    
+    [mButtonB0 setHidden:YES];
+    [mButtonE0 setHidden:YES];
+    [mButtonS0 setHidden:YES];
+    [mButtonT0 setHidden:YES];
 }
 
 - (void)showMenuB {
     self.mMenuState = MENU_STATE_SHOW_B;
-    [mViewB setFrame:CGRectMake(70, 10, 216, 33)];
-    [mViewE setFrame:CGRectMake(70+216, 10, 30, 33)];
-    [mViewS setFrame:CGRectMake(70+216+30, 10, 30, 33)];
-    [mViewT setFrame:CGRectMake(70+216+30+30, 10, 30, 33)];
+    [mViewB setFrame:CGRectMake(70, 10, BWA, 74)];
+    [mViewE setFrame:CGRectMake(70+BWA, 10, 30, 74)];
+    [mViewS setFrame:CGRectMake(70+BWA+30, 10, 30, 74)];
+    [mViewT setFrame:CGRectMake(70+BWA+30+30, 10, 30, 74)];
+
+    [mButtonB0 setHidden:NO];
 }
 - (void)showMenuE {
     self.mMenuState = MENU_STATE_SHOW_E;
-    [mViewB setFrame:CGRectMake(70, 10, 30, 33)];
-    [mViewE setFrame:CGRectMake(70+30, 10, 487, 33)];
-    [mViewS setFrame:CGRectMake(70+30+487, 10, 30, 33)];
-    [mViewT setFrame:CGRectMake(70+30+487+30, 10, 30, 33)];
+    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
+    [mViewE setFrame:CGRectMake(70+BW, 10, 487, 74)];
+    [mViewS setFrame:CGRectMake(70+BW+487, 10, 30, 74)];
+    [mViewT setFrame:CGRectMake(70+BW+487+30, 10, 30, 74)];
+
+    [mButtonE0 setHidden:NO];
 }
 - (void)showMenuS {
     self.mMenuState = MENU_STATE_SHOW_S;
-    [mViewB setFrame:CGRectMake(70, 10, 30, 33)];
-    [mViewE setFrame:CGRectMake(70+30, 10, 30, 33)];
-    [mViewS setFrame:CGRectMake(70+30+30, 10, 400, 33)];
-    [mViewT setFrame:CGRectMake(70+30+30+400, 10, 30, 33)];
+    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
+    [mViewE setFrame:CGRectMake(70+BW, 10, 30, 74)];
+    [mViewS setFrame:CGRectMake(70+BW+30, 10, 400, 74)];
+    [mViewT setFrame:CGRectMake(70+BW+30+400, 10, 30, 74)];
+
+    [mButtonS0 setHidden:NO];
 }
 - (void)showMenuT {
     self.mMenuState = MENU_STATE_SHOW_T;
-    [mViewB setFrame:CGRectMake(70, 10, 30, 33)];
-    [mViewE setFrame:CGRectMake(70+30, 10, 30, 33)];
-    [mViewS setFrame:CGRectMake(70+30+30, 10, 30, 33)];
-    [mViewT setFrame:CGRectMake(70+30+30+30, 10, 309, 33)];
+    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
+    [mViewE setFrame:CGRectMake(70+BW, 10, 30, 74)];
+    [mViewS setFrame:CGRectMake(70+BW+30, 10, 30, 74)];
+    [mViewT setFrame:CGRectMake(70+BW+30+30, 10, 309, 74)];
+
+    [mButtonT0 setHidden:NO];
 }
 
 
@@ -111,7 +131,11 @@
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          [self showMenuB];
-                     }completion:nil];
+                     }completion:^(BOOL finished){
+                         [mButtonE0 setHidden:YES];
+                         [mButtonS0 setHidden:YES];
+                         [mButtonT0 setHidden:YES];
+                     }];
     [mViewTab setSelectedIndex:1];
 }
 - (IBAction)clickExterior:(id)sender {
@@ -129,7 +153,11 @@
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          [self showMenuE];
-                     }completion:nil];
+                     }completion:^(BOOL finished){
+                         [mButtonB0 setHidden:YES];
+                         [mButtonS0 setHidden:YES];
+                         [mButtonT0 setHidden:YES];
+                     }];
     [mViewTab setSelectedIndex:4];
 }
 - (IBAction)clickE85:(id)sender {
@@ -157,7 +185,11 @@
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          [self showMenuS];
-                     }completion:nil];
+                     }completion:^(BOOL finished){
+                         [mButtonB0 setHidden:YES];
+                         [mButtonE0 setHidden:YES];
+                         [mButtonT0 setHidden:YES];
+                     }];;
     [mViewTab setSelectedIndex:10];
 }
 - (IBAction)clickSideRSR:(id)sender {
@@ -183,7 +215,11 @@
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          [self showMenuT];
-                     }completion:nil];
+                     }completion:^(BOOL finished){
+                         [mButtonB0 setHidden:YES];
+                         [mButtonE0 setHidden:YES];
+                         [mButtonS0 setHidden:YES];
+                     }];
     [mViewTab setSelectedIndex:15];
 }
 - (IBAction)clickTouchSC:(id)sender {

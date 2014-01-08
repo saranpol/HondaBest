@@ -27,6 +27,11 @@ enum {
 @property (nonatomic, weak) IBOutlet UIView *mViewE;
 @property (nonatomic, weak) IBOutlet UIView *mViewS;
 @property (nonatomic, weak) IBOutlet UIView *mViewT;
+@property (nonatomic, weak) IBOutlet UIButton *mButtonB0;
+@property (nonatomic, weak) IBOutlet UIButton *mButtonE0;
+@property (nonatomic, weak) IBOutlet UIButton *mButtonS0;
+@property (nonatomic, weak) IBOutlet UIButton *mButtonT0;
+
 
 - (IBAction)clickB:(id)sender;
 - (IBAction)clickInterior:(id)sender;
