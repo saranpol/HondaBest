@@ -43,6 +43,7 @@ enum {
 - (IBAction)clickCTV:(id)sender;
 - (IBAction)clickECON:(id)sender;
 - (IBAction)clickPaddleShift:(id)sender;
+- (IBAction)clickEcoCoaching:(id)sender;
 
 
 - (IBAction)clickS:(id)sender;

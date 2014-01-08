@@ -70,15 +70,16 @@
     }
 }
 
-#define BW 112
-#define BWA 400
+#define B_MENU_W 112
+#define BW 400
+#define EW 612
 
 - (void)hideAllMenu {
     self.mMenuState = MENU_STATE_HIDE_ALL;
-    [mViewB setFrame:CGRectMake(300, 10, BW, 74)];
-    [mViewE setFrame:CGRectMake(300+BW, 10, 30, 74)];
-    [mViewS setFrame:CGRectMake(300+BW+30, 10, 30, 74)];
-    [mViewT setFrame:CGRectMake(300+BW+30+30, 10, 30, 74)];
+    [mViewB setFrame:CGRectMake(300, 10, B_MENU_W, 74)];
+    [mViewE setFrame:CGRectMake(300+B_MENU_W, 10, B_MENU_W, 74)];
+    [mViewS setFrame:CGRectMake(300+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
+    [mViewT setFrame:CGRectMake(300+B_MENU_W+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
     
     [mButtonB0 setHidden:YES];
     [mButtonE0 setHidden:YES];
@@ -88,37 +89,37 @@
 
 - (void)showMenuB {
     self.mMenuState = MENU_STATE_SHOW_B;
-    [mViewB setFrame:CGRectMake(70, 10, BWA, 74)];
-    [mViewE setFrame:CGRectMake(70+BWA, 10, 30, 74)];
-    [mViewS setFrame:CGRectMake(70+BWA+30, 10, 30, 74)];
-    [mViewT setFrame:CGRectMake(70+BWA+30+30, 10, 30, 74)];
+    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
+    [mViewE setFrame:CGRectMake(70+BW, 10, B_MENU_W, 74)];
+    [mViewS setFrame:CGRectMake(70+BW+B_MENU_W, 10, B_MENU_W, 74)];
+    [mViewT setFrame:CGRectMake(70+BW+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
 
     [mButtonB0 setHidden:NO];
 }
 - (void)showMenuE {
     self.mMenuState = MENU_STATE_SHOW_E;
-    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
-    [mViewE setFrame:CGRectMake(70+BW, 10, 487, 74)];
-    [mViewS setFrame:CGRectMake(70+BW+487, 10, 30, 74)];
-    [mViewT setFrame:CGRectMake(70+BW+487+30, 10, 30, 74)];
+    [mViewB setFrame:CGRectMake(70, 10, B_MENU_W, 74)];
+    [mViewE setFrame:CGRectMake(70+B_MENU_W, 10, EW, 74)];
+    [mViewS setFrame:CGRectMake(70+B_MENU_W+EW, 10, B_MENU_W, 74)];
+    [mViewT setFrame:CGRectMake(70+B_MENU_W+EW+B_MENU_W, 10, B_MENU_W, 74)];
 
     [mButtonE0 setHidden:NO];
 }
 - (void)showMenuS {
     self.mMenuState = MENU_STATE_SHOW_S;
-    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
-    [mViewE setFrame:CGRectMake(70+BW, 10, 30, 74)];
-    [mViewS setFrame:CGRectMake(70+BW+30, 10, 400, 74)];
-    [mViewT setFrame:CGRectMake(70+BW+30+400, 10, 30, 74)];
+    [mViewB setFrame:CGRectMake(70, 10, B_MENU_W, 74)];
+    [mViewE setFrame:CGRectMake(70+B_MENU_W, 10, B_MENU_W, 74)];
+    [mViewS setFrame:CGRectMake(70+B_MENU_W+B_MENU_W, 10, 400, 74)];
+    [mViewT setFrame:CGRectMake(70+B_MENU_W+B_MENU_W+400, 10, B_MENU_W, 74)];
 
     [mButtonS0 setHidden:NO];
 }
 - (void)showMenuT {
     self.mMenuState = MENU_STATE_SHOW_T;
-    [mViewB setFrame:CGRectMake(70, 10, BW, 74)];
-    [mViewE setFrame:CGRectMake(70+BW, 10, 30, 74)];
-    [mViewS setFrame:CGRectMake(70+BW+30, 10, 30, 74)];
-    [mViewT setFrame:CGRectMake(70+BW+30+30, 10, 309, 74)];
+    [mViewB setFrame:CGRectMake(70, 10, B_MENU_W, 74)];
+    [mViewE setFrame:CGRectMake(70+B_MENU_W, 10, B_MENU_W, 74)];
+    [mViewS setFrame:CGRectMake(70+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
+    [mViewT setFrame:CGRectMake(70+B_MENU_W+B_MENU_W+B_MENU_W, 10, 309, 74)];
 
     [mButtonT0 setHidden:NO];
 }
@@ -175,7 +176,9 @@
 - (IBAction)clickPaddleShift:(id)sender {
     [mViewTab setSelectedIndex:9];
 }
-
+- (IBAction)clickEcoCoaching:(id)sender {
+    [mViewTab setSelectedIndex:19];
+}
 
 
 

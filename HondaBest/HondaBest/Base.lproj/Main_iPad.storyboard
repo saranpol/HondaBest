@@ -145,6 +145,7 @@
                         <segue destination="0Vd-3L-o31" kind="relationship" relationship="viewControllers" id="2GH-VK-Dpq"/>
                         <segue destination="Hiy-V1-C03" kind="relationship" relationship="viewControllers" id="WDl-Gc-tDq"/>
                         <segue destination="GB3-su-njU" kind="relationship" relationship="viewControllers" id="Ea1-6H-qB8"/>
+                        <segue destination="1Rb-fc-xJJ" kind="relationship" relationship="viewControllers" id="OhD-pc-8IT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GoU-JK-N3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -401,7 +402,6 @@
         <!--View Controller - CTV-->
         <scene sceneID="e3x-pn-tMH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u4q-c3-XAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FH0-Y6-fgf" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SDt-M2-CZ0"/>
@@ -428,6 +428,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="CTV" id="qge-n4-WtN"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4q-c3-XAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2521" y="1955"/>
         </scene>
@@ -490,7 +491,6 @@
         <!--View Controller - ECON-->
         <scene sceneID="wBN-Zo-tC0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VtM-Q9-OQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="mDv-9k-UvF" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qvX-i5-9Ms"/>
@@ -512,13 +512,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="ECON" id="cda-KW-xq4"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VtM-Q9-OQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3697" y="1955"/>
         </scene>
         <!--View Controller - PaddleShift-->
         <scene sceneID="8SB-hI-WUY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tH2-3X-Exg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SAd-XL-lnY" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eA4-Nc-71u"/>
@@ -560,8 +560,37 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="PaddleShift" id="DvZ-0M-WJj"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tH2-3X-Exg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4825" y="1955"/>
+        </scene>
+        <!--View Controller - Eco coaching-->
+        <scene sceneID="gve-mX-yR2">
+            <objects>
+                <viewController id="1Rb-fc-xJJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xfl-W5-g1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="h2C-d3-eFR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gHg-SG-dtv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eco coaching" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWI-mH-7aI">
+                                <rect key="frame" x="415" y="316" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Eco coaching" id="ri3-wp-baE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmS-uy-fp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5959" y="1955"/>
         </scene>
         <!--ViewB - B-->
         <scene sceneID="jlB-Mx-VLe">
@@ -638,7 +667,6 @@
         <!--View Controller - S-->
         <scene sceneID="ZnM-oF-HQx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nV0-Ff-l4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="guL-jd-RBn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2h8-Ae-hf2"/>
@@ -660,6 +688,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="S" id="b1A-tG-tUH"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nV0-Ff-l4u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-931" y="2881"/>
         </scene>
