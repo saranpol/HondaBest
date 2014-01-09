@@ -11,5 +11,9 @@
 @interface ViewB : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIView *mViewMeaning;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageBG;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageLogo;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageHead;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageText;
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewLanding : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIImageView *mImageBG;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageLogo;
 
 - (IBAction)clickBack:(id)sender;
 

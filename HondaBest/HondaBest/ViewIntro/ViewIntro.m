@@ -35,6 +35,11 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
+//#SKIP
+    [self gotoViewIntro];
+    return;
+    
+    
     [mImageLogoCity setAlpha:0];
     [mImageLogoBest setAlpha:0];
     

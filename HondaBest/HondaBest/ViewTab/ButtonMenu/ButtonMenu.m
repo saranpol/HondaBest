@@ -79,6 +79,13 @@
 }
 */
 
+- (void)setSelected:(BOOL)selected {
+    if(selected)
+        [mLabel setTextColor:[UIColor colorWithRed:0/255.0 green:71.0/255.0 blue:186.0/255.0 alpha:1.0]];
+    else
+        [mLabel setTextColor:[UIColor colorWithRed:107.0/255.0 green:107.0/255.0 blue:107.0/255.0 alpha:1.0]];
+}
+
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *v = [super hitTest:point withEvent:event];

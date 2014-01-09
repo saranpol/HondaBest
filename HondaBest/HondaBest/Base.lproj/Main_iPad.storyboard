@@ -73,45 +73,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sf-Cf-1i0">
-                                <rect key="frame" x="182" y="49" width="595" height="753"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lading" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="430-qD-uI0">
-                                        <rect key="frame" x="294" y="220" width="53" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.80368359499999997" blue="0.26253992840000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-7e-nPQ">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RmE-xi-RGZ">
+                                <rect key="frame" x="0.0" y="0.0" width="1948" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-7e-nPQ">
                                 <rect key="frame" x="631" y="11" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="GradeLevel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
                                 <rect key="frame" x="756" y="11" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="VideoGallery">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-Bd-yD6">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-Bd-yD6">
                                 <rect key="frame" x="872" y="11" width="98" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Share">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-go-1bl">
+                                <rect key="frame" x="583" y="71" width="302" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.69225326850000002" green="1" blue="0.63963374240000004" alpha="1" colorSpace="calibratedRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Landing" id="bGF-2d-I6K"/>
+                    <connections>
+                        <outlet property="mImageBG" destination="RmE-xi-RGZ" id="ZDv-yF-zBi"/>
+                        <outlet property="mImageLogo" destination="2Iy-go-1bl" id="rPC-W0-va3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TG-io-1Ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="195" y="1009"/>
         </scene>
-        <!--View Controller - E85-->
+        <!--ViewE85 - E85-->
         <scene sceneID="Uzk-d0-vZX">
             <objects>
-                <viewController id="hTO-t8-N7b" sceneMemberID="viewController">
+                <viewController id="hTO-t8-N7b" customClass="ViewE85" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KeI-k6-AWL"/>
                         <viewControllerLayoutGuide type="bottom" id="2ot-o5-e9N"/>
@@ -222,10 +220,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E85" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyI-lx-Qmu">
-                                <rect key="frame" x="476" y="282" width="30" height="21"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="detail_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-wg-rvU">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_03_e85.png" translatesAutoresizingMaskIntoConstraints="NO" id="t3b-cN-BTv">
+                                <rect key="frame" x="96" y="130" width="832" height="335"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="รองรับน้ำมันแก๊สโซฮอล์ E85   " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="3t2-n0-Ose">
+                                <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -726,22 +733,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YX7-bS-ZUa">
-                                <rect key="frame" x="474" y="294" width="12" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mpY-gz-Bwy">
+                                <rect key="frame" x="-945" y="0.0" width="1969" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-sG-8M4">
+                                <rect key="frame" x="760" y="23" width="231" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-Ex-KSe">
+                                <rect key="frame" x="77" y="95" width="376" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="QNu-Yd-s7A">
+                                <rect key="frame" x="77" y="152" width="606" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-S8-P8O">
-                                <rect key="frame" x="242" y="180" width="512" height="360"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beyond the class design package" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcj-72-Pfw">
-                                        <rect key="frame" x="79" y="146" width="379" height="123"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="viq-0k-3tV">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-gj-W4Q">
+                                        <rect key="frame" x="191" y="346" width="643" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -751,12 +770,16 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="B" id="PSq-CY-J0P"/>
                     <connections>
+                        <outlet property="mImageBG" destination="mpY-gz-Bwy" id="tDA-Ui-AMa"/>
+                        <outlet property="mImageHead" destination="9sA-Ex-KSe" id="lgF-n3-KZz"/>
+                        <outlet property="mImageLogo" destination="hPf-sG-8M4" id="8E1-dQ-jJe"/>
+                        <outlet property="mImageText" destination="QNu-Yd-s7A" id="GXV-FK-73x"/>
                         <outlet property="mViewMeaning" destination="MtW-S8-P8O" id="VZ7-Z8-j1L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMo-yD-bK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-944" y="1014"/>
+            <point key="canvasLocation" x="-936" y="1009"/>
         </scene>
         <!--ViewE - E-->
         <scene sceneID="meB-iN-kuO">
@@ -770,17 +793,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-zT-SAL">
-                                <rect key="frame" x="507" y="299" width="11" height="21"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-Xy-9pf">
+                                <rect key="frame" x="0.0" y="0.0" width="1896" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVC-qx-ofI">
+                                <rect key="frame" x="760" y="23" width="231" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0in-7h-aA4">
+                                <rect key="frame" x="54" y="111" width="816" height="104"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-dk-h4J">
+                                <rect key="frame" x="97" y="61" width="503" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-Eq-6lL">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Fy-di-sQb">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="VpD-O7-MUJ">
+                                        <rect key="frame" x="246" y="346" width="532" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="E" id="TOe-CD-h9g"/>
+                    <connections>
+                        <outlet property="mImageBG" destination="ElA-Xy-9pf" id="kw5-FD-JmF"/>
+                        <outlet property="mImageHead" destination="nU3-dk-h4J" id="UQt-3F-WAr"/>
+                        <outlet property="mImageLogo" destination="zVC-qx-ofI" id="DEb-0V-8f3"/>
+                        <outlet property="mImageText" destination="0in-7h-aA4" id="s1t-qy-ocz"/>
+                        <outlet property="mViewMeaning" destination="JAW-Eq-6lL" id="n0h-hF-ySa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M87-fr-nqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -941,11 +996,25 @@
         </scene>
     </scenes>
     <resources>
+        <image name="b_intro_bg.png" width="1" height="768"/>
+        <image name="b_intro_word.png" width="643" height="75"/>
+        <image name="b_landing_bg.jpg" width="1969" height="768"/>
+        <image name="b_landing_h1.png" width="376" height="45"/>
+        <image name="b_landing_h2.png" width="606" height="85"/>
         <image name="btn_switch.png" width="182" height="182"/>
+        <image name="detail_bg.jpg" width="1024" height="768"/>
+        <image name="e_03_e85.png" width="832" height="335"/>
+        <image name="e_intro_word.png" width="532" height="76"/>
+        <image name="e_landing_bg.jpg" width="1896" height="768"/>
+        <image name="e_landing_h1.png" width="503" height="45"/>
+        <image name="e_landing_h2.png" width="816" height="104"/>
         <image name="first_bg.jpg" width="1024" height="768"/>
         <image name="intro_bg.jpg" width="1024" height="768"/>
         <image name="intro_logo_best.png" width="754" height="119"/>
         <image name="intro_logo_city.png" width="553" height="155"/>
+        <image name="landing_bg.jpg" width="1948" height="768"/>
+        <image name="landing_logo.png" width="302" height="85"/>
+        <image name="logo_top_left.png" width="231" height="65"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

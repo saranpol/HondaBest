@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewMenu;
+
 @interface HBViewController : UIViewController
+
+@property (nonatomic, weak) ViewMenu *mViewMenu;
+
++ (HBViewController*)getVC;
 
 @end

@@ -35,19 +35,23 @@
     mViewMenu.mViewTab = self;
     
     CGRect f = mViewMenu.view.frame;
+    f.size.height = 74 + 37;
     f.origin.y = 768 - f.size.height;
 //    f.origin.y = 320 - f.size.height;
     [mViewMenu.view setFrame:f];
     [self.view addSubview:mViewMenu.view];
     
-    self.mButtonBack = [[UIButton alloc] initWithFrame:CGRectMake(0, 50, 100, 50)];
-    [mButtonBack setTitle:@"BACK" forState:UIControlStateNormal];
-    [mButtonBack setBackgroundColor:[UIColor redColor]];
-    [mButtonBack setTitle:@"BACKKK" forState:UIControlStateHighlighted];
+    UIImage *btnBackImage = [UIImage imageNamed:@"btn_back.png"];
+    
+    self.mButtonBack = [[UIButton alloc] initWithFrame:CGRectMake(25, 20, btnBackImage.size.width, btnBackImage.size.height)];
+    [mButtonBack setImage:btnBackImage forState:UIControlStateNormal];
     [mButtonBack addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:mButtonBack];
     
     [mButtonBack setHidden:YES];
+    
+    [mViewMenu.view setAlpha:0];
+    
 }
 
 

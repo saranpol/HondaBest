@@ -7,12 +7,13 @@
 //
 
 #import "ViewLanding.h"
-
-@interface ViewLanding ()
-
-@end
+#import "HBViewController.h"
+#import "ViewMenu.h"
 
 @implementation ViewLanding
+
+@synthesize mImageBG;
+@synthesize mImageLogo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +28,44 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [mImageLogo setAlpha:0];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [mImageLogo setAlpha:0];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+//#SKIP
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.view setAlpha:1.0];
+    return
+    
+    [UIView animateWithDuration:2.0
+                          delay:0.5
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         CGRect r = mImageBG.frame;
+                         r.origin.x = -(r.size.width - self.view.frame.size.width);
+                         [mImageBG setFrame:r];
+                     }
+                     completion:^(BOOL finished){
+                         [UIView animateWithDuration:0.3
+                                          animations:^{
+                                              [mImageLogo setAlpha:1];
+                                          }
+                                          completion:^(BOOL finished){
+                                              HBViewController *vc = [HBViewController getVC];
+                                              if(vc.mViewMenu.view.alpha == 0){
+                                                  [UIView animateWithDuration:0.3 animations:^{
+                                                      [vc.mViewMenu.view setAlpha:1.0];
+                                                  }];
+                                              }
+                                          }];
+                     }];
 }
 
 - (void)didReceiveMemoryWarning

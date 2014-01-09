@@ -8,22 +8,26 @@
 
 #import "HBViewController.h"
 
-@interface HBViewController ()
-
-@end
 
 @implementation HBViewController
+
+static HBViewController *instance;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    instance = self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
++ (HBViewController*)getVC {
+    return instance;
 }
 
 @end

@@ -53,13 +53,15 @@
 //    hotspot2.alpha=0.5;
 //    hotspot2.layer.cornerRadius=25;
 //    [panoView addHotspot:hotspot2 atHAngle:M_PI_4 vAngle:M_PI_4];
-//    
+//
+    /*
     UIButton *hotspot3=[UIButton buttonWithType:UIButtonTypeRoundedRect];
     [hotspot3 setTitle:@"clouds" forState:UIControlStateNormal];
     [hotspot3 setFrame:CGRectMake(0, 0, 100, 30)];
     hotspot3.shouldApplyPerspective=NO;
     [hotspot3 addTarget:self action:@selector(centerClouds:) forControlEvents:UIControlEventTouchUpInside];
     [panoView addHotspot:hotspot3 atHAngle:-M_PI_2 vAngle:M_PI_4];
+     */
 //
 //    
 //    UITapGestureRecognizer *tapgr=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapped:)];
