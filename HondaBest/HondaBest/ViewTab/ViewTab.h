@@ -13,5 +13,6 @@
 @interface ViewTab : UITabBarController <UITabBarControllerDelegate>
 
 @property (nonatomic, strong) ViewMenu *mViewMenu;
+@property (nonatomic, strong) UIButton *mButtonBack;
 
 @end

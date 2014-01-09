@@ -13,6 +13,7 @@
 @implementation ViewTab
 
 @synthesize mViewMenu;
+@synthesize mButtonBack;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,14 +40,14 @@
     [mViewMenu.view setFrame:f];
     [self.view addSubview:mViewMenu.view];
     
-    UIButton *b = [[UIButton alloc] initWithFrame:CGRectMake(0, 50, 100, 50)];
-    [b setTitle:@"BACK" forState:UIControlStateNormal];
-    [b setBackgroundColor:[UIColor redColor]];
-    [b setTitle:@"BACKKK" forState:UIControlStateHighlighted];
-    [b addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:b];
+    self.mButtonBack = [[UIButton alloc] initWithFrame:CGRectMake(0, 50, 100, 50)];
+    [mButtonBack setTitle:@"BACK" forState:UIControlStateNormal];
+    [mButtonBack setBackgroundColor:[UIColor redColor]];
+    [mButtonBack setTitle:@"BACKKK" forState:UIControlStateHighlighted];
+    [mButtonBack addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:mButtonBack];
     
-
+    [mButtonBack setHidden:YES];
 }
 
 
@@ -73,12 +74,22 @@
                         }
                     }];
 
+    [mButtonBack setHidden:(selectedIndex==0)];
 }
 
 - (void)clickBack {
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [UIView animateWithDuration:0.3
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mViewMenu hideAllMenu];
+                     }completion:^(BOOL finished){
+                         [mViewMenu hideAllButton0];
+                     }];;
+    [self setSelectedIndex:0];
 }
-     
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

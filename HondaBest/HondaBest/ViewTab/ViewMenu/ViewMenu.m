@@ -54,6 +54,7 @@
     switch (mMenuState) {
         case MENU_STATE_HIDE_ALL:
             [self hideAllMenu];
+            [self hideAllButton0];
             break;
         case MENU_STATE_SHOW_B:
             [self showMenuB];
@@ -74,6 +75,7 @@
 #define BW 400
 #define EW 612
 #define SW 629
+#define TW 602
 
 - (void)hideAllMenu {
     self.mMenuState = MENU_STATE_HIDE_ALL;
@@ -81,7 +83,9 @@
     [mViewE setFrame:CGRectMake(300+B_MENU_W, 10, B_MENU_W, 74)];
     [mViewS setFrame:CGRectMake(300+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
     [mViewT setFrame:CGRectMake(300+B_MENU_W+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
-    
+}
+
+- (void)hideAllButton0 {
     [mButtonB0 setHidden:YES];
     [mButtonE0 setHidden:YES];
     [mButtonS0 setHidden:YES];
@@ -120,7 +124,7 @@
     [mViewB setFrame:CGRectMake(70, 10, B_MENU_W, 74)];
     [mViewE setFrame:CGRectMake(70+B_MENU_W, 10, B_MENU_W, 74)];
     [mViewS setFrame:CGRectMake(70+B_MENU_W+B_MENU_W, 10, B_MENU_W, 74)];
-    [mViewT setFrame:CGRectMake(70+B_MENU_W+B_MENU_W+B_MENU_W, 10, 309, 74)];
+    [mViewT setFrame:CGRectMake(70+B_MENU_W+B_MENU_W+B_MENU_W, 10, TW, 74)];
 
     [mButtonT0 setHidden:NO];
 }
@@ -134,9 +138,11 @@
                      animations:^{
                          [self showMenuB];
                      }completion:^(BOOL finished){
-                         [mButtonE0 setHidden:YES];
-                         [mButtonS0 setHidden:YES];
-                         [mButtonT0 setHidden:YES];
+                         if(finished){
+                             [mButtonE0 setHidden:YES];
+                             [mButtonS0 setHidden:YES];
+                             [mButtonT0 setHidden:YES];
+                         }
                      }];
     [mViewTab setSelectedIndex:1];
 }
@@ -156,9 +162,11 @@
                      animations:^{
                          [self showMenuE];
                      }completion:^(BOOL finished){
-                         [mButtonB0 setHidden:YES];
-                         [mButtonS0 setHidden:YES];
-                         [mButtonT0 setHidden:YES];
+                         if(finished){
+                             [mButtonB0 setHidden:YES];
+                             [mButtonS0 setHidden:YES];
+                             [mButtonT0 setHidden:YES];
+                         }
                      }];
     [mViewTab setSelectedIndex:4];
 }
@@ -190,9 +198,11 @@
                      animations:^{
                          [self showMenuS];
                      }completion:^(BOOL finished){
-                         [mButtonB0 setHidden:YES];
-                         [mButtonE0 setHidden:YES];
-                         [mButtonT0 setHidden:YES];
+                         if(finished){
+                             [mButtonB0 setHidden:YES];
+                             [mButtonE0 setHidden:YES];
+                             [mButtonT0 setHidden:YES];
+                         }
                      }];;
     [mViewTab setSelectedIndex:10];
 }
@@ -226,23 +236,29 @@
                      animations:^{
                          [self showMenuT];
                      }completion:^(BOOL finished){
-                         [mButtonB0 setHidden:YES];
-                         [mButtonE0 setHidden:YES];
-                         [mButtonS0 setHidden:YES];
+                         if(finished){
+                             [mButtonB0 setHidden:YES];
+                             [mButtonE0 setHidden:YES];
+                             [mButtonS0 setHidden:YES];
+                         }
                      }];
     [mViewTab setSelectedIndex:15];
 }
-- (IBAction)clickTouchSC:(id)sender {
+- (IBAction)clickTotalControl:(id)sender {
     [mViewTab setSelectedIndex:16];
 }
-- (IBAction)clickMirrorLink:(id)sender {
+- (IBAction)clickSmartKey:(id)sender {
     [mViewTab setSelectedIndex:17];
 }
-- (IBAction)clickCruise:(id)sender {
+- (IBAction)clickLight:(id)sender {
     [mViewTab setSelectedIndex:18];
 }
-
-
+- (IBAction)clickOnePush:(id)sender {
+    [mViewTab setSelectedIndex:22];
+}
+- (IBAction)clickAdvanceTouch:(id)sender {
+    [mViewTab setSelectedIndex:23];
+}
 
 
 

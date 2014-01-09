@@ -33,6 +33,9 @@ enum {
 @property (nonatomic, weak) IBOutlet UIButton *mButtonT0;
 
 
+- (void)hideAllMenu;
+- (void)hideAllButton0;
+
 - (IBAction)clickB:(id)sender;
 - (IBAction)clickInterior:(id)sender;
 - (IBAction)clickExterior:(id)sender;
@@ -56,9 +59,10 @@ enum {
 
 
 - (IBAction)clickT:(id)sender;
-- (IBAction)clickTouchSC:(id)sender;
-- (IBAction)clickMirrorLink:(id)sender;
-- (IBAction)clickCruise:(id)sender;
-
+- (IBAction)clickTotalControl:(id)sender;
+- (IBAction)clickSmartKey:(id)sender;
+- (IBAction)clickLight:(id)sender;
+- (IBAction)clickOnePush:(id)sender;
+- (IBAction)clickAdvanceTouch:(id)sender;
 
 @end

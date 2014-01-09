@@ -22,11 +22,11 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="143"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKy-dH-ISL">
-                    <rect key="frame" x="13" y="-44" width="400" height="74"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKy-dH-ISL">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDc-4F-dNJ">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDc-4F-dNJ">
                             <rect key="frame" x="0.0" y="0.0" width="112" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -37,31 +37,31 @@
                                 <action selector="clickB:" destination="-1" eventType="touchUpInside" id="rV7-FL-t3A"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd4-33-gbJ" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd4-33-gbJ" customClass="ButtonMenu">
                             <rect key="frame" x="81" y="0.0" width="167" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="167" id="7EU-sS-bT7"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
                             <state key="normal" title="EXTERIOR" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.34252012440000001" green="0.40854952709999998" blue="0.86650815219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickExterior:" destination="-1" eventType="touchUpInside" id="o3w-mK-rla"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN3-L9-SB7" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN3-L9-SB7" customClass="ButtonMenu">
                             <rect key="frame" x="216" y="0.0" width="181" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="181" id="pdM-5S-Q0P"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
                             <state key="normal" title="INTERIOR" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.34252012440000001" green="0.40854952709999998" blue="0.86650815219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickInterior:" destination="-1" eventType="touchUpInside" id="wvc-Qz-smV"/>
@@ -69,28 +69,14 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="gd4-33-gbJ" firstAttribute="top" secondItem="vKy-dH-ISL" secondAttribute="top" id="0rI-y9-7W9"/>
-                        <constraint firstItem="gd4-33-gbJ" firstAttribute="bottom" secondItem="FN3-L9-SB7" secondAttribute="bottom" id="BnC-CC-Wx6"/>
-                        <constraint firstItem="dDc-4F-dNJ" firstAttribute="leading" secondItem="vKy-dH-ISL" secondAttribute="leading" id="C5j-G5-lhE"/>
-                        <constraint firstItem="gd4-33-gbJ" firstAttribute="leading" secondItem="vKy-dH-ISL" secondAttribute="leading" constant="81" id="LMz-rm-ohM"/>
-                        <constraint firstItem="gd4-33-gbJ" firstAttribute="bottom" secondItem="dDc-4F-dNJ" secondAttribute="bottom" id="X6g-bu-Z1a"/>
-                        <constraint firstAttribute="trailing" secondItem="FN3-L9-SB7" secondAttribute="trailing" constant="3" id="bWf-IU-Kl5"/>
-                        <constraint firstAttribute="bottom" secondItem="dDc-4F-dNJ" secondAttribute="bottom" id="rLP-le-XQ0"/>
-                        <constraint firstItem="gd4-33-gbJ" firstAttribute="top" secondItem="dDc-4F-dNJ" secondAttribute="top" id="yYI-oh-EuL"/>
-                        <constraint firstItem="gd4-33-gbJ" firstAttribute="top" secondItem="FN3-L9-SB7" secondAttribute="top" id="zPD-g6-7p3"/>
-                    </constraints>
                 </view>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGP-vg-gYb">
-                    <rect key="frame" x="-3" y="127" width="612" height="74"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGP-vg-gYb">
+                    <rect key="frame" x="600" y="0.0" width="612" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-Zl-492">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-Zl-492">
                             <rect key="frame" x="0.0" y="0.0" width="112" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="112" id="zdU-xl-OR7"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" backgroundImage="menu_e.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,85 +85,91 @@
                                 <action selector="clickE:" destination="-1" eventType="touchUpInside" id="Dgl-3f-qJu"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-Co-KZZ" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1A-Co-KZZ" customClass="ButtonMenu">
                             <rect key="frame" x="81" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="113" id="htC-c3-Um2"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="i-VTEC" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.86650815219999999" green="0.23627743100000001" blue="0.4856946184" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <state key="normal" title="i-VTEC\n1.5 L" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickiVTEC:" destination="-1" eventType="touchUpInside" id="B1p-xy-0ce"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0P-j1-YEG" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0P-j1-YEG" customClass="ButtonMenu">
                             <rect key="frame" x="162" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="113" id="PWN-tX-eei"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
                             <state key="normal" title="CTV" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.86650815219999999" green="0.23627743100000001" blue="0.4856946184" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickCTV:" destination="-1" eventType="touchUpInside" id="rk7-e7-f1C"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-ln-G4Y" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-ln-G4Y" customClass="ButtonMenu">
                             <rect key="frame" x="243" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="113" id="G4E-cc-Zap"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
                             <state key="normal" title="E85" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.86650815219999999" green="0.23627743100000001" blue="0.4856946184" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickE85:" destination="-1" eventType="touchUpInside" id="b6m-TI-7bf"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-gS-TKL" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-gS-TKL" customClass="ButtonMenu">
                             <rect key="frame" x="324" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="113" id="MoD-c6-ik3"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                            <state key="normal" title="PADDLESHIFT" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.86650815219999999" green="0.23627743100000001" blue="0.4856946184" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <state key="normal" title="Paddle\nshift" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickPaddleShift:" destination="-1" eventType="touchUpInside" id="pOZ-6S-cfI"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0Y-4F-yPd" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0Y-4F-yPd" customClass="ButtonMenu">
                             <rect key="frame" x="405" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="ECON" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.86650815219999999" green="0.23627743100000001" blue="0.4856946184" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <state key="normal" title="E CON" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickECON:" destination="-1" eventType="touchUpInside" id="bJ2-ul-sFk"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUm-Sl-1cx" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUm-Sl-1cx" customClass="ButtonMenu">
                             <rect key="frame" x="486" y="0.0" width="126" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                            <state key="normal" title="Eco coaching" backgroundImage="menu_bg.png">
-                                <color key="titleColor" red="0.86650815219999999" green="0.23627743100000001" blue="0.4856946184" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <state key="normal" title="Eco\ncoaching" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickEcoCoaching:" destination="-1" eventType="touchUpInside" id="3DN-Zs-TXJ"/>
@@ -185,42 +177,14 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="d1A-Co-KZZ" firstAttribute="top" secondItem="N0P-j1-YEG" secondAttribute="top" id="5B0-HT-QNm"/>
-                        <constraint firstItem="N0P-j1-YEG" firstAttribute="top" secondItem="2RH-ln-G4Y" secondAttribute="top" id="7Gx-Gd-oeZ"/>
-                        <constraint firstAttribute="bottom" secondItem="d1A-Co-KZZ" secondAttribute="bottom" id="8Fu-ql-CHw"/>
-                        <constraint firstAttribute="trailing" secondItem="wUm-Sl-1cx" secondAttribute="trailing" id="A37-EU-pU7"/>
-                        <constraint firstItem="QAg-gS-TKL" firstAttribute="top" secondItem="E0Y-4F-yPd" secondAttribute="top" id="CDa-gr-rge"/>
-                        <constraint firstItem="d1A-Co-KZZ" firstAttribute="top" secondItem="RX7-Zl-492" secondAttribute="top" id="Cke-a1-Fsu"/>
-                        <constraint firstItem="RX7-Zl-492" firstAttribute="bottom" secondItem="d1A-Co-KZZ" secondAttribute="bottom" id="DOu-nB-u3r"/>
-                        <constraint firstItem="2RH-ln-G4Y" firstAttribute="leading" secondItem="d1A-Co-KZZ" secondAttribute="trailing" constant="49" id="ISp-ay-3it"/>
-                        <constraint firstItem="2RH-ln-G4Y" firstAttribute="top" secondItem="QAg-gS-TKL" secondAttribute="top" id="LuQ-vM-huK"/>
-                        <constraint firstItem="N0P-j1-YEG" firstAttribute="leading" secondItem="RX7-Zl-492" secondAttribute="trailing" constant="50" id="SJh-te-aVg"/>
-                        <constraint firstItem="N0P-j1-YEG" firstAttribute="bottom" secondItem="d1A-Co-KZZ" secondAttribute="bottom" id="U8E-zi-SRm"/>
-                        <constraint firstItem="wUm-Sl-1cx" firstAttribute="bottom" secondItem="E0Y-4F-yPd" secondAttribute="bottom" id="aGs-Mp-l55"/>
-                        <constraint firstItem="QAg-gS-TKL" firstAttribute="bottom" secondItem="E0Y-4F-yPd" secondAttribute="bottom" id="cVL-RX-4ee"/>
-                        <constraint firstItem="QAg-gS-TKL" firstAttribute="leading" secondItem="N0P-j1-YEG" secondAttribute="trailing" constant="49" id="dRQ-qG-3IO"/>
-                        <constraint firstItem="E0Y-4F-yPd" firstAttribute="top" secondItem="wUm-Sl-1cx" secondAttribute="top" id="gac-gf-p6b"/>
-                        <constraint firstItem="QAg-gS-TKL" firstAttribute="bottom" secondItem="2RH-ln-G4Y" secondAttribute="bottom" id="gn1-HS-SxI"/>
-                        <constraint firstAttribute="trailing" secondItem="E0Y-4F-yPd" secondAttribute="trailing" constant="94" id="h5T-mF-3sM"/>
-                        <constraint firstItem="RX7-Zl-492" firstAttribute="leading" secondItem="OGP-vg-gYb" secondAttribute="leading" id="hMB-ll-DRi"/>
-                        <constraint firstItem="wUm-Sl-1cx" firstAttribute="leading" secondItem="QAg-gS-TKL" secondAttribute="trailing" constant="49" id="he4-MS-Wd4"/>
-                        <constraint firstItem="2RH-ln-G4Y" firstAttribute="bottom" secondItem="N0P-j1-YEG" secondAttribute="bottom" id="iO6-vf-bFo"/>
-                        <constraint firstItem="E0Y-4F-yPd" firstAttribute="leading" secondItem="2RH-ln-G4Y" secondAttribute="trailing" constant="49" id="m67-dm-MXU"/>
-                        <constraint firstItem="d1A-Co-KZZ" firstAttribute="top" secondItem="OGP-vg-gYb" secondAttribute="top" id="pLK-LR-gGJ"/>
-                        <constraint firstItem="d1A-Co-KZZ" firstAttribute="leading" secondItem="OGP-vg-gYb" secondAttribute="leading" constant="81" id="vSA-CY-aCl"/>
-                    </constraints>
                 </view>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIr-KY-6Ql">
-                    <rect key="frame" x="11" y="50" width="629" height="74"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIr-KY-6Ql">
+                    <rect key="frame" x="0.0" y="0.0" width="629" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtM-h6-VJE">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtM-h6-VJE">
                             <rect key="frame" x="0.0" y="0.0" width="112" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="112" id="Pt5-Qq-86y"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <state key="normal" backgroundImage="menu_s.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -229,85 +193,91 @@
                                 <action selector="clickS:" destination="-1" eventType="touchUpInside" id="TSc-9Y-jkS"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lw-h3-iEL" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lw-h3-iEL" customClass="ButtonMenu">
                             <rect key="frame" x="81" y="0.0" width="137" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <state key="normal" title="SideRSR" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickSideRSR:" destination="-1" eventType="touchUpInside" id="Uvx-EX-0dH"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy5-dV-Zde" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy5-dV-Zde" customClass="ButtonMenu">
                             <rect key="frame" x="186" y="0.0" width="116" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="116" id="G6q-72-vSu"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="VSA" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickVSA:" destination="-1" eventType="touchUpInside" id="PIm-yp-efL"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2G-zU-W53" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2G-zU-W53" customClass="ButtonMenu">
                             <rect key="frame" x="270" y="0.0" width="116" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="116" id="Xip-wz-P6U"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="ESS" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickESS:" destination="-1" eventType="touchUpInside" id="Zfc-uO-2rl"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-db-c7M" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-db-c7M" customClass="ButtonMenu">
                             <rect key="frame" x="354" y="0.0" width="110" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="110" id="kEu-QY-ldW"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="BackCam" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickBackCamera:" destination="-1" eventType="touchUpInside" id="7k9-2r-VoD"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUa-o2-3Ko" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUa-o2-3Ko" customClass="ButtonMenu">
                             <rect key="frame" x="432" y="0.0" width="109" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="109" id="QGQ-7V-H7j"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="GCON" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickGCON:" destination="-1" eventType="touchUpInside" id="uG1-29-pJv"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w71-NC-qkT" customClass="ButtonMenu">
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w71-NC-qkT" customClass="ButtonMenu">
                             <rect key="frame" x="509" y="0.0" width="118" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
                             <state key="normal" title="ISO" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickISO:" destination="-1" eventType="touchUpInside" id="kqB-lu-JfD"/>
@@ -315,125 +285,103 @@
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="w71-NC-qkT" secondAttribute="trailing" constant="2" id="5t8-Me-4EV"/>
-                        <constraint firstItem="w71-NC-qkT" firstAttribute="baseline" secondItem="zUa-o2-3Ko" secondAttribute="baseline" id="AHw-UN-eXn"/>
-                        <constraint firstItem="e2G-zU-W53" firstAttribute="leading" secondItem="6Lw-h3-iEL" secondAttribute="trailing" constant="52" id="J63-G2-CIO"/>
-                        <constraint firstItem="6Lw-h3-iEL" firstAttribute="leading" secondItem="yIr-KY-6Ql" secondAttribute="leading" constant="81" id="Jai-G1-pct"/>
-                        <constraint firstItem="KWZ-db-c7M" firstAttribute="baseline" secondItem="e2G-zU-W53" secondAttribute="baseline" id="Mnu-y5-6GS"/>
-                        <constraint firstItem="Dy5-dV-Zde" firstAttribute="leading" secondItem="WtM-h6-VJE" secondAttribute="trailing" constant="74" id="W63-EA-15U"/>
-                        <constraint firstAttribute="trailing" secondItem="zUa-o2-3Ko" secondAttribute="trailing" constant="88" id="au3-3n-fsG"/>
-                        <constraint firstItem="zUa-o2-3Ko" firstAttribute="leading" secondItem="e2G-zU-W53" secondAttribute="trailing" constant="46" id="axA-6r-ofH"/>
-                        <constraint firstAttribute="bottom" secondItem="Dy5-dV-Zde" secondAttribute="bottom" id="dNv-8D-LPa"/>
-                        <constraint firstItem="KWZ-db-c7M" firstAttribute="leading" secondItem="Dy5-dV-Zde" secondAttribute="trailing" constant="52" id="gPW-GP-oaR"/>
-                        <constraint firstItem="KWZ-db-c7M" firstAttribute="baseline" secondItem="zUa-o2-3Ko" secondAttribute="baseline" id="h7V-jb-s7w"/>
-                        <constraint firstItem="WtM-h6-VJE" firstAttribute="top" secondItem="6Lw-h3-iEL" secondAttribute="top" id="kcK-VO-E0c"/>
-                        <constraint firstItem="WtM-h6-VJE" firstAttribute="top" secondItem="yIr-KY-6Ql" secondAttribute="top" id="qFd-MC-98h"/>
-                        <constraint firstItem="WtM-h6-VJE" firstAttribute="leading" secondItem="yIr-KY-6Ql" secondAttribute="leading" id="rmu-hp-Dew"/>
-                        <constraint firstItem="w71-NC-qkT" firstAttribute="leading" secondItem="KWZ-db-c7M" secondAttribute="trailing" constant="45" id="sDQ-Ed-Qub"/>
-                        <constraint firstItem="Dy5-dV-Zde" firstAttribute="baseline" secondItem="e2G-zU-W53" secondAttribute="baseline" id="tU9-u6-s2l"/>
-                        <constraint firstItem="Dy5-dV-Zde" firstAttribute="baseline" secondItem="6Lw-h3-iEL" secondAttribute="baseline" id="ugw-Bp-tFn"/>
-                    </constraints>
                 </view>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbW-OC-aDe">
-                    <rect key="frame" x="695" y="72" width="309" height="33"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bbW-OC-aDe">
+                    <rect key="frame" x="0.0" y="68" width="602" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viX-5e-dY0">
-                            <rect key="frame" x="0.0" y="0.0" width="30" height="33"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viX-5e-dY0">
+                            <rect key="frame" x="0.0" y="0.0" width="112" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="1" green="0.60381757250000001" blue="0.3234891755" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="30" id="DQ7-Bb-Ldh"/>
-                            </constraints>
-                            <state key="normal" title="T">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" backgroundImage="menu_t.png">
+                                <color key="titleColor" red="0.26537933359999999" green="0.48340276500000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
                                 <action selector="clickT:" destination="-1" eventType="touchUpInside" id="ha9-aA-ATr"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d20-7Y-yI9">
-                            <rect key="frame" x="30" y="0.0" width="93" height="33"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d20-7Y-yI9" customClass="ButtonMenu">
+                            <rect key="frame" x="81" y="0.0" width="105" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.7962381114" green="0.48078256359999999" blue="0.25757441019999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="93" id="zeO-UE-PHk"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="TouchSC">
+                            <state key="normal" title="TotalControl" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
-                                <action selector="clickTouchSC:" destination="-1" eventType="touchUpInside" id="2cU-7M-j14"/>
+                                <action selector="clickTotalControl:" destination="-1" eventType="touchUpInside" id="uip-Xj-CTl"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb5-A2-WZv">
-                            <rect key="frame" x="123" y="0.0" width="93" height="33"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb5-A2-WZv" customClass="ButtonMenu">
+                            <rect key="frame" x="154" y="0.0" width="100" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.86650815219999999" green="0.52014568400000005" blue="0.27774954289999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="93" id="zc0-Xg-gIo"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="MirrorLink">
+                            <state key="normal" title="SmartKey" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
-                                <action selector="clickMirrorLink:" destination="-1" eventType="touchUpInside" id="1nK-NR-r6q"/>
+                                <action selector="clickSmartKey:" destination="-1" eventType="touchUpInside" id="6a2-HM-yhm"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oti-QG-eRU">
-                            <rect key="frame" x="216" y="0.0" width="93" height="33"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oti-QG-eRU" customClass="ButtonMenu">
+                            <rect key="frame" x="222" y="0.0" width="124" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" red="0.68907973744989892" green="0.48067651105736692" blue="0.86650815219999999" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <state key="normal" title="Cruise">
+                            <state key="normal" title="มาตรวัดเรืองแสง" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
-                                <action selector="clickCruise:" destination="-1" eventType="touchUpInside" id="jHv-GY-Ooo"/>
+                                <action selector="clickLight:" destination="-1" eventType="touchUpInside" id="DE6-zv-vqz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-7f-dJj" customClass="ButtonMenu">
+                            <rect key="frame" x="314" y="0.0" width="186" height="74"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="One push" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickOnePush:" destination="-1" eventType="touchUpInside" id="cg2-Mr-KcL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9S-YH-cks" customClass="ButtonMenu">
+                            <rect key="frame" x="468" y="0.0" width="133" height="74"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Advance Touch" backgroundImage="menu_bg.png">
+                                <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickAdvanceTouch:" destination="-1" eventType="touchUpInside" id="HQv-SZ-sqS"/>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="oti-QG-eRU" firstAttribute="leading" secondItem="tb5-A2-WZv" secondAttribute="trailing" id="9WH-Wl-BL7"/>
-                        <constraint firstItem="viX-5e-dY0" firstAttribute="bottom" secondItem="d20-7Y-yI9" secondAttribute="bottom" id="D7e-AR-uIq"/>
-                        <constraint firstAttribute="bottom" secondItem="d20-7Y-yI9" secondAttribute="bottom" id="EJB-z2-FvV"/>
-                        <constraint firstItem="d20-7Y-yI9" firstAttribute="top" secondItem="bbW-OC-aDe" secondAttribute="top" id="FOU-nB-aLq"/>
-                        <constraint firstItem="d20-7Y-yI9" firstAttribute="top" secondItem="tb5-A2-WZv" secondAttribute="top" id="HWQ-3q-ykf"/>
-                        <constraint firstItem="viX-5e-dY0" firstAttribute="leading" secondItem="bbW-OC-aDe" secondAttribute="leading" id="Hdt-jQ-z3N"/>
-                        <constraint firstItem="d20-7Y-yI9" firstAttribute="baseline" secondItem="tb5-A2-WZv" secondAttribute="baseline" id="M7t-m1-NE6"/>
-                        <constraint firstItem="tb5-A2-WZv" firstAttribute="top" secondItem="oti-QG-eRU" secondAttribute="top" id="Zgl-DW-Dch"/>
-                        <constraint firstAttribute="trailing" secondItem="oti-QG-eRU" secondAttribute="trailing" id="as7-9D-iHL"/>
-                        <constraint firstItem="d20-7Y-yI9" firstAttribute="leading" secondItem="viX-5e-dY0" secondAttribute="trailing" id="coP-J9-eLt"/>
-                        <constraint firstItem="tb5-A2-WZv" firstAttribute="bottom" secondItem="d20-7Y-yI9" secondAttribute="bottom" id="fFb-Hk-1md"/>
-                        <constraint firstItem="tb5-A2-WZv" firstAttribute="bottom" secondItem="oti-QG-eRU" secondAttribute="bottom" id="feT-As-KbT"/>
-                        <constraint firstItem="tb5-A2-WZv" firstAttribute="leading" secondItem="d20-7Y-yI9" secondAttribute="trailing" id="gpq-DK-F3m"/>
-                        <constraint firstItem="viX-5e-dY0" firstAttribute="top" secondItem="d20-7Y-yI9" secondAttribute="top" id="ip4-bl-1YW"/>
-                        <constraint firstItem="oti-QG-eRU" firstAttribute="baseline" secondItem="tb5-A2-WZv" secondAttribute="baseline" id="l2g-d3-f6a"/>
-                    </constraints>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="vKy-dH-ISL" secondAttribute="bottom" constant="113" id="02S-B2-eYp"/>
-                <constraint firstItem="bbW-OC-aDe" firstAttribute="leading" secondItem="yIr-KY-6Ql" secondAttribute="trailing" constant="55" id="4ek-sD-tr5"/>
-                <constraint firstAttribute="bottom" secondItem="OGP-vg-gYb" secondAttribute="bottom" constant="-58" id="6WQ-4J-lyI"/>
-                <constraint firstItem="vKy-dH-ISL" firstAttribute="top" secondItem="2" secondAttribute="top" constant="-44" id="C4x-7b-69n"/>
-                <constraint firstItem="yIr-KY-6Ql" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="11" id="FJX-Lf-qyR"/>
-                <constraint firstItem="bbW-OC-aDe" firstAttribute="top" secondItem="2" secondAttribute="top" constant="72" id="SWZ-0j-dTg"/>
-                <constraint firstAttribute="trailing" secondItem="vKy-dH-ISL" secondAttribute="trailing" constant="611" id="Twp-6v-TuF"/>
-                <constraint firstItem="OGP-vg-gYb" firstAttribute="top" secondItem="2" secondAttribute="top" constant="127" id="VDs-QC-qLZ"/>
-                <constraint firstAttribute="trailing" secondItem="bbW-OC-aDe" secondAttribute="trailing" constant="20" symbolic="YES" id="XUg-58-6aP"/>
-                <constraint firstItem="yIr-KY-6Ql" firstAttribute="top" secondItem="2" secondAttribute="top" constant="50" id="ZxU-j8-9rC"/>
-                <constraint firstItem="OGP-vg-gYb" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="-3" id="aar-Xd-jOf"/>
-                <constraint firstAttribute="trailing" secondItem="OGP-vg-gYb" secondAttribute="trailing" constant="415" id="cZ1-Fb-ryd"/>
-                <constraint firstItem="vKy-dH-ISL" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="13" id="lR8-ZS-ocJ"/>
-                <constraint firstItem="bbW-OC-aDe" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="695" id="vPV-pf-GRR"/>
-                <constraint firstAttribute="bottom" secondItem="bbW-OC-aDe" secondAttribute="bottom" constant="38" id="yrQ-n2-No6"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -444,5 +392,6 @@
         <image name="menu_bg.png" width="74" height="74"/>
         <image name="menu_e.png" width="112" height="74"/>
         <image name="menu_s.png" width="112" height="74"/>
+        <image name="menu_t.png" width="112" height="74"/>
     </resources>
 </document>

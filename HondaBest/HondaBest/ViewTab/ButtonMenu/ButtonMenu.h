@@ -10,4 +10,6 @@
 
 @interface ButtonMenu : UIButton
 
+@property (nonatomic, strong) UILabel *mLabel;
+
 @end
