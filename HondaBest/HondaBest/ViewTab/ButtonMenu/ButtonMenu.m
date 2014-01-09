@@ -36,4 +36,22 @@
 }
 */
 
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *v = [super hitTest:point withEvent:event];
+    if(v == self){
+        float x = point.x;
+        float y = 74 - point.y;
+        if(x<=0)
+            x=0.1;
+        if(y<=0)
+            y=0.1;
+        float slope = y/x;
+        if(slope < 74.0/30.0)
+            return self;
+        return nil;
+    }
+    return v;
+}
+
 @end

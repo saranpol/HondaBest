@@ -73,6 +73,7 @@
 #define B_MENU_W 112
 #define BW 400
 #define EW 612
+#define SW 629
 
 - (void)hideAllMenu {
     self.mMenuState = MENU_STATE_HIDE_ALL;
@@ -109,8 +110,8 @@
     self.mMenuState = MENU_STATE_SHOW_S;
     [mViewB setFrame:CGRectMake(70, 10, B_MENU_W, 74)];
     [mViewE setFrame:CGRectMake(70+B_MENU_W, 10, B_MENU_W, 74)];
-    [mViewS setFrame:CGRectMake(70+B_MENU_W+B_MENU_W, 10, 400, 74)];
-    [mViewT setFrame:CGRectMake(70+B_MENU_W+B_MENU_W+400, 10, B_MENU_W, 74)];
+    [mViewS setFrame:CGRectMake(70+B_MENU_W+B_MENU_W, 10, SW, 74)];
+    [mViewT setFrame:CGRectMake(70+B_MENU_W+B_MENU_W+SW, 10, B_MENU_W, 74)];
 
     [mButtonS0 setHidden:NO];
 }
@@ -198,14 +199,20 @@
 - (IBAction)clickSideRSR:(id)sender {
     [mViewTab setSelectedIndex:11];
 }
-- (IBAction)clickSideCertain:(id)sender {
-    [mViewTab setSelectedIndex:12];
-}
 - (IBAction)clickVSA:(id)sender {
     [mViewTab setSelectedIndex:13];
 }
 - (IBAction)clickESS:(id)sender {
     [mViewTab setSelectedIndex:14];
+}
+- (IBAction)clickBackCamera:(id)sender {
+    [mViewTab setSelectedIndex:12];
+}
+- (IBAction)clickGCON:(id)sender {
+    [mViewTab setSelectedIndex:20];
+}
+- (IBAction)clickISO:(id)sender {
+    [mViewTab setSelectedIndex:21];
 }
 
 

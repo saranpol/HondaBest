@@ -48,10 +48,13 @@ enum {
 
 - (IBAction)clickS:(id)sender;
 - (IBAction)clickSideRSR:(id)sender;
-- (IBAction)clickSideCertain:(id)sender;
 - (IBAction)clickVSA:(id)sender;
 - (IBAction)clickESS:(id)sender;
-    
+- (IBAction)clickBackCamera:(id)sender;
+- (IBAction)clickGCON:(id)sender;
+- (IBAction)clickISO:(id)sender;
+
+
 - (IBAction)clickT:(id)sender;
 - (IBAction)clickTouchSC:(id)sender;
 - (IBAction)clickMirrorLink:(id)sender;
