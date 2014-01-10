@@ -104,7 +104,7 @@
                             <rect key="frame" x="162" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <state key="normal" title="CTV" backgroundImage="menu_bg.png">
+                            <state key="normal" title="CVT" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
