@@ -53,7 +53,7 @@
 @synthesize minZoom=_minZoom;
 @synthesize maxZoom=_maxZoom;
 
--(void)setZoomFactor:(float)zoomFactor{
+-(void)setZoomFactor:(CGFloat)zoomFactor{
 	//a limit of 0 gets a factor of 0,5
 	//a limit of 100 gets a factor of 4
 	float minFactor=(_minZoom*3.5/100.0)+0.5;
@@ -67,7 +67,7 @@
     [self render];
 }
 
--(float)zoomFactor{
+-(CGFloat)zoomFactor{
 	return (_zoomFactor/_referenceSide);
 }
 
