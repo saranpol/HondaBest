@@ -55,32 +55,32 @@
                      animations:^{
                          [mViewMeaning setAlpha:0.0];
                      }completion:^(BOOL finished){
-                         [self slideBG];
+                         if(finished)
+                             [self slideBG];
                      }];
 }
 
 - (void)slideBG {
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                            [mImageLogo setAlpha:1];
+                     }completion:nil];
 
-     [UIView animateWithDuration:0.3
-                           delay:0
-                         options:UIViewAnimationOptionCurveEaseInOut
-                      animations:^{
-                          [mImageLogo setAlpha:1];
-                      }completion:nil];
-     
-     [UIView animateWithDuration:0.3
-                           delay:0.5
-                         options:UIViewAnimationOptionCurveEaseInOut
-                      animations:^{
-                          [mImageHead setAlpha:1];
-                      }completion:nil];
-     
-     [UIView animateWithDuration:0.3
-                           delay:1.0
-                         options:UIViewAnimationOptionCurveEaseInOut
-                      animations:^{
-                          [mImageText setAlpha:1];
-                      }completion:nil];
+    [UIView animateWithDuration:0.3
+                          delay:0.5
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mImageHead setAlpha:1];
+                     }completion:nil];
+
+    [UIView animateWithDuration:0.3
+                          delay:1.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mImageText setAlpha:1];
+                     }completion:nil];
     
 }
 

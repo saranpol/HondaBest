@@ -81,9 +81,9 @@
 
 - (void)setSelected:(BOOL)selected {
     if(selected)
-        [mLabel setTextColor:[UIColor colorWithRed:0/255.0 green:71.0/255.0 blue:186.0/255.0 alpha:1.0]];
+        [mLabel setTextColor:[UIColor colorWithRed:40.0/255.0 green:96.0/255.0 blue:193.0/255.0 alpha:1.0]];
     else
-        [mLabel setTextColor:[UIColor colorWithRed:107.0/255.0 green:107.0/255.0 blue:107.0/255.0 alpha:1.0]];
+        [mLabel setTextColor:[UIColor colorWithRed:153.0/255.0 green:153.0/255.0 blue:153.0/255.0 alpha:1.0]];
 }
 
 

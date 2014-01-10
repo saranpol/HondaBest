@@ -170,20 +170,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exterior" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVc-60-14W">
-                                <rect key="frame" x="482" y="57" width="60" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
-                                <rect key="frame" x="39" y="170" width="816" height="523"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b_360ex.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-ST-wQ7">
-                                <rect key="frame" x="120" y="127" width="815" height="523"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-ST-wQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26537933359999999" green="0.48340276500000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="naG-yl-Wpt" appends="YES" id="HcE-XH-Slt"/>
@@ -518,10 +512,10 @@
             </objects>
             <point key="canvasLocation" x="2521" y="1955"/>
         </scene>
-        <!--View Controller - VSA-->
+        <!--ViewABS - VSA-->
         <scene sceneID="MfP-dk-9jo">
             <objects>
-                <viewController id="hjk-fr-N3v" sceneMemberID="viewController">
+                <viewController id="hjk-fr-N3v" customClass="ViewABS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N8J-uZ-vm3"/>
                         <viewControllerLayoutGuide type="bottom" id="lkf-Gi-a4b"/>
@@ -534,46 +528,73 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_03_vsa.png" translatesAutoresizingMaskIntoConstraints="NO" id="GWf-k3-OiV">
-                                <rect key="frame" x="96" y="130" width="832" height="335"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="DxL-xF-svQ">
-                                <rect key="frame" x="75" y="478" width="875" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Vehicle Stability Assist (VSA) ระบบช่วยควบคุมการทรงตัวขณะเข้าโค้ง
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-HJ-nbN">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="V0Y-99-qIL">
+                                    <size key="itemSize" width="1024" height="768"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellFeature" id="hiJ-Nl-UOW" customClass="CellFeature">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_02_abs.png" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-bO-f4l">
+                                                    <rect key="frame" x="96" y="130" width="832" height="335"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="DxL-xF-svQ">
+                                                    <rect key="frame" x="75" y="478" width="875" height="116"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Vehicle Stability Assist (VSA) ระบบช่วยควบคุมการทรงตัวขณะเข้าโค้ง
 เพิ่มการยึดเกาะถนน มั่นคงทุกการขับเคลื่อน  </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="x9d-yt-fQr">
-                                <rect key="frame" x="208" y="70" width="875" height="116"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="mImageFeature" destination="etZ-bO-f4l" id="9gp-Ia-PyE"/>
+                                            <outlet property="mLabelDescription" destination="DxL-xF-svQ" id="JII-no-TiT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="hjk-fr-N3v" id="SEQ-rh-QaZ"/>
+                                    <outlet property="delegate" destination="hjk-fr-N3v" id="7gc-is-AL7"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-Xl-eLk">
+                                <rect key="frame" x="493" y="600" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">ระบบเบรกป้องกันล้อล็อก ABS ช่วยให้สามารถควบคุมการบังคับพวงมาลัยเมื่อต้องเบรกกะทันหัน
-พร้อมระบบกระจายแรงเบรก EBD เพิ่มประสิทธิภาพการเบรกให้มีความสมดุลมากขึ้น  </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_02_abs.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Mx-8v-XG8">
-                                <rect key="frame" x="47" y="20" width="832" height="335"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="VSA" id="CsO-ia-6ED"/>
+                    <connections>
+                        <outlet property="mCollectionView" destination="ZZ6-HJ-nbN" id="CVH-eX-EUd"/>
+                        <outlet property="mPageControl" destination="tkF-Xl-eLk" id="4ss-e3-UnY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BCb-Uw-LmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2521" y="2881"/>
         </scene>
-        <!--View Controller - ESS-->
+        <!--ViewESS - ESS-->
         <scene sceneID="FPA-ds-q4G">
             <objects>
-                <viewController id="Fsv-oe-Nl4" sceneMemberID="viewController">
+                <viewController id="Fsv-oe-Nl4" customClass="ViewESS" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PwK-FC-VbX"/>
                         <viewControllerLayoutGuide type="bottom" id="PPM-1D-5eW"/>
@@ -586,37 +607,64 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_05_hillstart.png" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-1w-Tm1">
-                                <rect key="frame" x="96" y="130" width="832" height="335"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_04_ess.png" translatesAutoresizingMaskIntoConstraints="NO" id="ElK-cA-uPU">
-                                <rect key="frame" x="11" y="64" width="832" height="335"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="2dd-Gl-Hmh">
-                                <rect key="frame" x="75" y="478" width="875" height="116"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Oq6-51-DAB">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="7kJ-ym-Bgv">
+                                    <size key="itemSize" width="1024" height="768"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellFeature" id="De5-G4-VCN" customClass="CellFeature">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_02_abs.png" translatesAutoresizingMaskIntoConstraints="NO" id="Her-Ms-s4C">
+                                                    <rect key="frame" x="96" y="130" width="832" height="335"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="ZY1-uN-LzU">
+                                                    <rect key="frame" x="75" y="478" width="875" height="116"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Vehicle Stability Assist (VSA) ระบบช่วยควบคุมการทรงตัวขณะเข้าโค้ง
+เพิ่มการยึดเกาะถนน มั่นคงทุกการขับเคลื่อน  </string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="mImageFeature" destination="Her-Ms-s4C" id="OWK-1o-uHQ"/>
+                                            <outlet property="mLabelDescription" destination="ZY1-uN-LzU" id="SWz-Tl-n6A"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fsv-oe-Nl4" id="zPi-zu-yAu"/>
+                                    <outlet property="delegate" destination="Fsv-oe-Nl4" id="RgB-C7-RUt"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-1M-T5J">
+                                <rect key="frame" x="493" y="600" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Emergency Stop Signal (ESS)
-สัญญาณไฟฉุกเฉินอัตโนมัติขณะเบรกกะทันหัน  </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-e2-fnx">
-                                <rect key="frame" x="172" y="-6" width="875" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Hill Start Assist (HSA)
-ระบบช่วยการออกตัวขณะอยู่บนทางลาดชัน  </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="ESS" id="UrD-72-2GE"/>
+                    <connections>
+                        <outlet property="mCollectionView" destination="Oq6-51-DAB" id="OxU-jw-BzF"/>
+                        <outlet property="mPageControl" destination="H1W-1M-T5J" id="p4H-lU-hrt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YSz-FO-jtq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -661,10 +709,10 @@
             </objects>
             <point key="canvasLocation" x="3697" y="3819"/>
         </scene>
-        <!--View Controller - AdvanceTouch-->
+        <!--View Advance Touch - AdvanceTouch-->
         <scene sceneID="kUB-A4-Uad">
             <objects>
-                <viewController id="PMo-qM-VTJ" sceneMemberID="viewController">
+                <viewController id="PMo-qM-VTJ" customClass="ViewAdvanceTouch" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8oK-2T-bLW"/>
                         <viewControllerLayoutGuide type="bottom" id="PgC-JX-ZgO"/>
@@ -677,24 +725,64 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_04_advanced.png" translatesAutoresizingMaskIntoConstraints="NO" id="yNb-Y8-3Bz">
-                                <rect key="frame" x="96" y="130" width="832" height="335"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="j6A-wJ-3sj">
-                                <rect key="frame" x="75" y="478" width="875" height="116"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="90M-ZF-9La">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="rIs-c0-vim">
+                                    <size key="itemSize" width="1024" height="768"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellFeature" id="qts-k9-V2L" customClass="CellFeature">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_02_abs.png" translatesAutoresizingMaskIntoConstraints="NO" id="dGH-QV-Wlk">
+                                                    <rect key="frame" x="96" y="130" width="832" height="335"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="0ld-ek-4oe">
+                                                    <rect key="frame" x="75" y="478" width="875" height="116"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Vehicle Stability Assist (VSA) ระบบช่วยควบคุมการทรงตัวขณะเข้าโค้ง
+เพิ่มการยึดเกาะถนน มั่นคงทุกการขับเคลื่อน  </string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="mImageFeature" destination="dGH-QV-Wlk" id="EaS-aX-iS9"/>
+                                            <outlet property="mLabelDescription" destination="0ld-ek-4oe" id="zkh-tc-vzo"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="PMo-qM-VTJ" id="4QV-6z-2H3"/>
+                                    <outlet property="delegate" destination="PMo-qM-VTJ" id="8rh-we-bER"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-zD-STt">
+                                <rect key="frame" x="421" y="600" width="183" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">ระบบเครื่องเสียงหน้าจอสัมผัสขนาด 7 นิ้ว
-แบบ Advanced Touch   </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AdvanceTouch" id="vUf-77-8B2"/>
+                    <connections>
+                        <outlet property="mCollectionView" destination="90M-ZF-9La" id="v4N-aK-LN8"/>
+                        <outlet property="mPageControl" destination="UrC-zD-STt" id="8qB-wL-kqU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UcI-DF-aB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -928,7 +1016,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-gj-W4Q">
-                                        <rect key="frame" x="191" y="346" width="643" height="75"/>
+                                        <rect key="frame" x="191" y="322" width="643" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -988,7 +1076,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="VpD-O7-MUJ">
-                                        <rect key="frame" x="246" y="346" width="532" height="76"/>
+                                        <rect key="frame" x="246" y="322" width="532" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -1048,7 +1136,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-Ca-eaV">
-                                        <rect key="frame" x="209" y="346" width="606" height="76"/>
+                                        <rect key="frame" x="209" y="322" width="606" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -1108,7 +1196,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="tED-m2-dYk">
-                                        <rect key="frame" x="241" y="346" width="542" height="76"/>
+                                        <rect key="frame" x="241" y="322" width="542" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -1230,6 +1318,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         </scene>
     </scenes>
     <resources>
+        <image name="b_360ex.jpg" width="1024" height="768"/>
         <image name="b_intro_bg.png" width="1" height="768"/>
         <image name="b_intro_word.png" width="643" height="75"/>
         <image name="b_landing_bg.jpg" width="1969" height="768"/>
@@ -1256,9 +1345,6 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="logo_top_left.png" width="231" height="65"/>
         <image name="s_01_sidesrs.png" width="832" height="335"/>
         <image name="s_02_abs.png" width="832" height="335"/>
-        <image name="s_03_vsa.png" width="832" height="335"/>
-        <image name="s_04_ess.png" width="832" height="335"/>
-        <image name="s_05_hillstart.png" width="832" height="335"/>
         <image name="s_06-2_camera.png" width="408" height="73"/>
         <image name="s_06_camera.png" width="832" height="335"/>
         <image name="s_07_g-force.png" width="832" height="335"/>
@@ -1270,7 +1356,6 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="t_01_smartkey.png" width="832" height="335"/>
         <image name="t_02_light.png" width="832" height="335"/>
         <image name="t_03_start.png" width="832" height="335"/>
-        <image name="t_04_advanced.png" width="832" height="335"/>
         <image name="t_intro_word.png" width="542" height="76"/>
         <image name="t_landing_bg.jpg" width="1024" height="768"/>
         <image name="t_landing_h1.png" width="573" height="47"/>

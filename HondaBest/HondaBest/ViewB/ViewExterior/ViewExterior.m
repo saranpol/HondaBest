@@ -54,8 +54,9 @@
     }
     
     //NSLog(@"%f", p);
-    NSInteger i = floorf(MAX_IMAGE_INDEX*p);
-    NSString *s = [NSString stringWithFormat:@"interior_%ld.jpg", (long)i];
+    //NSInteger i = floorf(MAX_IMAGE_INDEX*p);
+    //NSString *s = [NSString stringWithFormat:@"interior_%ld.jpg", (long)i];
+    NSString *s = @"b_360ex.jpg";
     [mImageRotate setImage:[UIImage imageNamed:s]];
 }
 
