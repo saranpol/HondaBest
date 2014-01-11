@@ -27,6 +27,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="clickStart:" destination="BYZ-38-t0r" eventType="touchDown" id="5ba-NG-Jh7"/>
                                     <segue destination="pNb-3T-70T" kind="modal" modalTransitionStyle="crossDissolve" id="BJp-73-4n7"/>
                                 </connections>
                             </button>
@@ -170,13 +171,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b_360ex.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exterior_01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-ST-wQ7">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-3d-6hx">
+                                        <rect key="frame" x="61" y="468" width="148" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8mC-ZB-3JN">
+                                        <rect key="frame" x="763" y="252" width="170" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -189,6 +200,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Exterior" id="Ryv-r0-OF9"/>
                     <connections>
+                        <outlet property="mImageAngle0" destination="i7a-3d-6hx" id="7Ig-Kc-WaD"/>
+                        <outlet property="mImageAngle1" destination="8mC-ZB-3JN" id="82s-IY-b6D"/>
                         <outlet property="mImageRotate" destination="ViS-sI-Ydo" id="b2H-Es-cJj"/>
                     </connections>
                 </viewController>
@@ -807,7 +820,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-TB-9kX">
                                 <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">ECON Mode เป็นระบบที่ช่วยลดการใช้พลังงานที่สิ้นเปลือง โดยระบบจะปรับการทำงานของเครื่องยนต์ ลิ้นปีกผีเสื้อ และ ระบบเกียร์ให้ทำงานสัมพันธ์กันในขณะรถวิ่ง นอกจากนั้นระบบจะปรับการทำงานของระบบปรับอากาศ และการหมุนเวียนอากาศภายในห้องโดยสาร ให้เหมาะสมกับอุณหภูมิภายนอกรถ ซึ่งการทำงานของ ECON Mode นั้นจะช่วยควบคุมเครื่องยนต์ ให้ใช้พลังงานอย่างมีประสิทธิภาพมากที่สุด </mutableString>
+                                <string key="text">ECON Mode เป็นระบบที่ช่วยลดการใช้พลังงานที่สิ้นเปลือง โดยระบบจะปรับการทำงานของเครื่องยนต์ ลิ้นปีกผีเสื้อ และ ระบบเกียร์ให้ทำงานสัมพันธ์กันในขณะรถวิ่ง นอกจากนั้นระบบจะปรับการทำงานของระบบปรับอากาศ และการหมุนเวียนอากาศภายในห้องโดยสาร ให้เหมาะสมกับอุณหภูมิภายนอกรถ ซึ่งการทำงานของ ECON Mode นั้นจะช่วยควบคุมเครื่องยนต์ ให้ใช้พลังงานอย่างมีประสิทธิภาพมากที่สุด </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -923,7 +936,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="VQ9-Xr-giY">
                                 <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">ECO Coaching ระบบแสดงผลการขับขี่แบบประหยัดน้ำมัน เป็นระบบที่ช่วยแนะนำให้ผู้ขับขี่ใช้เชื้อเพลิงอย่างรู้คุณค่า โดยวัดจากพฤติกรรมการเหยียบเบรก และคันเร่งของผู้ขับขี่ ซึ่งจะแสดงผลด้วยการเปลี่ยนสีที่มาตรวัดเรืองแสง โดยระบบจะช่วยส่งเสริมพฤติกรรมการขับขี่ให้ดียิ่งขึ้น และเป็นอีกหนึ่งวิธีที่จะช่วยโลกในการประหยัดพลังงาน </mutableString>
+                                <string key="text">ECO Coaching ระบบแสดงผลการขับขี่แบบประหยัดน้ำมัน เป็นระบบที่ช่วยแนะนำให้ผู้ขับขี่ใช้เชื้อเพลิงอย่างรู้คุณค่า โดยวัดจากพฤติกรรมการเหยียบเบรก และคันเร่งของผู้ขับขี่ ซึ่งจะแสดงผลด้วยการเปลี่ยนสีที่มาตรวัดเรืองแสง โดยระบบจะช่วยส่งเสริมพฤติกรรมการขับขี่ให้ดียิ่งขึ้น และเป็นอีกหนึ่งวิธีที่จะช่วยโลกในการประหยัดพลังงาน </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1318,7 +1331,8 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         </scene>
     </scenes>
     <resources>
-        <image name="b_360ex.jpg" width="1024" height="768"/>
+        <image name="b_btn_360ex_1.png" width="148" height="101"/>
+        <image name="b_btn_360ex_2.png" width="170" height="109"/>
         <image name="b_intro_bg.png" width="1" height="768"/>
         <image name="b_intro_word.png" width="643" height="75"/>
         <image name="b_landing_bg.jpg" width="1969" height="768"/>
@@ -1336,6 +1350,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_landing_bg.jpg" width="1896" height="768"/>
         <image name="e_landing_h1.png" width="503" height="45"/>
         <image name="e_landing_h2.png" width="816" height="104"/>
+        <image name="exterior_01.jpg" width="1024" height="768"/>
         <image name="first_bg.jpg" width="1024" height="768"/>
         <image name="intro_bg.jpg" width="1024" height="768"/>
         <image name="intro_logo_best.png" width="754" height="119"/>

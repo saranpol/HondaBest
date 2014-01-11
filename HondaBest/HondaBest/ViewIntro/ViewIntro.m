@@ -7,6 +7,7 @@
 //
 
 #import "ViewIntro.h"
+#import "HBViewController.h"
 
 @implementation ViewIntro
 
@@ -30,6 +31,8 @@
     [mImageLogoCity setAlpha:0];
     [mImageLogoBest setAlpha:0];
 
+    HBViewController *vc = [HBViewController getVC];
+    [vc playSoundIntro];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

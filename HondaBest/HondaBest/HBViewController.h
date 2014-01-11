@@ -7,13 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class ViewMenu;
+@class SoundEffect;
 
 @interface HBViewController : UIViewController
 
 @property (nonatomic, weak) ViewMenu *mViewMenu;
+@property (nonatomic, strong) SoundEffect *mSoundStart;
+@property (nonatomic, strong) AVAudioPlayer *mSoundIntro;
 
 + (HBViewController*)getVC;
+
+- (IBAction)clickStart:(id)sender;
+- (void)playSoundIntro;
 
 @end

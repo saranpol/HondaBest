@@ -13,6 +13,9 @@
 @synthesize mRotationPercent;
 @synthesize mRotationPercentBegin;
 @synthesize mImageRotate;
+@synthesize mImageAngle0;
+@synthesize mImageAngle1;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -36,14 +39,25 @@
 }
 
 
-#define MAX_IMAGE_INDEX 5
+- (void)hideAngleImage {
+    [UIView animateWithDuration:0.3 animations:^{
+        [mImageAngle0 setAlpha:0];
+        [mImageAngle1 setAlpha:0];
+    }];
+}
+
+#define MAX_IMAGE_INDEX 35
 - (IBAction)panView:(id)sender {
+    if(mImageAngle0.alpha > 0){
+        [self hideAngleImage];
+    }
+    
     UIPanGestureRecognizer *g = (UIPanGestureRecognizer*)sender;
     CGPoint t = [g translationInView:g.view];
     if(g.state == UIGestureRecognizerStateBegan){
         mRotationPercentBegin = mRotationPercent;
     }
-    self.mRotationPercent = mRotationPercentBegin + t.x/(g.view.frame.size.width/3.0);
+    self.mRotationPercent = mRotationPercentBegin - t.x/(g.view.frame.size.width/2.5);
 //      self.mRotationPercent = mRotationPercentBegin + t.x/g.view.frame.size.width;
     CGFloat p = mRotationPercent;
     if(mRotationPercent < 0){
@@ -54,9 +68,8 @@
     }
     
     //NSLog(@"%f", p);
-    //NSInteger i = floorf(MAX_IMAGE_INDEX*p);
-    //NSString *s = [NSString stringWithFormat:@"interior_%ld.jpg", (long)i];
-    NSString *s = @"b_360ex.jpg";
+    NSInteger i = floorf(MAX_IMAGE_INDEX*p) + 1;
+    NSString *s = [NSString stringWithFormat:@"exterior_%02ld.jpg", (long)i];
     [mImageRotate setImage:[UIImage imageNamed:s]];
 }
 

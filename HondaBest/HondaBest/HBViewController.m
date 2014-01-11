@@ -7,11 +7,14 @@
 //
 
 #import "HBViewController.h"
-
+#import "SoundEffect.h"
 
 @implementation HBViewController
 
 static HBViewController *instance;
+
+@synthesize mSoundStart;
+@synthesize mSoundIntro;
 
 - (void)viewDidLoad
 {
@@ -28,6 +31,25 @@ static HBViewController *instance;
 
 + (HBViewController*)getVC {
     return instance;
+}
+
+- (IBAction)clickStart:(id)sender {
+    self.mSoundStart = [[SoundEffect alloc] initWithSoundNamed:@"sound_start_engine.mp3"];
+    [mSoundStart play];
+}
+
+- (AVAudioPlayer*)loadAVAudioPlayer:(NSString*)name {
+    NSError *error;
+    NSURL *soundUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:name ofType:@"mp3"]];
+    return [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:&error];
+}
+
+- (void)playSoundIntro {
+    self.mSoundIntro = [self loadAVAudioPlayer:@"intro"];
+    mSoundIntro.numberOfLoops = -1;
+    mSoundIntro.volume = 0.2;
+    [mSoundIntro prepareToPlay];
+    [mSoundIntro play];
 }
 
 @end
