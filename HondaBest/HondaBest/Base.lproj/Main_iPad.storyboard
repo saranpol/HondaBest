@@ -1065,7 +1065,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-Xy-9pf">
-                                <rect key="frame" x="0.0" y="0.0" width="1896" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1895" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVC-qx-ofI">
@@ -1125,7 +1125,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XwS-eB-lPE">
-                                <rect key="frame" x="-844" y="0.0" width="1868" height="768"/>
+                                <rect key="frame" x="-843" y="0.0" width="1867" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-Gz-7wO">
@@ -1347,7 +1347,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_05_econ.png" width="832" height="335"/>
         <image name="e_06_ecocoaching.png" width="832" height="335"/>
         <image name="e_intro_word.png" width="532" height="76"/>
-        <image name="e_landing_bg.jpg" width="1896" height="768"/>
+        <image name="e_landing_bg.jpg" width="1895" height="768"/>
         <image name="e_landing_h1.png" width="503" height="45"/>
         <image name="e_landing_h2.png" width="816" height="104"/>
         <image name="exterior_01.jpg" width="1024" height="768"/>
@@ -1365,7 +1365,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="s_07_g-force.png" width="832" height="335"/>
         <image name="s_08_isofix.png" width="832" height="335"/>
         <image name="s_intro_word.png" width="606" height="76"/>
-        <image name="s_landing_bg.jpg" width="1868" height="768"/>
+        <image name="s_landing_bg.jpg" width="1867" height="768"/>
         <image name="s_landing_h1.png" width="358" height="46"/>
         <image name="s_landing_h2.png" width="846" height="109"/>
         <image name="t_01_smartkey.png" width="832" height="335"/>
