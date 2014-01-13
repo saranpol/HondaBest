@@ -45,11 +45,11 @@ static HBViewController *instance;
 }
 
 - (void)playSoundIntro {
-    self.mSoundIntro = [self loadAVAudioPlayer:@"intro"];
-    mSoundIntro.numberOfLoops = -1;
-    mSoundIntro.volume = 0.2;
-    [mSoundIntro prepareToPlay];
-    [mSoundIntro play];
+//    self.mSoundIntro = [self loadAVAudioPlayer:@"intro"];
+//    mSoundIntro.numberOfLoops = -1;
+//    mSoundIntro.volume = 0.2;
+//    [mSoundIntro prepareToPlay];
+//    [mSoundIntro play];
 }
 
 @end

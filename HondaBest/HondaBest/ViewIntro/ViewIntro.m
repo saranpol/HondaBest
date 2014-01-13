@@ -39,8 +39,8 @@
     [super viewDidAppear:animated];
     
 //#SKIP
-//    [self gotoViewIntro];
-//    return;
+    [self gotoViewIntro];
+    return;
     
     
     [mImageLogoCity setAlpha:0];

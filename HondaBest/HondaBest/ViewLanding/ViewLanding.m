@@ -40,9 +40,9 @@
     [super viewDidAppear:animated];
     
 //#SKIP
-//    HBViewController *vc = [HBViewController getVC];
-//    [vc.mViewMenu.view setAlpha:1.0];
-//    return
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.view setAlpha:1.0];
+    return
     
     [UIView animateWithDuration:2.0
                           delay:0.5
