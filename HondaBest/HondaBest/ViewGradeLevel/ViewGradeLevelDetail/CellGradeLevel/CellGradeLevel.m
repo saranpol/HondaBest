@@ -12,6 +12,7 @@
 
 @synthesize mImageCar;
 @synthesize mImageInCar;
+@synthesize mImageText;
 
 
 - (id)initWithFrame:(CGRect)frame

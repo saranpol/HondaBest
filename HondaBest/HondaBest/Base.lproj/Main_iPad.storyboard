@@ -345,12 +345,17 @@
                                                     <rect key="frame" x="477" y="82" width="506" height="297"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="right" fixedFrame="YES" image="gradelevel_txt_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jrv-IP-Ih8">
+                                                    <rect key="frame" x="777" y="401" width="204" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
                                             <outlet property="mImageCar" destination="daV-eF-Krl" id="PXu-Bh-zNJ"/>
                                             <outlet property="mImageInCar" destination="4Ae-lm-lb2" id="dXQ-Cu-8Xp"/>
+                                            <outlet property="mImageText" destination="Jrv-IP-Ih8" id="vax-FB-j3v"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -359,6 +364,14 @@
                                     <outlet property="delegate" destination="aJs-y3-gtu" id="fLb-V5-ffT"/>
                                 </connections>
                             </collectionView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gradelevel_arrow_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="1uU-kb-aZ7">
+                                <rect key="frame" x="25" y="662" width="40" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gradelevel_arrow_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="oWv-d2-L4J">
+                                <rect key="frame" x="956" y="662" width="40" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-mP-NaS">
                                 <rect key="frame" x="362" y="707" width="300" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -403,40 +416,58 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1948" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-7e-nPQ">
-                                <rect key="frame" x="631" y="11" width="98" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMp-is-zJp">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="GradeLevel">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="0l5-Xs-qbw" kind="modal" modalTransitionStyle="crossDissolve" id="m6g-kg-FL4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-mf-i2Y">
-                                <rect key="frame" x="511" y="11" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Color Body">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Udj-tS-OqD" kind="modal" modalTransitionStyle="crossDissolve" id="qGc-yo-UzQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
-                                <rect key="frame" x="756" y="11" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="VideoGallery">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-Bd-yD6">
-                                <rect key="frame" x="872" y="11" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Share">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_nav_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="buU-w9-W1F">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-7e-nPQ">
+                                        <rect key="frame" x="400" y="0.0" width="87" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="landing_nav_btn_gardelevel.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="0l5-Xs-qbw" kind="modal" modalTransitionStyle="crossDissolve" id="m6g-kg-FL4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-mf-i2Y">
+                                        <rect key="frame" x="496" y="0.0" width="112" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="landing_nav_btn_bodycolor.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Udj-tS-OqD" kind="modal" modalTransitionStyle="crossDissolve" id="qGc-yo-UzQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
+                                        <rect key="frame" x="830" y="0.0" width="112" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="landing_nav_btn_videogallery.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-Bd-yD6">
+                                        <rect key="frame" x="619" y="0.0" width="190" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="landing_nav_btn_spec_equip.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-9i-MXQ">
+                                        <rect key="frame" x="944" y="0.0" width="79" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="landing_nav_btn_share.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-go-1bl">
                                 <rect key="frame" x="583" y="71" width="302" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -448,6 +479,7 @@
                     <connections>
                         <outlet property="mImageBG" destination="RmE-xi-RGZ" id="ZDv-yF-zBi"/>
                         <outlet property="mImageLogo" destination="2Iy-go-1bl" id="rPC-W0-va3"/>
+                        <outlet property="mViewTopMenu" destination="VMp-is-zJp" id="hkh-9E-1bq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TG-io-1Ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1707,16 +1739,25 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_landing_h2.png" width="816" height="104"/>
         <image name="exterior_01.jpg" width="1024" height="768"/>
         <image name="first_bg.jpg" width="1024" height="768"/>
+        <image name="gradelevel_arrow_left.png" width="40" height="75"/>
+        <image name="gradelevel_arrow_right.png" width="40" height="75"/>
         <image name="gradelevel_car_01.png" width="709" height="513"/>
         <image name="gradelevel_colorbody_background.jpg" width="2140" height="768"/>
         <image name="gradelevel_detail_01.png" width="506" height="297"/>
         <image name="gradelevel_landing.png" width="1045" height="374"/>
         <image name="gradelevel_text.png" width="347" height="27"/>
+        <image name="gradelevel_txt_01.png" width="204" height="26"/>
         <image name="intro_bg.jpg" width="1024" height="768"/>
         <image name="intro_logo_best.png" width="754" height="119"/>
         <image name="intro_logo_city.png" width="553" height="155"/>
         <image name="landing_bg.jpg" width="1948" height="768"/>
         <image name="landing_logo.png" width="302" height="85"/>
+        <image name="landing_nav_bg.png" width="1024" height="42"/>
+        <image name="landing_nav_btn_bodycolor.png" width="80" height="14"/>
+        <image name="landing_nav_btn_gardelevel.png" width="84" height="14"/>
+        <image name="landing_nav_btn_share.png" width="42" height="14"/>
+        <image name="landing_nav_btn_spec_equip.png" width="190" height="14"/>
+        <image name="landing_nav_btn_videogallery.png" width="98" height="14"/>
         <image name="logo_top_left.png" width="231" height="65"/>
         <image name="s_01_sidesrs.png" width="832" height="335"/>
         <image name="s_02_abs.png" width="832" height="335"/>

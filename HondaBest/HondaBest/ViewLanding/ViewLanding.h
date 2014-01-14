@@ -12,6 +12,7 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *mImageBG;
 @property (nonatomic, weak) IBOutlet UIImageView *mImageLogo;
+@property (nonatomic, weak) IBOutlet UIView *mViewTopMenu;
 
 - (IBAction)clickBack:(id)sender;
 

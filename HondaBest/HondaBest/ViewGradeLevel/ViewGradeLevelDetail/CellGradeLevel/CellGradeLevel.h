@@ -12,5 +12,6 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *mImageCar;
 @property (nonatomic, weak) IBOutlet UIImageView *mImageInCar;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageText;
 
 @end

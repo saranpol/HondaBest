@@ -14,6 +14,7 @@
 
 @synthesize mImageBG;
 @synthesize mImageLogo;
+@synthesize mViewTopMenu;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [mImageLogo setAlpha:0];
+    [mViewTopMenu setAlpha:0];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -39,10 +41,11 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-//#SKIP
+#ifdef SKIP_INTRO
     HBViewController *vc = [HBViewController getVC];
     [vc.mViewMenu.view setAlpha:1.0];
     return
+#endif
     
     [UIView animateWithDuration:2.0
                           delay:0.5
@@ -62,6 +65,9 @@
                                               if(vc.mViewMenu.view.alpha == 0){
                                                   [UIView animateWithDuration:0.3 animations:^{
                                                       [vc.mViewMenu.view setAlpha:1.0];
+                                                  }];
+                                                  [UIView animateWithDuration:0.3 animations:^{
+                                                      [mViewTopMenu setAlpha:1.0];
                                                   }];
                                               }
                                           }];
