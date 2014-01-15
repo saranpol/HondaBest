@@ -44,6 +44,9 @@
 #ifdef SKIP_INTRO
     HBViewController *vc = [HBViewController getVC];
     [vc.mViewMenu.view setAlpha:1.0];
+    [UIView animateWithDuration:0.3 animations:^{
+        [mViewTopMenu setAlpha:1.0];
+    }];
     return
 #endif
     

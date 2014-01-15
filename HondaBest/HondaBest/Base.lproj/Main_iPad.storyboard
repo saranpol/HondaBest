@@ -53,6 +53,18 @@
                     <view key="view" contentMode="scaleToFill" id="f8J-sD-nDm">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1o-X9-2Rh">
+                                <rect key="frame" x="967" y="675" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ABc-dO-gcr" kind="modal" identifier="GotoInteriorDetail" modalTransitionStyle="crossDissolve" id="OqP-CL-rvv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -75,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gradelevel_colorbody_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-M6-bn8">
-                                <rect key="frame" x="-1116" y="0.0" width="2140" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="2140" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuE-8c-DN4">
@@ -217,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gradelevel_colorbody_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TRi-ou-W3C">
-                                <rect key="frame" x="-1116" y="0.0" width="2140" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="2140" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3e-Jf-ZCg">
@@ -375,6 +387,8 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-mP-NaS">
                                 <rect key="frame" x="362" y="707" width="300" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.87843143940000001" green="0.87843143940000001" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-sc-oFl">
                                 <rect key="frame" x="25" y="20" width="69" height="27"/>
@@ -557,6 +571,16 @@
                                         <rect key="frame" x="763" y="252" width="170" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-qI-h2t">
+                                        <rect key="frame" x="968" y="682" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ABc-dO-gcr" kind="modal" identifier="GotoExteriorDetail" modalTransitionStyle="crossDissolve" id="crD-ai-DsX"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -860,6 +884,107 @@
             </objects>
             <point key="canvasLocation" x="2521" y="3819"/>
         </scene>
+        <!--View Popup Detail-->
+        <scene sceneID="mou-Jy-Rsn">
+            <objects>
+                <viewController id="ABc-dO-gcr" customClass="ViewPopupDetail" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FVo-OZ-fZe"/>
+                        <viewControllerLayoutGuide type="bottom" id="F70-dL-JNc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JSi-QR-3Qy">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="N27-px-5ga">
+                                <rect key="frame" x="0.0" y="92" width="1024" height="542"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jax-WQ-bPh">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="srW-eZ-wsZ">
+                                    <size key="itemSize" width="1024" height="768"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellPopupDetail" id="YVU-36-HmA" customClass="CellPopupDetail">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B-Exterior-popup_01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D89-RE-Rvx">
+                                                    <rect key="frame" x="0.0" y="102" width="1024" height="522"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ข้อความ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNm-kP-nse">
+                                                    <rect key="frame" x="27" y="643" width="971" height="58"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="mImage" destination="D89-RE-Rvx" id="aFu-bE-Jcj"/>
+                                            <outlet property="mLabel" destination="GNm-kP-nse" id="3ce-fZ-glf"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ABc-dO-gcr" id="4Yy-o1-31n"/>
+                                    <outlet property="delegate" destination="ABc-dO-gcr" id="tNn-4y-DuV"/>
+                                </connections>
+                            </collectionView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_btn_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="nko-0h-rfM">
+                                <rect key="frame" x="25" y="334" width="35" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_btn_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-Nw-0Ae">
+                                <rect key="frame" x="964" y="334" width="35" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibV-Oq-VGs">
+                                <rect key="frame" x="-4" y="9" width="93" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="popup_btn_close.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickClose:" destination="ABc-dO-gcr" eventType="touchUpInside" id="0dY-2b-eNh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5S-9v-WtH">
+                                <rect key="frame" x="102" y="712" width="821" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.46274513006210327" green="0.46274513006210327" blue="0.46274513006210327" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="11" translatesAutoresizingMaskIntoConstraints="NO" id="sNK-vi-8gA">
+                                <rect key="frame" x="343" y="712" width="338" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.87843143939971924" green="0.87843143939971924" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039224743843079" green="0.098039224743843079" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="mCollectionView" destination="jax-WQ-bPh" id="iah-RU-vFc"/>
+                        <outlet property="mPageControl" destination="sNK-vi-8gA" id="5zQ-bQ-0vJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcQ-Sb-Ev3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2521" y="1009"/>
+        </scene>
         <!--View Controller - CVT-->
         <scene sceneID="e3x-pn-tMH">
             <objects>
@@ -962,6 +1087,8 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="tkF-Xl-eLk">
                                 <rect key="frame" x="493" y="600" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.87843143940000001" green="0.87843143940000001" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1041,6 +1168,8 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="H1W-1M-T5J">
                                 <rect key="frame" x="493" y="600" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.87843143940000001" green="0.87843143940000001" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1159,6 +1288,8 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" translatesAutoresizingMaskIntoConstraints="NO" id="UrC-zD-STt">
                                 <rect key="frame" x="421" y="600" width="183" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.87843143940000001" green="0.87843143940000001" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1704,6 +1835,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         </scene>
     </scenes>
     <resources>
+        <image name="B-Exterior-popup_01.jpg" width="1024" height="522"/>
         <image name="b_btn_360ex_1.png" width="148" height="101"/>
         <image name="b_btn_360ex_2.png" width="170" height="109"/>
         <image name="b_intro_bg.png" width="1" height="768"/>
@@ -1759,6 +1891,10 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="landing_nav_btn_spec_equip.png" width="190" height="14"/>
         <image name="landing_nav_btn_videogallery.png" width="98" height="14"/>
         <image name="logo_top_left.png" width="231" height="65"/>
+        <image name="popup_bg_blue.png" width="1024" height="542"/>
+        <image name="popup_btn_close.png" width="38" height="38"/>
+        <image name="popup_btn_left.png" width="35" height="65"/>
+        <image name="popup_btn_right.png" width="35" height="65"/>
         <image name="s_01_sidesrs.png" width="832" height="335"/>
         <image name="s_02_abs.png" width="832" height="335"/>
         <image name="s_06-2_camera.png" width="408" height="73"/>
@@ -1784,6 +1920,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ali-Ts-cQn"/>
+        <segue reference="OqP-CL-rvv"/>
         <segue reference="D2S-eB-Eeo"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,39 +44,53 @@
     if(mImageText.alpha == 0){
         [self slideBG];
     }else{
-        CGRect r = mImageBG.frame;
-        r.origin.x = 0;
-        [mImageBG setFrame:r];
+//        CGRect r = mImageBG.frame;
+//        r.origin.x = 0;
+//        [mImageBG setFrame:r];
     }
 }
 
 - (void)slideBG {
-    [UIView animateWithDuration:2.0
+    [UIView animateWithDuration:0.3
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mImageText setAlpha:1];
+                     }completion:nil];
+    
+    [UIView animateWithDuration:0.3
                           delay:0.5
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         CGRect r = mImageBG.frame;
-                         r.origin.x = 0;
-                         [mImageBG setFrame:r];
-                     }
-                     completion:^(BOOL finished){
-                         if(finished){
-                             [UIView animateWithDuration:0.3
-                                                   delay:0.0
-                                                 options:UIViewAnimationOptionCurveEaseInOut
-                                              animations:^{
-                                                  [mImageText setAlpha:1];
-                                              }completion:nil];
-                             
-                             [UIView animateWithDuration:0.3
-                                                   delay:0.5
-                                                 options:UIViewAnimationOptionCurveEaseInOut
-                                              animations:^{
-                                                  [mViewControl setAlpha:1];
-                                              }completion:nil];
-                         }
-                         
-                     }];
+                         [mViewControl setAlpha:1];
+                     }completion:nil];
+    
+//    [UIView animateWithDuration:2.0
+//                          delay:0.5
+//                        options:UIViewAnimationOptionCurveEaseInOut
+//                     animations:^{
+//                         CGRect r = mImageBG.frame;
+//                         r.origin.x = 0;
+//                         [mImageBG setFrame:r];
+//                     }
+//                     completion:^(BOOL finished){
+//                         if(finished){
+//                             [UIView animateWithDuration:0.3
+//                                                   delay:0.0
+//                                                 options:UIViewAnimationOptionCurveEaseInOut
+//                                              animations:^{
+//                                                  [mImageText setAlpha:1];
+//                                              }completion:nil];
+//                             
+//                             [UIView animateWithDuration:0.3
+//                                                   delay:0.5
+//                                                 options:UIViewAnimationOptionCurveEaseInOut
+//                                              animations:^{
+//                                                  [mViewControl setAlpha:1];
+//                                              }completion:nil];
+//                         }
+//                         
+//                     }];
 }
 
 

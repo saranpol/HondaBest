@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="mButtonB0" destination="gd4-33-gbJ" id="fUo-kW-RF7"/>
                 <outlet property="mButtonE0" destination="d1A-Co-KZZ" id="pVG-kh-hxJ"/>
+                <outlet property="mButtonInfo" destination="UBM-Zp-o6g" id="x1d-RK-zMK"/>
                 <outlet property="mButtonS0" destination="6Lw-h3-iEL" id="eYA-my-yqz"/>
                 <outlet property="mButtonT0" destination="d20-7Y-yI9" id="g2s-17-Rkc"/>
                 <outlet property="mViewB" destination="vKy-dH-ISL" id="xNe-v2-He7"/>
@@ -22,6 +23,16 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="396"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBM-Zp-o6g">
+                    <rect key="frame" x="881" y="2" width="254" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="b_btn_information.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickInfo:" destination="-1" eventType="touchUpInside" id="Dqk-uQ-QyM"/>
+                    </connections>
+                </button>
                 <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vKy-dH-ISL">
                     <rect key="frame" x="0.0" y="0.0" width="400" height="74"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -243,7 +254,7 @@
                             <rect key="frame" x="354" y="0.0" width="110" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <state key="normal" title="กล้อง\nมองหลัง" backgroundImage="menu_bg.png">
+                            <state key="normal" title="กล้อง\nส่องภาพ\nด้านหลัง" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -391,6 +402,7 @@
         </view>
     </objects>
     <resources>
+        <image name="b_btn_information.png" width="199" height="70"/>
         <image name="menu_b.png" width="112" height="74"/>
         <image name="menu_bg.png" width="74" height="74"/>
         <image name="menu_e.png" width="112" height="74"/>

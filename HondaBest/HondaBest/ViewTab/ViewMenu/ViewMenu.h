@@ -31,6 +31,7 @@ enum {
 @property (nonatomic, weak) IBOutlet UIButton *mButtonE0;
 @property (nonatomic, weak) IBOutlet UIButton *mButtonS0;
 @property (nonatomic, weak) IBOutlet UIButton *mButtonT0;
+@property (nonatomic, weak) IBOutlet UIButton *mButtonInfo;
 
 
 - (void)hideAllMenu;
@@ -64,5 +65,7 @@ enum {
 - (IBAction)clickLight:(id)sender;
 - (IBAction)clickOnePush:(id)sender;
 - (IBAction)clickAdvanceTouch:(id)sender;
+
+- (IBAction)clickInfo:(id)sender;
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-//#define SKIP_INTRO
+#define SKIP_INTRO
 
 @class ViewMenu;
 @class SoundEffect;

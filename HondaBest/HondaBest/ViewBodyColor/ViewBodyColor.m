@@ -57,46 +57,74 @@
 }
 
 - (void)slideBG {
-    [UIView animateWithDuration:2.0
+    [UIView animateWithDuration:0.3
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mImageBodyColor setAlpha:1];
+                     }completion:nil];
+    
+    [UIView animateWithDuration:0.3
                           delay:0.5
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                         CGRect r = mImageBG.frame;
-                         r.origin.x = 0;
-                         [mImageBG setFrame:r];
-                     }
-                     completion:^(BOOL finished){
-                         if(finished){
-                             [UIView animateWithDuration:0.3
-                                                   delay:0
-                                                 options:UIViewAnimationOptionCurveEaseInOut
-                                              animations:^{
-                                                  [mImageBodyColor setAlpha:1];
-                                              }completion:nil];
-                             
-                             [UIView animateWithDuration:0.3
-                                                   delay:0.5
-                                                 options:UIViewAnimationOptionCurveEaseInOut
-                                              animations:^{
-                                                  [mImageCar setAlpha:1];
-                                              }completion:nil];
-                             
-                             [UIView animateWithDuration:0.3
-                                                   delay:1.0
-                                                 options:UIViewAnimationOptionCurveEaseInOut
-                                              animations:^{
-                                                  [mImageText setAlpha:1];
-                                              }completion:nil];
-                             
-                             [UIView animateWithDuration:0.3
-                                                   delay:1.2
-                                                 options:UIViewAnimationOptionCurveEaseInOut
-                                              animations:^{
-                                                  [mViewControl setAlpha:1];
-                                              }completion:nil];
-                         }
-                         
-                     }];
+                         [mImageCar setAlpha:1];
+                     }completion:nil];
+    
+    [UIView animateWithDuration:0.3
+                          delay:1.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mImageText setAlpha:1];
+                     }completion:nil];
+    
+    [UIView animateWithDuration:0.3
+                          delay:1.2
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mViewControl setAlpha:1];
+                     }completion:nil];
+    
+//    [UIView animateWithDuration:2.0
+//                          delay:0.5
+//                        options:UIViewAnimationOptionCurveEaseInOut
+//                     animations:^{
+//                         CGRect r = mImageBG.frame;
+//                         r.origin.x = 0;
+//                         [mImageBG setFrame:r];
+//                     }
+//                     completion:^(BOOL finished){
+//                         if(finished){
+//                             [UIView animateWithDuration:0.3
+//                                                   delay:0
+//                                                 options:UIViewAnimationOptionCurveEaseInOut
+//                                              animations:^{
+//                                                  [mImageBodyColor setAlpha:1];
+//                                              }completion:nil];
+//                             
+//                             [UIView animateWithDuration:0.3
+//                                                   delay:0.5
+//                                                 options:UIViewAnimationOptionCurveEaseInOut
+//                                              animations:^{
+//                                                  [mImageCar setAlpha:1];
+//                                              }completion:nil];
+//                             
+//                             [UIView animateWithDuration:0.3
+//                                                   delay:1.0
+//                                                 options:UIViewAnimationOptionCurveEaseInOut
+//                                              animations:^{
+//                                                  [mImageText setAlpha:1];
+//                                              }completion:nil];
+//                             
+//                             [UIView animateWithDuration:0.3
+//                                                   delay:1.2
+//                                                 options:UIViewAnimationOptionCurveEaseInOut
+//                                              animations:^{
+//                                                  [mViewControl setAlpha:1];
+//                                              }completion:nil];
+//                         }
+//                         
+//                     }];
 }
 
 - (void)unselectAll {

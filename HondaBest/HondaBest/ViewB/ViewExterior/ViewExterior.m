@@ -7,6 +7,9 @@
 //
 
 #import "ViewExterior.h"
+#import "HBViewController.h"
+#import "ViewMenu.h"
+#import "ViewPopupDetail.h"
 
 @implementation ViewExterior
 
@@ -36,6 +39,23 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    HBViewController *vc = [HBViewController getVC];
+    [UIView animateWithDuration:0.3 animations:^{
+        [vc.mViewMenu.mButtonInfo setAlpha:1];
+    }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.mButtonInfo setAlpha:1];
+    [UIView animateWithDuration:0.3 animations:^{
+        [vc.mViewMenu.mButtonInfo setAlpha:0];
+    }];
 }
 
 
@@ -72,5 +92,15 @@
     NSString *s = [NSString stringWithFormat:@"exterior_%02ld.jpg", (long)i];
     [mImageRotate setImage:[UIImage imageNamed:s]];
 }
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"GotoExteriorDetail"]) {
+        ViewPopupDetail *v = [segue destinationViewController];
+        v.mMode = MODE_EXTERIOR;
+    }
+}
+
 
 @end

@@ -7,7 +7,9 @@
 //
 
 #import "ViewInterior.h"
-
+#import "HBViewController.h"
+#import "ViewMenu.h"
+#import "ViewPopupDetail.h"
 
 @implementation ViewInterior
 
@@ -70,6 +72,28 @@
 
 }
 
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.mButtonInfo setAlpha:0];
+    [UIView animateWithDuration:0.3 animations:^{
+        [vc.mViewMenu.mButtonInfo setAlpha:1];
+    }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.mButtonInfo setAlpha:1];
+    [UIView animateWithDuration:0.3 animations:^{
+        [vc.mViewMenu.mButtonInfo setAlpha:0];
+    }];
+}
+
+
+
+
 -(void)centerClouds:(id)sender{
 //    [(JAPanoView*)self.view setHAngle:-M_PI_2];
 //    [(JAPanoView*)self.view setVAngle:M_PI_4];
@@ -83,5 +107,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"GotoInteriorDetail"]) {
+        ViewPopupDetail *v = [segue destinationViewController];
+        v.mMode = MODE_INTERIOR;
+    }
+}
+
 
 @end

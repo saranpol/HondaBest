@@ -24,6 +24,7 @@
 @synthesize mButtonE0;
 @synthesize mButtonS0;
 @synthesize mButtonT0;
+@synthesize mButtonInfo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -310,7 +311,12 @@
 }
 
 
-
+- (IBAction)clickInfo:(id)sender {
+    if(mViewTab.selectedIndex == 2)
+        [mViewTab.selectedViewController performSegueWithIdentifier:@"GotoExteriorDetail" sender:self];
+    if(mViewTab.selectedIndex == 3)
+        [mViewTab.selectedViewController performSegueWithIdentifier:@"GotoInteriorDetail" sender:self];
+}
 
 
 
