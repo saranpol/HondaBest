@@ -140,6 +140,12 @@
 - (void)changeImageText:(int)car {
     [mImageCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"colorbody_car_%02d.png", car]]];
     [mImageText setImage:[UIImage imageNamed:[NSString stringWithFormat:@"colorbody_car_%02d_text.png", car]]];
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect f = mImageBG.frame;
+        CGFloat x = -(car-1)*150;
+        f.origin.x = x;
+        [mImageBG setFrame:f];
+    }];
 }
 
 - (IBAction)clickCar1:(id)sender {

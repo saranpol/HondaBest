@@ -324,7 +324,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="gradelevel_colorbody_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sBD-hh-st4">
-                                <rect key="frame" x="0.0" y="0.0" width="2140" height="768"/>
+                                <rect key="frame" x="-150" y="0.0" width="2140" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-3d-4HJ">
@@ -407,6 +407,7 @@
                     </view>
                     <connections>
                         <outlet property="mCollectionView" destination="2eE-3d-4HJ" id="lcE-f4-59s"/>
+                        <outlet property="mImageBG" destination="sBD-hh-st4" id="tB9-Kr-q42"/>
                         <outlet property="mPageControl" destination="Smb-mP-NaS" id="llH-Dp-Lzb"/>
                     </connections>
                 </viewController>

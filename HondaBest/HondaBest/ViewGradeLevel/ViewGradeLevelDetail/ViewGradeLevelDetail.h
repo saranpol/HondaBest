@@ -13,6 +13,7 @@
 @property (nonatomic, weak) IBOutlet UICollectionView *mCollectionView;
 @property (nonatomic, weak) IBOutlet UIPageControl *mPageControl;
 @property (nonatomic, assign) NSInteger mPage;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageBG;
 
 - (IBAction)clickBack:(id)sender;
 
