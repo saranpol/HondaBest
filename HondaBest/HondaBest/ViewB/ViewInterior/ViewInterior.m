@@ -11,9 +11,11 @@
 #import "ViewMenu.h"
 #import "ViewPopupDetail.h"
 
+
 @implementation ViewInterior
 
 @synthesize mPopover;
+@synthesize mMotionManager;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -80,6 +82,7 @@
     [UIView animateWithDuration:0.3 animations:^{
         [vc.mViewMenu.mButtonInfo setAlpha:1];
     }];
+    [self startUpdates];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -89,6 +92,7 @@
     [UIView animateWithDuration:0.3 animations:^{
         [vc.mViewMenu.mButtonInfo setAlpha:0];
     }];
+    [self stopUpdates];
 }
 
 
@@ -114,6 +118,43 @@
         v.mMode = MODE_INTERIOR;
     }
 }
+
+
+
+
+- (void)startUpdates {
+    self.mMotionManager = [[CMMotionManager alloc] init];
+    ViewInterior * __weak weakSelf = self;
+    
+    if ([mMotionManager isGyroAvailable] == YES) {
+        [mMotionManager setGyroUpdateInterval:0.01];
+        [mMotionManager startGyroUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMGyroData *gyroData, NSError *error) {
+            if(weakSelf){
+                double y = gyroData.rotationRate.y;
+                double x = gyroData.rotationRate.x;
+                JAPanoView *v = (JAPanoView*)weakSelf.view;
+                if(fabs(y) > 0.1){
+                    [v setVAngle:v.vAngle+y/120.0];
+                }
+                if(fabs(x) > 0.1){
+                    [v setHAngle:v.hAngle+x/120.0];
+                }
+
+            }
+            
+        }];
+    }
+}
+
+- (void)stopUpdates {
+    if ([mMotionManager isGyroActive] == YES) {
+        [mMotionManager stopGyroUpdates];
+    }
+}
+
+
+
+
 
 
 @end

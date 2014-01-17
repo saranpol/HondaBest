@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "JAPanoView.h"
+#import <CoreMotion/CoreMotion.h>
 
 @interface ViewInterior : UIViewController <JAPanoViewDelegate>
 
 @property (nonatomic, strong) UIPopoverController *mPopover;
+@property (nonatomic, strong) CMMotionManager *mMotionManager;
 
 @end

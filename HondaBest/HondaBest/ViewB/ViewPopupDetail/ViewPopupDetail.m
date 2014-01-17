@@ -68,7 +68,7 @@
                 break;
             case 3:
                 [cell.mImage setImage:[UIImage imageNamed:@"B-Exterior-popup_04.jpg"]];
-                [cell.mLabel setText:@"..."];
+                [cell.mLabel setText:@"ไฟท้ายดีไซน์พรีเมียม"];
                 break;
         }
     }else if(mMode == MODE_INTERIOR){

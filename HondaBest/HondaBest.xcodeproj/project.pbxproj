@@ -47,6 +47,7 @@
 		4302C23418872E7A005223D8 /* 02-B-Interior-popup-06@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4302C21C18872E7A005223D8 /* 02-B-Interior-popup-06@2x.jpg */; };
 		4302C23518872E7A005223D8 /* 02-B-Interior-popup-07@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4302C21D18872E7A005223D8 /* 02-B-Interior-popup-07@2x.jpg */; };
 		4302C23618872E7A005223D8 /* 02-B-Interior-popup-08@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4302C21E18872E7A005223D8 /* 02-B-Interior-popup-08@2x.jpg */; };
+		4318199D1888C2880051CD57 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4318199C1888C2880051CD57 /* CoreMotion.framework */; };
 		436E1E99187DEF56003BB1E6 /* ButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 436E1E98187DEF56003BB1E6 /* ButtonMenu.m */; };
 		436E1EDC187EEA45003BB1E6 /* DB HELVETHAICA X BD COND IT V3.2.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 436E1EDB187EEA45003BB1E6 /* DB HELVETHAICA X BD COND IT V3.2.TTF */; };
 		4372C0D71881D212004855F2 /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4372C0D61881D212004855F2 /* intro.mp3 */; };
@@ -447,6 +448,7 @@
 		4302C21C18872E7A005223D8 /* 02-B-Interior-popup-06@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-B-Interior-popup-06@2x.jpg"; sourceTree = "<group>"; };
 		4302C21D18872E7A005223D8 /* 02-B-Interior-popup-07@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-B-Interior-popup-07@2x.jpg"; sourceTree = "<group>"; };
 		4302C21E18872E7A005223D8 /* 02-B-Interior-popup-08@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "02-B-Interior-popup-08@2x.jpg"; sourceTree = "<group>"; };
+		4318199C1888C2880051CD57 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		436E1E97187DEF56003BB1E6 /* ButtonMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonMenu.h; sourceTree = "<group>"; };
 		436E1E98187DEF56003BB1E6 /* ButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenu.m; sourceTree = "<group>"; };
 		436E1EDB187EEA45003BB1E6 /* DB HELVETHAICA X BD COND IT V3.2.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB HELVETHAICA X BD COND IT V3.2.TTF"; sourceTree = "<group>"; };
@@ -829,6 +831,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4318199D1888C2880051CD57 /* CoreMotion.framework in Frameworks */,
 				439B4EC71881CAAA0005365C /* AudioToolbox.framework in Frameworks */,
 				43CE9CA21871C4F900AAD780 /* QuartzCore.framework in Frameworks */,
 				43D63DE7186F4C310070530E /* CoreGraphics.framework in Frameworks */,
@@ -1173,6 +1176,7 @@
 		43D63DE3186F4C310070530E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4318199C1888C2880051CD57 /* CoreMotion.framework */,
 				439B4EC61881CAAA0005365C /* AudioToolbox.framework */,
 				43CE9CA11871C4F900AAD780 /* QuartzCore.framework */,
 				43D63DE4186F4C310070530E /* Foundation.framework */,
