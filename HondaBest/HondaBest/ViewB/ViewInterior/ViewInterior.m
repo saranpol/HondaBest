@@ -132,6 +132,10 @@
             if(weakSelf){
                 double y = gyroData.rotationRate.y;
                 double x = gyroData.rotationRate.x;
+                if([UIDevice currentDevice].orientation == UIDeviceOrientationLandscapeLeft){
+                    x = -x;
+                    y = -y;
+                }
                 JAPanoView *v = (JAPanoView*)weakSelf.view;
                 if(fabs(y) > 0.1){
                     [v setVAngle:v.vAngle+y/120.0];
