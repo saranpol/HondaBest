@@ -440,7 +440,7 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-7e-nPQ">
-                                        <rect key="frame" x="400" y="0.0" width="87" height="42"/>
+                                        <rect key="frame" x="593" y="0.0" width="87" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_gardelevel.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -450,7 +450,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-mf-i2Y">
-                                        <rect key="frame" x="496" y="0.0" width="112" height="42"/>
+                                        <rect key="frame" x="689" y="0.0" width="112" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_bodycolor.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -459,7 +459,7 @@
                                             <segue destination="Udj-tS-OqD" kind="modal" modalTransitionStyle="crossDissolve" id="qGc-yo-UzQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
                                         <rect key="frame" x="830" y="0.0" width="112" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_videogallery.png">
@@ -467,13 +467,13 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-Bd-yD6">
-                                        <rect key="frame" x="619" y="0.0" width="190" height="42"/>
+                                        <rect key="frame" x="812" y="0.0" width="190" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_spec_equip.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-9i-MXQ">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-9i-MXQ">
                                         <rect key="frame" x="944" y="0.0" width="79" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_share.png">
@@ -1325,7 +1325,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-TB-9kX">
                                 <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">ECON Mode เป็นระบบที่ช่วยลดการใช้พลังงานที่สิ้นเปลือง โดยระบบจะปรับการทำงานของเครื่องยนต์ ลิ้นปีกผีเสื้อ และ ระบบเกียร์ให้ทำงานสัมพันธ์กันในขณะรถวิ่ง นอกจากนั้นระบบจะปรับการทำงานของระบบปรับอากาศ และการหมุนเวียนอากาศภายในห้องโดยสาร ให้เหมาะสมกับอุณหภูมิภายนอกรถ ซึ่งการทำงานของ ECON Mode นั้นจะช่วยควบคุมเครื่องยนต์ ให้ใช้พลังงานอย่างมีประสิทธิภาพมากที่สุด </string>
+                                <mutableString key="text">ECON Mode เป็นระบบที่ช่วยลดการใช้พลังงานที่สิ้นเปลือง โดยระบบจะปรับการทำงานของเครื่องยนต์  ลิ้นปีกผีเสื้อ และ ระบบเกียร์ให้ทำงานสัมพันธ์กันในขณะรถวิ่ง นอกจากนั้นระบบจะปรับการทำงานของระบบปรับอากาศ และการหมุนเวียนอากาศภายในห้องโดยสาร ให้เหมาะสมกับอุณหภูมิภายนอกรถ ซึ่งการทำงานของ ECON Mode นั้นจะช่วยควบคุมเครื่องยนต์ ให้ใช้พลังงานอย่างมีประสิทธิภาพมากที่สุด </mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1344,10 +1344,10 @@
             </objects>
             <point key="canvasLocation" x="3697" y="1955"/>
         </scene>
-        <!--View Controller - PaddleShift-->
+        <!--View Paddle - PaddleShift-->
         <scene sceneID="8SB-hI-WUY">
             <objects>
-                <viewController id="SAd-XL-lnY" sceneMemberID="viewController">
+                <viewController id="SAd-XL-lnY" customClass="ViewPaddle" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eA4-Nc-71u"/>
                         <viewControllerLayoutGuide type="bottom" id="X7e-ki-Q9S"/>
@@ -1363,21 +1363,65 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="fKF-ZK-UmM">
                                 <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">ระบบควบคุมการเปลี่ยนเกียร์ที่พวงมาลัยแบบ 7 สปีด
-(7-speed Paddle Shift)  </string>
+                                <string key="text">  ระบบควบคุมการเปลี่ยนเกียร์ที่พวงมาลัยแบบ 7 สปีด
+(7-speed Paddle Shift)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_04_paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-mG-mUY">
-                                <rect key="frame" x="96" y="130" width="832" height="335"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-9P-0wT">
+                                <rect key="frame" x="119" y="139" width="785" height="317"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_speed1.png" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-nx-IAz">
+                                <rect key="frame" x="187" y="-47" width="498" height="487"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_SteeringWheel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-mG-mUY">
+                                <rect key="frame" x="97" y="130" width="831" height="334"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN3-lo-idf">
+                                <rect key="frame" x="293" y="380" width="137" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="e_PaddleShift_paddleshift_btnDown.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButtonLeft:" destination="SAd-XL-lnY" eventType="touchUpInside" id="tfU-Gi-ruv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23c-J1-rHl">
+                                <rect key="frame" x="583" y="380" width="137" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="e_PaddleShift_paddleshift_btnUp.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButtonRight:" destination="SAd-XL-lnY" eventType="touchUpInside" id="7vG-oq-2YJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1W-k4-VEs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="e_PaddleShift_coverhowto.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButtonGuide:" destination="SAd-XL-lnY" eventType="touchUpInside" id="9aL-s6-eXI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PaddleShift" id="DvZ-0M-WJj"/>
+                    <connections>
+                        <outlet property="mButtonGuide" destination="e1W-k4-VEs" id="tCG-Da-eY4"/>
+                        <outlet property="mButtonLeft" destination="jN3-lo-idf" id="6Yx-8Y-X9p"/>
+                        <outlet property="mButtonRight" destination="23c-J1-rHl" id="uVo-Gl-dlX"/>
+                        <outlet property="mImageSpeed" destination="J3W-nx-IAz" id="vG7-1q-GVR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tH2-3X-Exg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1863,9 +1907,14 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_01_i_vtec.png" width="832" height="335"/>
         <image name="e_02_cvt.png" width="832" height="335"/>
         <image name="e_03_e85.png" width="832" height="335"/>
-        <image name="e_04_paddle.png" width="832" height="335"/>
         <image name="e_05_econ.png" width="832" height="335"/>
         <image name="e_06_ecocoaching.png" width="832" height="335"/>
+        <image name="e_PaddleShift_coverhowto.png" width="1024" height="768"/>
+        <image name="e_PaddleShift_paddleshift_SteeringWheel.png" width="831" height="334"/>
+        <image name="e_PaddleShift_paddleshift_bg.png" width="787" height="318"/>
+        <image name="e_PaddleShift_paddleshift_btnDown.png" width="137" height="137"/>
+        <image name="e_PaddleShift_paddleshift_btnUp.png" width="137" height="137"/>
+        <image name="e_PaddleShift_paddleshift_speed1.png" width="498" height="487"/>
         <image name="e_intro_word.png" width="532" height="76"/>
         <image name="e_landing_bg.jpg" width="1895" height="768"/>
         <image name="e_landing_h1.png" width="503" height="45"/>
@@ -1921,7 +1970,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="ali-Ts-cQn"/>
-        <segue reference="OqP-CL-rvv"/>
+        <segue reference="crD-ai-DsX"/>
         <segue reference="D2S-eB-Eeo"/>
     </inferredMetricsTieBreakers>
 </document>

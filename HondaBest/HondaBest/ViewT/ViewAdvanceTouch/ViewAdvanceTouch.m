@@ -74,7 +74,7 @@
             break;
         case 7:
             [cell.mImageFeature setImage:[UIImage imageNamed:@"t_11_navigation.png"]];
-                [cell.mLabelDescription setText:@"Navigation\nรองรับ HondaLink Navigation Application *เฉพาะ Smart Phone บางรุ่น\n\n"];
+                [cell.mLabelDescription setText:@"Navigation\nรองรับ HondaLink Navigation Application\n*เฉพาะ Smart Phone บางรุ่น\n\n"];
             break;
     }
     return cell;

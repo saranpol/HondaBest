@@ -51,6 +51,25 @@
 		436E1E99187DEF56003BB1E6 /* ButtonMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 436E1E98187DEF56003BB1E6 /* ButtonMenu.m */; };
 		436E1EDC187EEA45003BB1E6 /* DB HELVETHAICA X BD COND IT V3.2.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 436E1EDB187EEA45003BB1E6 /* DB HELVETHAICA X BD COND IT V3.2.TTF */; };
 		4372C0D71881D212004855F2 /* intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4372C0D61881D212004855F2 /* intro.mp3 */; };
+		439219E71889B074009FFB41 /* e_PaddleShift_coverhowto.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219D41889B074009FFB41 /* e_PaddleShift_coverhowto.png */; };
+		439219E81889B074009FFB41 /* e_PaddleShift_paddleshift_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219D51889B074009FFB41 /* e_PaddleShift_paddleshift_bg.png */; };
+		439219E91889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219D61889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown.png */; };
+		439219EA1889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219D71889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp.png */; };
+		439219EB1889B074009FFB41 /* e_PaddleShift_paddleshift_speed1.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219D81889B074009FFB41 /* e_PaddleShift_paddleshift_speed1.png */; };
+		439219EC1889B074009FFB41 /* e_PaddleShift_paddleshift_speed2.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219D91889B074009FFB41 /* e_PaddleShift_paddleshift_speed2.png */; };
+		439219ED1889B074009FFB41 /* e_PaddleShift_paddleshift_speed3.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219DA1889B074009FFB41 /* e_PaddleShift_paddleshift_speed3.png */; };
+		439219EE1889B074009FFB41 /* e_PaddleShift_paddleshift_speed4.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219DB1889B074009FFB41 /* e_PaddleShift_paddleshift_speed4.png */; };
+		439219EF1889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219DC1889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel.png */; };
+		439219F01889B074009FFB41 /* e_PaddleShift_coverhowto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219DE1889B074009FFB41 /* e_PaddleShift_coverhowto@2x.png */; };
+		439219F11889B074009FFB41 /* e_PaddleShift_paddleshift_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219DF1889B074009FFB41 /* e_PaddleShift_paddleshift_bg@2x.png */; };
+		439219F21889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E01889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown@2x.png */; };
+		439219F31889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E11889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp@2x.png */; };
+		439219F41889B074009FFB41 /* e_PaddleShift_paddleshift_speed1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E21889B074009FFB41 /* e_PaddleShift_paddleshift_speed1@2x.png */; };
+		439219F51889B074009FFB41 /* e_PaddleShift_paddleshift_speed2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E31889B074009FFB41 /* e_PaddleShift_paddleshift_speed2@2x.png */; };
+		439219F61889B074009FFB41 /* e_PaddleShift_paddleshift_speed3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E41889B074009FFB41 /* e_PaddleShift_paddleshift_speed3@2x.png */; };
+		439219F71889B074009FFB41 /* e_PaddleShift_paddleshift_speed4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E51889B074009FFB41 /* e_PaddleShift_paddleshift_speed4@2x.png */; };
+		439219F81889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439219E61889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel@2x.png */; };
+		439219FC1889B3F2009FFB41 /* ViewPaddle.m in Sources */ = {isa = PBXBuildFile; fileRef = 439219FB1889B3F2009FFB41 /* ViewPaddle.m */; };
 		439B4E731881B7AC0005365C /* exterior_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 439B4E2A1881B7AC0005365C /* exterior_01.jpg */; };
 		439B4E741881B7AC0005365C /* exterior_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 439B4E2B1881B7AC0005365C /* exterior_02.jpg */; };
 		439B4E751881B7AC0005365C /* exterior_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 439B4E2C1881B7AC0005365C /* exterior_03.jpg */; };
@@ -177,7 +196,6 @@
 		43E57738187F706700B11E81 /* e_01_i_vtec.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E5769E187F706700B11E81 /* e_01_i_vtec.png */; };
 		43E57739187F706700B11E81 /* e_02_cvt.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E5769F187F706700B11E81 /* e_02_cvt.png */; };
 		43E5773A187F706700B11E81 /* e_03_e85.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576A0187F706700B11E81 /* e_03_e85.png */; };
-		43E5773B187F706700B11E81 /* e_04_paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576A1187F706700B11E81 /* e_04_paddle.png */; };
 		43E5773C187F706700B11E81 /* e_05_econ.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576A2187F706700B11E81 /* e_05_econ.png */; };
 		43E5773D187F706700B11E81 /* e_06_ecocoaching.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576A3187F706700B11E81 /* e_06_ecocoaching.png */; };
 		43E5773F187F706700B11E81 /* e_intro_word.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576A5187F706700B11E81 /* e_intro_word.png */; };
@@ -187,7 +205,6 @@
 		43E57743187F706700B11E81 /* e_01_i_vtec@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576AA187F706700B11E81 /* e_01_i_vtec@2x.png */; };
 		43E57744187F706700B11E81 /* e_02_cvt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576AB187F706700B11E81 /* e_02_cvt@2x.png */; };
 		43E57745187F706700B11E81 /* e_03_e85@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576AC187F706700B11E81 /* e_03_e85@2x.png */; };
-		43E57746187F706700B11E81 /* e_04_paddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576AD187F706700B11E81 /* e_04_paddle@2x.png */; };
 		43E57747187F706700B11E81 /* e_05_econ@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576AE187F706700B11E81 /* e_05_econ@2x.png */; };
 		43E57748187F706700B11E81 /* e_06_ecocoaching@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576AF187F706700B11E81 /* e_06_ecocoaching@2x.png */; };
 		43E5774A187F706700B11E81 /* e_intro_word@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E576B1187F706700B11E81 /* e_intro_word@2x.png */; };
@@ -453,6 +470,26 @@
 		436E1E98187DEF56003BB1E6 /* ButtonMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonMenu.m; sourceTree = "<group>"; };
 		436E1EDB187EEA45003BB1E6 /* DB HELVETHAICA X BD COND IT V3.2.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DB HELVETHAICA X BD COND IT V3.2.TTF"; sourceTree = "<group>"; };
 		4372C0D61881D212004855F2 /* intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = intro.mp3; sourceTree = "<group>"; };
+		439219D41889B074009FFB41 /* e_PaddleShift_coverhowto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_coverhowto.png; sourceTree = "<group>"; };
+		439219D51889B074009FFB41 /* e_PaddleShift_paddleshift_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_bg.png; sourceTree = "<group>"; };
+		439219D61889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_btnDown.png; sourceTree = "<group>"; };
+		439219D71889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_btnUp.png; sourceTree = "<group>"; };
+		439219D81889B074009FFB41 /* e_PaddleShift_paddleshift_speed1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_speed1.png; sourceTree = "<group>"; };
+		439219D91889B074009FFB41 /* e_PaddleShift_paddleshift_speed2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_speed2.png; sourceTree = "<group>"; };
+		439219DA1889B074009FFB41 /* e_PaddleShift_paddleshift_speed3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_speed3.png; sourceTree = "<group>"; };
+		439219DB1889B074009FFB41 /* e_PaddleShift_paddleshift_speed4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_speed4.png; sourceTree = "<group>"; };
+		439219DC1889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_PaddleShift_paddleshift_SteeringWheel.png; sourceTree = "<group>"; };
+		439219DE1889B074009FFB41 /* e_PaddleShift_coverhowto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_coverhowto@2x.png"; sourceTree = "<group>"; };
+		439219DF1889B074009FFB41 /* e_PaddleShift_paddleshift_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_bg@2x.png"; sourceTree = "<group>"; };
+		439219E01889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_btnDown@2x.png"; sourceTree = "<group>"; };
+		439219E11889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_btnUp@2x.png"; sourceTree = "<group>"; };
+		439219E21889B074009FFB41 /* e_PaddleShift_paddleshift_speed1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_speed1@2x.png"; sourceTree = "<group>"; };
+		439219E31889B074009FFB41 /* e_PaddleShift_paddleshift_speed2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_speed2@2x.png"; sourceTree = "<group>"; };
+		439219E41889B074009FFB41 /* e_PaddleShift_paddleshift_speed3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_speed3@2x.png"; sourceTree = "<group>"; };
+		439219E51889B074009FFB41 /* e_PaddleShift_paddleshift_speed4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_speed4@2x.png"; sourceTree = "<group>"; };
+		439219E61889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_SteeringWheel@2x.png"; sourceTree = "<group>"; };
+		439219FA1889B3F2009FFB41 /* ViewPaddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPaddle.h; sourceTree = "<group>"; };
+		439219FB1889B3F2009FFB41 /* ViewPaddle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPaddle.m; sourceTree = "<group>"; };
 		439B4E2A1881B7AC0005365C /* exterior_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exterior_01.jpg; sourceTree = "<group>"; };
 		439B4E2B1881B7AC0005365C /* exterior_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exterior_02.jpg; sourceTree = "<group>"; };
 		439B4E2C1881B7AC0005365C /* exterior_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exterior_03.jpg; sourceTree = "<group>"; };
@@ -599,7 +636,6 @@
 		43E5769E187F706700B11E81 /* e_01_i_vtec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_01_i_vtec.png; sourceTree = "<group>"; };
 		43E5769F187F706700B11E81 /* e_02_cvt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_02_cvt.png; sourceTree = "<group>"; };
 		43E576A0187F706700B11E81 /* e_03_e85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_03_e85.png; sourceTree = "<group>"; };
-		43E576A1187F706700B11E81 /* e_04_paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_04_paddle.png; sourceTree = "<group>"; };
 		43E576A2187F706700B11E81 /* e_05_econ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_05_econ.png; sourceTree = "<group>"; };
 		43E576A3187F706700B11E81 /* e_06_ecocoaching.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_06_ecocoaching.png; sourceTree = "<group>"; };
 		43E576A5187F706700B11E81 /* e_intro_word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = e_intro_word.png; sourceTree = "<group>"; };
@@ -609,7 +645,6 @@
 		43E576AA187F706700B11E81 /* e_01_i_vtec@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_01_i_vtec@2x.png"; sourceTree = "<group>"; };
 		43E576AB187F706700B11E81 /* e_02_cvt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_02_cvt@2x.png"; sourceTree = "<group>"; };
 		43E576AC187F706700B11E81 /* e_03_e85@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_03_e85@2x.png"; sourceTree = "<group>"; };
-		43E576AD187F706700B11E81 /* e_04_paddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_04_paddle@2x.png"; sourceTree = "<group>"; };
 		43E576AE187F706700B11E81 /* e_05_econ@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_05_econ@2x.png"; sourceTree = "<group>"; };
 		43E576AF187F706700B11E81 /* e_06_ecocoaching@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_06_ecocoaching@2x.png"; sourceTree = "<group>"; };
 		43E576B1187F706700B11E81 /* e_intro_word@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_intro_word@2x.png"; sourceTree = "<group>"; };
@@ -996,6 +1031,56 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		439219D21889B074009FFB41 /* E_PaddleShift */ = {
+			isa = PBXGroup;
+			children = (
+				439219D31889B074009FFB41 /* 1x */,
+				439219DD1889B074009FFB41 /* 2x */,
+			);
+			path = E_PaddleShift;
+			sourceTree = "<group>";
+		};
+		439219D31889B074009FFB41 /* 1x */ = {
+			isa = PBXGroup;
+			children = (
+				439219D41889B074009FFB41 /* e_PaddleShift_coverhowto.png */,
+				439219D51889B074009FFB41 /* e_PaddleShift_paddleshift_bg.png */,
+				439219D61889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown.png */,
+				439219D71889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp.png */,
+				439219D81889B074009FFB41 /* e_PaddleShift_paddleshift_speed1.png */,
+				439219D91889B074009FFB41 /* e_PaddleShift_paddleshift_speed2.png */,
+				439219DA1889B074009FFB41 /* e_PaddleShift_paddleshift_speed3.png */,
+				439219DB1889B074009FFB41 /* e_PaddleShift_paddleshift_speed4.png */,
+				439219DC1889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel.png */,
+			);
+			path = 1x;
+			sourceTree = "<group>";
+		};
+		439219DD1889B074009FFB41 /* 2x */ = {
+			isa = PBXGroup;
+			children = (
+				439219DE1889B074009FFB41 /* e_PaddleShift_coverhowto@2x.png */,
+				439219DF1889B074009FFB41 /* e_PaddleShift_paddleshift_bg@2x.png */,
+				439219E01889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown@2x.png */,
+				439219E11889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp@2x.png */,
+				439219E21889B074009FFB41 /* e_PaddleShift_paddleshift_speed1@2x.png */,
+				439219E31889B074009FFB41 /* e_PaddleShift_paddleshift_speed2@2x.png */,
+				439219E41889B074009FFB41 /* e_PaddleShift_paddleshift_speed3@2x.png */,
+				439219E51889B074009FFB41 /* e_PaddleShift_paddleshift_speed4@2x.png */,
+				439219E61889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel@2x.png */,
+			);
+			path = 2x;
+			sourceTree = "<group>";
+		};
+		439219F91889B3DC009FFB41 /* ViewPaddle */ = {
+			isa = PBXGroup;
+			children = (
+				439219FA1889B3F2009FFB41 /* ViewPaddle.h */,
+				439219FB1889B3F2009FFB41 /* ViewPaddle.m */,
+			);
+			path = ViewPaddle;
+			sourceTree = "<group>";
+		};
 		439B4E281881B7AC0005365C /* B_Exterior */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,6 +1234,7 @@
 			children = (
 				43CE9CA81871CFD600AAD780 /* ViewE.h */,
 				43CE9CA91871CFD600AAD780 /* ViewE.m */,
+				439219F91889B3DC009FFB41 /* ViewPaddle */,
 				43E57672187F4DE800B11E81 /* ViewE85 */,
 			);
 			path = ViewE;
@@ -1421,6 +1507,7 @@
 		43E5769C187F706700B11E81 /* E */ = {
 			isa = PBXGroup;
 			children = (
+				439219D21889B074009FFB41 /* E_PaddleShift */,
 				43E5769D187F706700B11E81 /* 1x */,
 				43E576A9187F706700B11E81 /* 2x */,
 			);
@@ -1433,7 +1520,6 @@
 				43E5769E187F706700B11E81 /* e_01_i_vtec.png */,
 				43E5769F187F706700B11E81 /* e_02_cvt.png */,
 				43E576A0187F706700B11E81 /* e_03_e85.png */,
-				43E576A1187F706700B11E81 /* e_04_paddle.png */,
 				43E576A2187F706700B11E81 /* e_05_econ.png */,
 				43E576A3187F706700B11E81 /* e_06_ecocoaching.png */,
 				43E576A5187F706700B11E81 /* e_intro_word.png */,
@@ -1450,7 +1536,6 @@
 				43E576AA187F706700B11E81 /* e_01_i_vtec@2x.png */,
 				43E576AB187F706700B11E81 /* e_02_cvt@2x.png */,
 				43E576AC187F706700B11E81 /* e_03_e85@2x.png */,
-				43E576AD187F706700B11E81 /* e_04_paddle@2x.png */,
 				43E576AE187F706700B11E81 /* e_05_econ@2x.png */,
 				43E576AF187F706700B11E81 /* e_06_ecocoaching@2x.png */,
 				43E576B1187F706700B11E81 /* e_intro_word@2x.png */,
@@ -2021,6 +2106,7 @@
 				43E57783187F706700B11E81 /* t_04_advanced.png in Resources */,
 				439B4E8D1881B7AC0005365C /* exterior_27.jpg in Resources */,
 				4302C22C18872E7A005223D8 /* 02-B-Interior-popup-06.jpg in Resources */,
+				439219F21889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown@2x.png in Resources */,
 				43E5779D187F706700B11E81 /* t_landing_h2@2x.png in Resources */,
 				43E57756187F706700B11E81 /* intro_logo_best@2x.png in Resources */,
 				4302C22B18872E7A005223D8 /* 02-B-Interior-popup-05.jpg in Resources */,
@@ -2033,17 +2119,20 @@
 				43EC8CDA18846B81007585A3 /* colorbody_car_07_text.png in Resources */,
 				43EC8C6118844BCD007585A3 /* s_02_abs.png in Resources */,
 				4302C1F318872975005223D8 /* detail_bg@2x.jpg in Resources */,
+				439219EB1889B074009FFB41 /* e_PaddleShift_paddleshift_speed1.png in Resources */,
 				439B4E7B1881B7AC0005365C /* exterior_09.jpg in Resources */,
 				43E57792187F706700B11E81 /* t_04_advanced@2x.png in Resources */,
 				43EC8CD318846B81007585A3 /* colorbody_car_04.png in Resources */,
 				43E57752187F706700B11E81 /* intro_bg.jpg in Resources */,
 				439B4E941881B7AC0005365C /* exterior_34.jpg in Resources */,
 				43EC8CD918846B81007585A3 /* colorbody_car_07.png in Resources */,
+				439219F71889B074009FFB41 /* e_PaddleShift_paddleshift_speed4@2x.png in Resources */,
 				43EC8C7318844BCD007585A3 /* s_06-2_camera@2x.png in Resources */,
 				43E57754187F706700B11E81 /* intro_logo_city.png in Resources */,
 				43EC8D951885BE97007585A3 /* gradelevel_txt_02@2x.png in Resources */,
 				439B4E741881B7AC0005365C /* exterior_02.jpg in Resources */,
 				43EC8C6018844BCD007585A3 /* s_01_sidesrs_active.png in Resources */,
+				439219E91889B074009FFB41 /* e_PaddleShift_paddleshift_btnDown.png in Resources */,
 				43E57794187F706700B11E81 /* t_06_hdmi@2x.png in Resources */,
 				43E577D9187FA32100B11E81 /* interior_4@2x.jpg in Resources */,
 				4302C22118872E7A005223D8 /* B-Exterior-popup_03.jpg in Resources */,
@@ -2055,7 +2144,6 @@
 				439B4E9D1881B7AC0005365C /* exterior_07@2x.jpg in Resources */,
 				43E5773D187F706700B11E81 /* e_06_ecocoaching.png in Resources */,
 				43E577D3187FA32100B11E81 /* interior_4.jpg in Resources */,
-				43E5773B187F706700B11E81 /* e_04_paddle.png in Resources */,
 				43EC8C6C18844BCD007585A3 /* s_landing_h2.png in Resources */,
 				43EC8D941885BE97007585A3 /* gradelevel_txt_01@2x.png in Resources */,
 				43EC8D851885BE97007585A3 /* gradelevel_txt_03.png in Resources */,
@@ -2094,7 +2182,9 @@
 				43E57742187F706700B11E81 /* e_landing_h2.png in Resources */,
 				439B4E8E1881B7AC0005365C /* exterior_28.jpg in Resources */,
 				43E5773F187F706700B11E81 /* e_intro_word.png in Resources */,
+				439219E71889B074009FFB41 /* e_PaddleShift_coverhowto.png in Resources */,
 				43E57781187F706700B11E81 /* t_02_light.png in Resources */,
+				439219F61889B074009FFB41 /* e_PaddleShift_paddleshift_speed3@2x.png in Resources */,
 				43E5778C187F706700B11E81 /* t_landing_bg.jpg in Resources */,
 				43E57799187F706700B11E81 /* t_11_navigation@2x.png in Resources */,
 				4302C1EC18872975005223D8 /* detail_bg.jpg in Resources */,
@@ -2108,6 +2198,7 @@
 				4302C1F518872975005223D8 /* popup_bg_blue@2x.png in Resources */,
 				43EC8D8E1885BE97007585A3 /* gradelevel_detail_01@2x.png in Resources */,
 				439B4E9E1881B7AC0005365C /* exterior_08@2x.jpg in Resources */,
+				439219ED1889B074009FFB41 /* e_PaddleShift_paddleshift_speed3.png in Resources */,
 				4302C22818872E7A005223D8 /* 02-B-Interior-popup-02.jpg in Resources */,
 				43EC8DAC1885C0A8007585A3 /* landing_logo.png in Resources */,
 				4302C23018872E7A005223D8 /* 02-B-Interior-popup-02@2x.jpg in Resources */,
@@ -2188,7 +2279,6 @@
 				439B4EA31881B7AC0005365C /* exterior_13@2x.jpg in Resources */,
 				43E57797187F706700B11E81 /* t_09_ipod@2x.png in Resources */,
 				43EC8CDB18846B81007585A3 /* colorbody_nav_background.png in Resources */,
-				43E57746187F706700B11E81 /* e_04_paddle@2x.png in Resources */,
 				4302C23418872E7A005223D8 /* 02-B-Interior-popup-06@2x.jpg in Resources */,
 				4302C1F618872975005223D8 /* popup_btn_close@2x.png in Resources */,
 				43EC8CF818846B81007585A3 /* colorbody_nav_btn_03@2x.png in Resources */,
@@ -2202,6 +2292,7 @@
 				43EC8D7A1885BE97007585A3 /* gradelevel_car_03.png in Resources */,
 				43E57721187F706700B11E81 /* b_btn_360ex_1.png in Resources */,
 				439B4EAB1881B7AC0005365C /* exterior_21@2x.jpg in Resources */,
+				439219EF1889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel.png in Resources */,
 				43E5779C187F706700B11E81 /* t_landing_h1@2x.png in Resources */,
 				43EC8C7618844BCD007585A3 /* s_08_isofix@2x.png in Resources */,
 				43E57744187F706700B11E81 /* e_02_cvt@2x.png in Resources */,
@@ -2213,6 +2304,7 @@
 				439B4EAA1881B7AC0005365C /* exterior_20@2x.jpg in Resources */,
 				4302C22718872E7A005223D8 /* 02-B-Interior-popup-01.jpg in Resources */,
 				43D63DEF186F4C310070530E /* InfoPlist.strings in Resources */,
+				439219F51889B074009FFB41 /* e_PaddleShift_paddleshift_speed2@2x.png in Resources */,
 				439B4E851881B7AC0005365C /* exterior_19.jpg in Resources */,
 				43E5779A187F706700B11E81 /* t_intro_word@2x.png in Resources */,
 				43EC8C6A18844BCD007585A3 /* s_landing_bg.jpg in Resources */,
@@ -2230,6 +2322,7 @@
 				439B4E931881B7AC0005365C /* exterior_33.jpg in Resources */,
 				43EC8CE518846B81007585A3 /* colorbody_text.png in Resources */,
 				43E57728187F706700B11E81 /* b_landing_h2.png in Resources */,
+				439219F81889B074009FFB41 /* e_PaddleShift_paddleshift_SteeringWheel@2x.png in Resources */,
 				439B4E781881B7AC0005365C /* exterior_06.jpg in Resources */,
 				439B4E981881B7AC0005365C /* exterior_02@2x.jpg in Resources */,
 				43EC8CE918846B81007585A3 /* colorbody_car_02@2x.png in Resources */,
@@ -2243,6 +2336,7 @@
 				43E57780187F706700B11E81 /* t_01_smartkey.png in Resources */,
 				439B4EAD1881B7AC0005365C /* exterior_23@2x.jpg in Resources */,
 				4302C1ED18872975005223D8 /* logo_top_left.png in Resources */,
+				439219EA1889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp.png in Resources */,
 				43E577D8187FA32100B11E81 /* interior_3@2x.jpg in Resources */,
 				43E5774B187F706700B11E81 /* e_landing_bg@2x.jpg in Resources */,
 				439B4E9A1881B7AC0005365C /* exterior_04@2x.jpg in Resources */,
@@ -2263,6 +2357,7 @@
 				439B4EB51881B7AC0005365C /* exterior_31@2x.jpg in Resources */,
 				43EC8DAB1885C0A8007585A3 /* landing_bg.jpg in Resources */,
 				439B4E871881B7AC0005365C /* exterior_21.jpg in Resources */,
+				439219F11889B074009FFB41 /* e_PaddleShift_paddleshift_bg@2x.png in Resources */,
 				43E577D5187FA32100B11E81 /* interior_0@2x.jpg in Resources */,
 				4302C23518872E7A005223D8 /* 02-B-Interior-popup-07@2x.jpg in Resources */,
 				43EC8C7118844BCD007585A3 /* s_04_ess@2x.png in Resources */,
@@ -2279,6 +2374,7 @@
 				439B4EA41881B7AC0005365C /* exterior_14@2x.jpg in Resources */,
 				439B4EA81881B7AC0005365C /* exterior_18@2x.jpg in Resources */,
 				439B4E7E1881B7AC0005365C /* exterior_12.jpg in Resources */,
+				439219E81889B074009FFB41 /* e_PaddleShift_paddleshift_bg.png in Resources */,
 				439B4E801881B7AC0005365C /* exterior_14.jpg in Resources */,
 				43E57750187F706700B11E81 /* btn_switch@2x.png in Resources */,
 				43EC8C6618844BCD007585A3 /* s_06_camera.png in Resources */,
@@ -2286,6 +2382,7 @@
 				43EC8C7718844BCD007585A3 /* s_intro_word@2x.png in Resources */,
 				4302C23218872E7A005223D8 /* 02-B-Interior-popup-04@2x.jpg in Resources */,
 				439B4EA21881B7AC0005365C /* exterior_12@2x.jpg in Resources */,
+				439219EC1889B074009FFB41 /* e_PaddleShift_paddleshift_speed2.png in Resources */,
 				439B4E8C1881B7AC0005365C /* exterior_26.jpg in Resources */,
 				439B4E831881B7AC0005365C /* exterior_17.jpg in Resources */,
 				43EC8CEB18846B81007585A3 /* colorbody_car_03@2x.png in Resources */,
@@ -2296,6 +2393,7 @@
 				43E577D2187FA32100B11E81 /* interior_3.jpg in Resources */,
 				43E57790187F706700B11E81 /* t_02_light@2x.png in Resources */,
 				43E57726187F706700B11E81 /* b_landing_bg.jpg in Resources */,
+				439219F01889B074009FFB41 /* e_PaddleShift_coverhowto@2x.png in Resources */,
 				43E5774A187F706700B11E81 /* e_intro_word@2x.png in Resources */,
 				43EC8C7818844BCD007585A3 /* s_landing_bg@2x.jpg in Resources */,
 				43EC8C6D18844BCD007585A3 /* s_01_sidesrs@2x.png in Resources */,
@@ -2309,6 +2407,7 @@
 				43EC8DAE1885C0A8007585A3 /* landing_nav_btn_bodycolor.png in Resources */,
 				439B4EA71881B7AC0005365C /* exterior_17@2x.jpg in Resources */,
 				43EC8D901885BE97007585A3 /* gradelevel_detail_03@2x.png in Resources */,
+				439219F31889B074009FFB41 /* e_PaddleShift_paddleshift_btnUp@2x.png in Resources */,
 				439B4E771881B7AC0005365C /* exterior_05.jpg in Resources */,
 				43EC8DB21885C0A8007585A3 /* landing_nav_btn_videogallery.png in Resources */,
 				43E5778F187F706700B11E81 /* t_01_smartkey@2x.png in Resources */,
@@ -2333,6 +2432,7 @@
 				43E57723187F706700B11E81 /* b_btn_information.png in Resources */,
 				43E57785187F706700B11E81 /* t_06_hdmi.png in Resources */,
 				439B4E7F1881B7AC0005365C /* exterior_13.jpg in Resources */,
+				439219EE1889B074009FFB41 /* e_PaddleShift_paddleshift_speed4.png in Resources */,
 				43EC8C6918844BCD007585A3 /* s_intro_word.png in Resources */,
 				43EC8C7A18844BCD007585A3 /* s_landing_h2@2x.png in Resources */,
 				439B4E861881B7AC0005365C /* exterior_20.jpg in Resources */,
@@ -2354,6 +2454,7 @@
 				43EC8D7C1885BE97007585A3 /* gradelevel_colorbody_background.jpg in Resources */,
 				439B4EBA1881B7AC0005365C /* exterior_36@2x.jpg in Resources */,
 				43E57741187F706700B11E81 /* e_landing_h1.png in Resources */,
+				439219F41889B074009FFB41 /* e_PaddleShift_paddleshift_speed1@2x.png in Resources */,
 				439B4EB81881B7AC0005365C /* exterior_34@2x.jpg in Resources */,
 				439B4E7D1881B7AC0005365C /* exterior_11.jpg in Resources */,
 				43E5774D187F706700B11E81 /* e_landing_h2@2x.png in Resources */,
@@ -2411,6 +2512,7 @@
 				436E1E99187DEF56003BB1E6 /* ButtonMenu.m in Sources */,
 				43EC8D50188488BE007585A3 /* CellGradeLevel.m in Sources */,
 				43D63DF1186F4C310070530E /* main.m in Sources */,
+				439219FC1889B3F2009FFB41 /* ViewPaddle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2554,7 +2656,7 @@
 				GCC_PREFIX_HEADER = "HondaBest/HondaBest-Prefix.pch";
 				INFOPLIST_FILE = "HondaBest/HondaBest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8118B675-B796-496F-925C-FC9AD57FA07C";
+				PROVISIONING_PROFILE = "AF60E47A-8310-4EA8-B849-D1335A227661";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -2570,7 +2672,7 @@
 				GCC_PREFIX_HEADER = "HondaBest/HondaBest-Prefix.pch";
 				INFOPLIST_FILE = "HondaBest/HondaBest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8118B675-B796-496F-925C-FC9AD57FA07C";
+				PROVISIONING_PROFILE = "AF60E47A-8310-4EA8-B849-D1335A227661";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};

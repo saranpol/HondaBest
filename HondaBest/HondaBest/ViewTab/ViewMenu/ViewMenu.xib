@@ -144,8 +144,8 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-gS-TKL" customClass="ButtonMenu">
                             <rect key="frame" x="324" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <state key="normal" title="Paddle\nshift" backgroundImage="menu_bg.png">
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <state key="normal" title="  7-speed\nPaddle\nShift" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -160,7 +160,7 @@
                             <rect key="frame" x="405" y="0.0" width="113" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <state key="normal" title="E CON" backgroundImage="menu_bg.png">
+                            <state key="normal" title="ECON\nMode" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -175,7 +175,7 @@
                             <rect key="frame" x="486" y="0.0" width="126" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <state key="normal" title="Eco\ncoaching" backgroundImage="menu_bg.png">
+                            <state key="normal" title="ECO\nCoaching" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -207,9 +207,9 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Lw-h3-iEL" customClass="ButtonMenu">
                             <rect key="frame" x="81" y="0.0" width="137" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
                             <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
-                            <state key="normal" title="SIDE SRS\n&amp;\nSIDE CURTAIN" backgroundImage="menu_bg.png">
+                            <state key="normal" title="  6-position\nAirbags" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -239,7 +239,7 @@
                             <rect key="frame" x="270" y="0.0" width="116" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <state key="normal" title="ESS &amp;\nHill Start\nassist" backgroundImage="menu_bg.png">
+                            <state key="normal" title="ESS &amp;\nHill Start\nAssist" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -253,8 +253,8 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-db-c7M" customClass="ButtonMenu">
                             <rect key="frame" x="354" y="0.0" width="110" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <state key="normal" title="กล้อง\nส่องภาพ\nด้านหลัง" backgroundImage="menu_bg.png">
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <state key="normal" title="   Multi-angle\nRearview\nCamera" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -284,7 +284,7 @@
                             <rect key="frame" x="509" y="0.0" width="118" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                            <state key="normal" title="ISOFIX/\nChild\nAnchor" backgroundImage="menu_bg.png">
+                            <state key="normal" title="  ISOFIX &amp;\nChild\nAnchor" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -333,8 +333,8 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tb5-A2-WZv" customClass="ButtonMenu">
                             <rect key="frame" x="154" y="0.0" width="100" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <state key="normal" title="Smart\nKey" backgroundImage="menu_bg.png">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="  Honda\nSmart\n      Key       .\nSystem   ." backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -364,7 +364,7 @@
                             <rect key="frame" x="314" y="0.0" width="186" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <state key="normal" title="One push\nignition system" backgroundImage="menu_bg.png">
+                            <state key="normal" title="One Push\nIgnition System" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
@@ -378,9 +378,9 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9S-YH-cks" customClass="ButtonMenu">
                             <rect key="frame" x="468" y="0.0" width="133" height="74"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                            <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" title="Advanced\nTouch" backgroundImage="menu_bg.png">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="9" maxY="0.0"/>
+                            <state key="normal" title="     ระบบเครื่องเสียง\n   หน้าจอสัมผัสแบบ\nAdvanced Touch" backgroundImage="menu_bg.png">
                                 <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
