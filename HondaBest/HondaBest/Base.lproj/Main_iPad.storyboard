@@ -216,6 +216,102 @@
             </objects>
             <point key="canvasLocation" x="2634" y="30"/>
         </scene>
+        <!--View Spec-->
+        <scene sceneID="Q7J-y0-LiW">
+            <objects>
+                <viewController id="KRo-gt-qgR" customClass="ViewSpec" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ruV-LB-fbS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vgb-Fa-mkf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xa4-XJ-1Cv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Hr-fs-fxX">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39k-Xz-GPL">
+                                <rect key="frame" x="17" y="16" width="69" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="spec_dtandard_b_back.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBack:" destination="KRo-gt-qgR" eventType="touchUpInside" id="8xl-Nj-rl2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxO-Gx-1sG">
+                                <rect key="frame" x="78" y="43" width="260" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="spec_dtandard_b_spec_a.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="spec_dtandard_b_spec.png"/>
+                                <connections>
+                                    <action selector="clickButton0:" destination="KRo-gt-qgR" eventType="touchUpInside" id="DeW-LX-4jb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93x-Rj-Gfa">
+                                <rect key="frame" x="321" y="43" width="331" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="spec_dtandard_b_standard_a.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="spec_dtandard_b_standard.png"/>
+                                <connections>
+                                    <action selector="clickButton1:" destination="KRo-gt-qgR" eventType="touchUpInside" id="iUr-hp-I6L"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="6aQ-k6-VsI">
+                                <rect key="frame" x="757" y="42" width="231" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-fB-t2r">
+                                <rect key="frame" x="78" y="125" width="900" height="643"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_spec_detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="axF-yf-oYM">
+                                        <rect key="frame" x="13" y="0.0" width="833" height="1014"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_spec_f.png" translatesAutoresizingMaskIntoConstraints="NO" id="PIv-pr-Ssc">
+                                <rect key="frame" x="78" y="125" width="873" height="47"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7G-pd-8Cy">
+                                <rect key="frame" x="78" y="171" width="900" height="597"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_b_standard_detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="xVN-1N-A3P">
+                                        <rect key="frame" x="0.0" y="0.0" width="873" height="904"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_bg_f.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-5c-Xxv">
+                                <rect key="frame" x="0.0" y="708" width="1024" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="mButton0" destination="kxO-Gx-1sG" id="K6k-T0-eC0"/>
+                        <outlet property="mButton1" destination="93x-Rj-Gfa" id="Imu-K3-HU3"/>
+                        <outlet property="mImage1" destination="PIv-pr-Ssc" id="pR1-fn-G3W"/>
+                        <outlet property="mScrollView0" destination="OOL-fB-t2r" id="SUH-lk-r2F"/>
+                        <outlet property="mScrollView1" destination="U7G-pd-8Cy" id="4I2-jT-1oW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nE4-zr-4pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="-1874"/>
+        </scene>
         <!--View Grade Level-->
         <scene sceneID="mHw-we-Awz">
             <objects>
@@ -472,6 +568,9 @@
                                         <state key="normal" image="landing_nav_btn_spec_equip.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="KRo-gt-qgR" kind="modal" modalTransitionStyle="crossDissolve" id="8Ou-sk-Jap"/>
+                                        </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-9i-MXQ">
                                         <rect key="frame" x="944" y="0.0" width="79" height="42"/>
@@ -565,11 +664,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-3d-6hx">
-                                        <rect key="frame" x="61" y="468" width="148" height="101"/>
+                                        <rect key="frame" x="22" y="533" width="148" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8mC-ZB-3JN">
-                                        <rect key="frame" x="763" y="252" width="170" height="109"/>
+                                        <rect key="frame" x="787" y="153" width="170" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-qI-h2t">
@@ -676,12 +775,23 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRA-Zx-t33">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="s_cover_airbag.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButtonGuide:" destination="VIH-mJ-V1h" eventType="touchUpInside" id="3UO-br-ced"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="SideRSR" id="fG3-kR-EMS"/>
                     <connections>
+                        <outlet property="mButtonGuide" destination="tRA-Zx-t33" id="xN4-hS-kc6"/>
                         <outlet property="mImageRSR" destination="VY0-xl-gbm" id="u3l-A6-Ry7"/>
                     </connections>
                 </viewController>
@@ -1325,7 +1435,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-TB-9kX">
                                 <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">ECON Mode เป็นระบบที่ช่วยลดการใช้พลังงานที่สิ้นเปลือง โดยระบบจะปรับการทำงานของเครื่องยนต์  ลิ้นปีกผีเสื้อ และ ระบบเกียร์ให้ทำงานสัมพันธ์กันในขณะรถวิ่ง นอกจากนั้นระบบจะปรับการทำงานของระบบปรับอากาศ และการหมุนเวียนอากาศภายในห้องโดยสาร ให้เหมาะสมกับอุณหภูมิภายนอกรถ ซึ่งการทำงานของ ECON Mode นั้นจะช่วยควบคุมเครื่องยนต์ ให้ใช้พลังงานอย่างมีประสิทธิภาพมากที่สุด </mutableString>
+                                <string key="text">ECON Mode เป็นระบบที่ช่วยลดการใช้พลังงานที่สิ้นเปลือง โดยระบบจะปรับการทำงานของเครื่องยนต์  ลิ้นปีกผีเสื้อ และ ระบบเกียร์ให้ทำงานสัมพันธ์กันในขณะรถวิ่ง นอกจากนั้นระบบจะปรับการทำงานของระบบปรับอากาศ และการหมุนเวียนอากาศภายในห้องโดยสาร ให้เหมาะสมกับอุณหภูมิภายนอกรถ ซึ่งการทำงานของ ECON Mode นั้นจะช่วยควบคุมเครื่องยนต์ ให้ใช้พลังงานอย่างมีประสิทธิภาพมากที่สุด </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -1356,7 +1466,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="detail_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-Oe-5AK">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-9P-0wT">
+                                <rect key="frame" x="116" y="144" width="787" height="318"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_speed1.png" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-nx-IAz">
+                                <rect key="frame" x="187" y="-47" width="498" height="487"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_SteeringWheel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-mG-mUY">
+                                <rect key="frame" x="92" y="135" width="835" height="336"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_mark.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-Oe-5AK">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -1369,18 +1491,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-9P-0wT">
-                                <rect key="frame" x="119" y="139" width="785" height="317"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_speed1.png" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-nx-IAz">
-                                <rect key="frame" x="187" y="-47" width="498" height="487"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_SteeringWheel.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-mG-mUY">
-                                <rect key="frame" x="97" y="130" width="831" height="334"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN3-lo-idf">
                                 <rect key="frame" x="293" y="380" width="137" height="137"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1914,6 +2024,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_PaddleShift_paddleshift_bg.png" width="787" height="318"/>
         <image name="e_PaddleShift_paddleshift_btnDown.png" width="137" height="137"/>
         <image name="e_PaddleShift_paddleshift_btnUp.png" width="137" height="137"/>
+        <image name="e_PaddleShift_paddleshift_mark.png" width="1024" height="768"/>
         <image name="e_PaddleShift_paddleshift_speed1.png" width="498" height="487"/>
         <image name="e_intro_word.png" width="532" height="76"/>
         <image name="e_landing_bg.jpg" width="1895" height="768"/>
@@ -1951,10 +2062,20 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="s_06_camera.png" width="832" height="335"/>
         <image name="s_07_g-force.png" width="832" height="335"/>
         <image name="s_08_isofix.png" width="832" height="335"/>
+        <image name="s_cover_airbag.png" width="1024" height="768"/>
         <image name="s_intro_word.png" width="606" height="76"/>
         <image name="s_landing_bg.jpg" width="1866" height="768"/>
         <image name="s_landing_h1.png" width="358" height="46"/>
         <image name="s_landing_h2.png" width="846" height="109"/>
+        <image name="spec_dtandard_b_back.png" width="69" height="26"/>
+        <image name="spec_dtandard_b_spec.png" width="260" height="64"/>
+        <image name="spec_dtandard_b_spec_a.png" width="260" height="61"/>
+        <image name="spec_dtandard_b_standard.png" width="330" height="63"/>
+        <image name="spec_dtandard_b_standard_a.png" width="331" height="61"/>
+        <image name="spec_dtandard_b_standard_detail.png" width="873" height="904"/>
+        <image name="spec_dtandard_bg_f.png" width="1024" height="60"/>
+        <image name="spec_dtandard_spec_detail.png" width="833" height="1014"/>
+        <image name="spec_dtandard_spec_f.png" width="873" height="47"/>
         <image name="t_01_smartkey.png" width="832" height="335"/>
         <image name="t_02_light.png" width="832" height="335"/>
         <image name="t_03_start.png" width="832" height="335"/>

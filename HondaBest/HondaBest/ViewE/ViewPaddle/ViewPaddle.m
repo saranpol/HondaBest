@@ -14,7 +14,7 @@
 @synthesize mButtonLeft;
 @synthesize mButtonRight;
 @synthesize mImageSpeed;
-
+@synthesize mCountGear;
 
 #define PADDLE_GUIDE_SHOWN @"PADDLE_GUIDE_SHOWN"
 
@@ -77,12 +77,38 @@
     }];
 }
 
+- (void)updateGear {
+    switch (mCountGear) {
+        case 0:
+        case 1:
+            [mImageSpeed setImage:[UIImage imageNamed:@"e_PaddleShift_paddleshift_speed1.png"]];
+            break;
+        case 2:
+        case 3:
+            [mImageSpeed setImage:[UIImage imageNamed:@"e_PaddleShift_paddleshift_speed2.png"]];
+            break;
+        case 4:
+        case 5:
+            [mImageSpeed setImage:[UIImage imageNamed:@"e_PaddleShift_paddleshift_speed3.png"]];
+            break;
+        case 6:
+            [mImageSpeed setImage:[UIImage imageNamed:@"e_PaddleShift_paddleshift_speed4.png"]];
+            break;
+    }
+}
+
 - (IBAction)clickButtonLeft:(id)sender {
-    
+    mCountGear--;
+    if(mCountGear<0)
+        mCountGear = 0;
+    [self updateGear];
 }
 
 - (IBAction)clickButtonRight:(id)sender {
-    
+    mCountGear++;
+    if(mCountGear>6)
+        mCountGear = 6;
+    [self updateGear];
 }
 
 

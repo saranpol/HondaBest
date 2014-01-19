@@ -11,5 +11,8 @@
 @interface ViewRSR : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIImageView *mImageRSR;
+@property (nonatomic, weak) IBOutlet UIButton *mButtonGuide;
+
+- (IBAction)clickButtonGuide:(id)sender;
 
 @end

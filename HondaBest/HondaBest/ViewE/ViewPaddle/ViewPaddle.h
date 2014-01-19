@@ -14,6 +14,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *mButtonLeft;
 @property (nonatomic, weak) IBOutlet UIButton *mButtonRight;
 @property (nonatomic, weak) IBOutlet UIImageView *mImageSpeed;
+@property (nonatomic, assign) NSInteger mCountGear;
 
 
 - (IBAction)clickButtonGuide:(id)sender;

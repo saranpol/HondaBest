@@ -11,6 +11,7 @@
 @implementation ViewRSR
 
 @synthesize mImageRSR;
+@synthesize mButtonGuide;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,10 +22,18 @@
     return self;
 }
 
+#define RSR_GUIDE_SHOWN @"RSR_GUIDE_SHOWN"
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if([userDefaults objectForKey:RSR_GUIDE_SHOWN])
+        [mButtonGuide setHidden:YES];
+    else
+        [mButtonGuide setHidden:NO];
 }
 
 
@@ -52,6 +61,9 @@
     if ( event.subtype == UIEventSubtypeMotionShake )
     {
         // Put in code here to handle shake
+        if(![mButtonGuide isHidden]){
+            [self clickButtonGuide:nil];
+        }
         [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs_active.png"]];
     }
     
@@ -62,5 +74,17 @@
 - (BOOL)canBecomeFirstResponder {
     return YES;
 }
+
+- (IBAction)clickButtonGuide:(id)sender {
+    [UIView animateWithDuration:0.3 animations:^{
+        [mButtonGuide setAlpha:0];
+    }completion:^(BOOL finished){
+        [mButtonGuide setHidden:YES];
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:[NSNumber numberWithInt:1] forKey:RSR_GUIDE_SHOWN];
+        [userDefaults synchronize];
+    }];
+}
+
 
 @end
