@@ -10,6 +10,8 @@
 
 @implementation CellFeature
 
+@synthesize mPlayer;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -27,5 +29,25 @@
     // Drawing code
 }
 */
+
+- (void)setupVideo:(NSString*)video {
+    if(mPlayer && mPlayer.view.superview)
+        [mPlayer.view removeFromSuperview];
+    NSString *path = [[NSBundle mainBundle] pathForResource:video ofType:@"mp4"];
+    self.mPlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
+    self.mPlayer.view.frame = self.mImageFeature.frame;
+    [self addSubview:mPlayer.view];
+    [mPlayer setControlStyle:MPMovieControlStyleNone];
+    [mPlayer setRepeatMode:MPMovieRepeatModeOne];
+    [mPlayer play];
+    [mPlayer.view setAlpha:0.0];
+    [UIView animateWithDuration:0.3
+                          delay:1.0
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [mPlayer.view setAlpha:1.0];
+                     }completion:nil];
+}
+
 
 @end

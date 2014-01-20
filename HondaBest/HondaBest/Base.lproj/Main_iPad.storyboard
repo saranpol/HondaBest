@@ -811,22 +811,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="719"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tRr-u2-Sr0">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="detail_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="v3F-lA-vdS">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="Idt-jg-svj">
-                                <rect key="frame" x="760" y="23" width="231" height="65"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_00_total.png" translatesAutoresizingMaskIntoConstraints="NO" id="6vt-IQ-Ehr">
+                                <rect key="frame" x="96" y="130" width="832" height="335"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="dH4-7C-ZGo">
-                                <rect key="frame" x="70" y="493" width="573" height="47"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-R5-MQs">
-                                <rect key="frame" x="70" y="553" width="634" height="90"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="พวงมาลัยแบบมัลติฟังก์ชั่น ควบคุมทุกสิ่งได้ดั่งใจเพียงปลายนิ้ว  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-vy-lE7">
+                                <rect key="frame" x="75" y="478" width="875" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -1169,7 +1168,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_02_abs.png" translatesAutoresizingMaskIntoConstraints="NO" id="etZ-bO-f4l">
-                                                    <rect key="frame" x="96" y="130" width="832" height="335"/>
+                                                    <rect key="frame" x="105" y="130" width="832" height="335"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="DxL-xF-svQ">
@@ -1554,7 +1553,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_07_g-force.png" translatesAutoresizingMaskIntoConstraints="NO" id="oGq-ak-Eln">
-                                <rect key="frame" x="96" y="130" width="832" height="335"/>
+                                <rect key="frame" x="97" y="130" width="830" height="334"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="lrp-0n-dfT">
@@ -2060,7 +2059,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="s_02_abs.png" width="832" height="335"/>
         <image name="s_06-2_camera.png" width="408" height="73"/>
         <image name="s_06_camera.png" width="832" height="335"/>
-        <image name="s_07_g-force.png" width="832" height="335"/>
+        <image name="s_07_g-force.png" width="830" height="334"/>
         <image name="s_08_isofix.png" width="832" height="335"/>
         <image name="s_cover_airbag.png" width="1024" height="768"/>
         <image name="s_intro_word.png" width="606" height="76"/>
@@ -2076,6 +2075,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="spec_dtandard_bg_f.png" width="1024" height="60"/>
         <image name="spec_dtandard_spec_detail.png" width="833" height="1014"/>
         <image name="spec_dtandard_spec_f.png" width="873" height="47"/>
+        <image name="t_00_total.png" width="832" height="335"/>
         <image name="t_01_smartkey.png" width="832" height="335"/>
         <image name="t_02_light.png" width="832" height="335"/>
         <image name="t_03_start.png" width="832" height="335"/>

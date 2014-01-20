@@ -34,8 +34,8 @@ static HBViewController *instance;
 }
 
 - (IBAction)clickStart:(id)sender {
-    self.mSoundStart = [[SoundEffect alloc] initWithSoundNamed:@"sound_start_engine.mp3"];
-    [mSoundStart play];
+//    self.mSoundStart = [[SoundEffect alloc] initWithSoundNamed:@"sound_start_engine.mp3"];
+//    [mSoundStart play];
 }
 
 - (AVAudioPlayer*)loadAVAudioPlayer:(NSString*)name {

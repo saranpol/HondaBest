@@ -32,11 +32,17 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    if([userDefaults objectForKey:PADDLE_GUIDE_SHOWN])
-        [mButtonGuide setHidden:YES];
-    else
-        [mButtonGuide setHidden:NO];
+//    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+//    if([userDefaults objectForKey:PADDLE_GUIDE_SHOWN])
+//        [mButtonGuide setHidden:YES];
+//    else
+//        [mButtonGuide setHidden:NO];
+
+    
+    // Disable
+    [mButtonGuide setHidden:YES];
+    [mButtonLeft setUserInteractionEnabled:NO];
+    [mButtonRight setUserInteractionEnabled:NO];
     
 }
 

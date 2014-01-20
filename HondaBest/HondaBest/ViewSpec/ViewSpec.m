@@ -41,7 +41,7 @@
     s0.height = 1100;
     [mScrollView0 setContentSize:s0];
     CGSize s1 = mScrollView1.frame.size;
-    s1.height = 1400;
+    s1.height = 1000;
     [mScrollView1 setContentSize:s1];
 
 }
@@ -56,17 +56,18 @@
 - (IBAction)clickButton0:(id)sender {
     [mButton0 setSelected:YES];
     [mButton1 setSelected:NO];
-    [mScrollView0 setHidden:NO];
-    [mScrollView1 setHidden:YES];
-    [mImage1 setHidden:YES];
+    [mScrollView0 setHidden:YES];
+    [mScrollView1 setHidden:NO];
+    [mImage1 setHidden:NO];
 }
 
 - (IBAction)clickButton1:(id)sender {
     [mButton0 setSelected:NO];
     [mButton1 setSelected:YES];
-    [mScrollView0 setHidden:YES];
-    [mScrollView1 setHidden:NO];
-    [mImage1 setHidden:NO];
+    [mScrollView0 setHidden:NO];
+    [mScrollView1 setHidden:YES];
+    [mImage1 setHidden:YES];
+
 }
 
 - (IBAction)clickBack:(id)sender {
