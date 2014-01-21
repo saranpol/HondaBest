@@ -74,6 +74,11 @@
 
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.mButtonInfo setImage:[UIImage imageNamed:@"b_btn_information.png"] forState:UIControlStateNormal];
+}
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];

@@ -16,5 +16,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *mImageBG;
 
 - (IBAction)clickBack:(id)sender;
+- (IBAction)clickLeft:(id)sender;
+- (IBAction)clickRight:(id)sender;
 
 @end

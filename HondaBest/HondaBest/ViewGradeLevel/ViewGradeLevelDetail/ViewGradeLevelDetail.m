@@ -75,4 +75,22 @@
 }
 
 
+- (IBAction)clickLeft:(id)sender {
+    self.mPage--;
+    if(mPage < 0)
+        self.mPage = 0;
+    [mCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:mPage inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+    [mPageControl setCurrentPage:mPage];
+}
+
+- (IBAction)clickRight:(id)sender {
+    self.mPage++;
+    if(mPage > 3)
+        self.mPage = 3;
+    [mCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:mPage inSection:0] atScrollPosition:UICollectionViewScrollPositionLeft animated:YES];
+    [mPageControl setCurrentPage:mPage];
+    
+}
+
+
 @end

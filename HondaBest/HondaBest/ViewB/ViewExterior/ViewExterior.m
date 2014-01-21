@@ -41,6 +41,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    HBViewController *vc = [HBViewController getVC];
+    [vc.mViewMenu.mButtonInfo setImage:[UIImage imageNamed:@"b_btn_information_black.png"] forState:UIControlStateNormal];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     HBViewController *vc = [HBViewController getVC];
