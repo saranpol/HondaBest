@@ -38,10 +38,10 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     CGSize s0 = mScrollView0.frame.size;
-    s0.height = 1100;
+    s0.height = 2367;
     [mScrollView0 setContentSize:s0];
     CGSize s1 = mScrollView1.frame.size;
-    s1.height = 1000;
+    s1.height = 1500;
     [mScrollView1 setContentSize:s1];
 
 }
@@ -58,7 +58,7 @@
     [mButton1 setSelected:NO];
     [mScrollView0 setHidden:YES];
     [mScrollView1 setHidden:NO];
-    [mImage1 setHidden:NO];
+    //[mImage1 setHidden:NO];
 }
 
 - (IBAction)clickButton1:(id)sender {
@@ -66,7 +66,7 @@
     [mButton1 setSelected:YES];
     [mScrollView0 setHidden:NO];
     [mScrollView1 setHidden:YES];
-    [mImage1 setHidden:YES];
+    //[mImage1 setHidden:YES];
 
 }
 

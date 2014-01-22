@@ -42,7 +42,7 @@
     if(mMode == MODE_EXTERIOR){
         c = 4;
     }else if(mMode == MODE_INTERIOR){
-        c = 8;
+        c = 5;
     }
     [mPageControl setNumberOfPages:c];
     return c;
@@ -73,38 +73,38 @@
         }
     }else if(mMode == MODE_INTERIOR){
         switch (indexPath.row) {
+//            case 0:
+//                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-01.jpg"]];
+//                [cell.mLabel setText:@"ช่องเชื่อมต่อ USB 2 ตำแหน่ง พร้อมช่องเชื่อมต่อ HDMI"];
+//                break;
+//            case 1:
+//                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-02.jpg"]];
+//                [cell.mLabel setText:@"ระบบเครื่องปรับอากาศอัตโนมัติพร้อมแผงควบคุมแบบสัมผัส"];
+//                break;
             case 0:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-01.jpg"]];
-                [cell.mLabel setText:@"ช่องเชื่อมต่อ USB 2 ตำแหน่ง พร้อมช่องเชื่อมต่อ HDMI"];
-                break;
-            case 1:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-02.jpg"]];
-                [cell.mLabel setText:@"ระบบเครื่องปรับอากาศอัตโนมัติพร้อมแผงควบคุมแบบสัมผัส"];
-                break;
-            case 2:
                 [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-03.jpg"]];
                 [cell.mLabel setText:@"ที่วางแก้วน้ำบริเวณคอนโซลหน้า แผงข้างประตู และบริเวณพนักเท้าแขนด้านหลัง"];
                 break;
-            case 3:
+            case 1:
                 [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-04.jpg"]];
                 [cell.mLabel setText:@"ลำโพง 8 ตำแหน่ง"];
                 break;
-            case 4:
+            case 2:
                 [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-05.jpg"]];
                 [cell.mLabel setText:@"ช่องเชื่อมต่อ USB 2 ตำแหน่ง พร้อมช่องเชื่อมต่อ HDMI"];
                 break;
-            case 5:
+            case 3:
                 [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-06.jpg"]];
                 [cell.mLabel setText:@"ช่องจ่ายไฟสำรองด้านหลัง 2 ตำแหน่ง"];
                 break;
-            case 6:
+            case 4:
                 [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-07.jpg"]];
                 [cell.mLabel setText:@"ช่องเชื่อมต่อ USB 2 ตำแหน่ง พร้อมช่องเชื่อมต่อ HDMI"];
                 break;
-            case 7:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-08.jpg"]];
-                [cell.mLabel setText:@"พวงมาลัยแบบมัลติฟังก์ชั่น"];
-                break;
+//            case 7:
+//                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-08.jpg"]];
+//                [cell.mLabel setText:@"พวงมาลัยแบบมัลติฟังก์ชั่น"];
+//                break;
         }
     }
 

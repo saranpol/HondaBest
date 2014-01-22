@@ -269,25 +269,25 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOL-fB-t2r">
-                                <rect key="frame" x="78" y="125" width="900" height="643"/>
+                                <rect key="frame" x="78" y="175" width="900" height="593"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_spec_detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="axF-yf-oYM">
-                                        <rect key="frame" x="13" y="0.0" width="833" height="1014"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="871" height="2268"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_spec_f.png" translatesAutoresizingMaskIntoConstraints="NO" id="PIv-pr-Ssc">
-                                <rect key="frame" x="78" y="125" width="873" height="47"/>
+                                <rect key="frame" x="78" y="123" width="871" height="52"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7G-pd-8Cy">
-                                <rect key="frame" x="78" y="171" width="900" height="597"/>
+                                <rect key="frame" x="78" y="175" width="900" height="593"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spec_dtandard_b_standard_detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="xVN-1N-A3P">
-                                        <rect key="frame" x="0.0" y="0.0" width="873" height="904"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="871" height="1409"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
@@ -831,7 +831,7 @@
                                 <rect key="frame" x="96" y="130" width="832" height="335"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="พวงมาลัยแบบมัลติฟังก์ชั่น ควบคุมทุกสิ่งได้ดั่งใจเพียงปลายนิ้ว  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-vy-lE7">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="พวงมาลัยแบบมัลติฟังก์ชั่น   " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="875" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-vy-lE7">
                                 <rect key="frame" x="75" y="478" width="875" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -1929,7 +1929,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="intro_logo_best.png" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-PZ-tJJ">
-                                <rect key="frame" x="135" y="324" width="754" height="119"/>
+                                <rect key="frame" x="91" y="294" width="842" height="179"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="intro_logo_city.png" translatesAutoresizingMaskIntoConstraints="NO" id="0p2-ef-un3">
@@ -2052,7 +2052,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="gradelevel_text.png" width="347" height="27"/>
         <image name="gradelevel_txt_01.png" width="204" height="26"/>
         <image name="intro_bg.jpg" width="1024" height="768"/>
-        <image name="intro_logo_best.png" width="754" height="119"/>
+        <image name="intro_logo_best.png" width="842" height="179"/>
         <image name="intro_logo_city.png" width="553" height="155"/>
         <image name="landing_bg.jpg" width="1948" height="768"/>
         <image name="landing_logo.png" width="302" height="85"/>
@@ -2083,10 +2083,10 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="spec_dtandard_b_spec_a.png" width="260" height="61"/>
         <image name="spec_dtandard_b_standard.png" width="330" height="63"/>
         <image name="spec_dtandard_b_standard_a.png" width="331" height="61"/>
-        <image name="spec_dtandard_b_standard_detail.png" width="873" height="904"/>
+        <image name="spec_dtandard_b_standard_detail.png" width="871" height="1409"/>
         <image name="spec_dtandard_bg_f.png" width="1024" height="60"/>
-        <image name="spec_dtandard_spec_detail.png" width="833" height="1014"/>
-        <image name="spec_dtandard_spec_f.png" width="873" height="47"/>
+        <image name="spec_dtandard_spec_detail.png" width="871" height="2268"/>
+        <image name="spec_dtandard_spec_f.png" width="871" height="52"/>
         <image name="t_00_total.png" width="832" height="335"/>
         <image name="t_01_smartkey.png" width="832" height="335"/>
         <image name="t_02_light.png" width="832" height="335"/>
