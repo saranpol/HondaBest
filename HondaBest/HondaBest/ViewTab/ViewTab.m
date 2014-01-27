@@ -36,8 +36,11 @@
     
     CGRect f = mViewMenu.view.frame;
     f.size.height = 74 + 37;
-    f.origin.y = 768 - f.size.height;
-//    f.origin.y = 320 - f.size.height;
+    if(self.view.frame.size.height >= 768){
+        f.origin.y = 768 - f.size.height;
+    }else{
+        f.origin.y = 320 - f.size.height;
+    }
     [mViewMenu.view setFrame:f];
     [self.view addSubview:mViewMenu.view];
     

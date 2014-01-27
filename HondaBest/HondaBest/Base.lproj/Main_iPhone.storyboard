@@ -16,23 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="first_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YuR-Os-dYZ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u46-ie-Ulj">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRS-ai-5N9">
-                                <rect key="frame" x="426" y="284" width="182" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="btn_switch.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickStart:" destination="BYZ-38-t0r" eventType="touchDown" id="5ba-NG-Jh7"/>
-                                    <segue destination="ip1-oX-EFz" kind="modal" modalTransitionStyle="crossDissolve" id="57d-DN-qqV"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="first_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YuR-Os-dYZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRS-ai-5N9">
+                                        <rect key="frame" x="233" y="119" width="84" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="btn_switch_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickStart:" destination="BYZ-38-t0r" eventType="touchDown" id="5ba-NG-Jh7"/>
+                                            <segue destination="ip1-oX-EFz" kind="modal" modalTransitionStyle="crossDissolve" id="57d-DN-qqV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="L4y-UV-fzv"/>
+                                    <constraint firstAttribute="height" constant="320" id="ktY-d2-jXl"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="u46-ie-Ulj" secondAttribute="centerX" id="fIc-2g-fZa"/>
+                            <constraint firstAttribute="centerY" secondItem="u46-ie-Ulj" secondAttribute="centerY" id="fSa-pP-eDK"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -535,20 +550,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RmE-xi-RGZ">
-                                <rect key="frame" x="0.0" y="0.0" width="1948" height="768"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RmE-xi-RGZ">
+                                <rect key="frame" x="0.0" y="0.0" width="862" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VMp-is-zJp">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMp-is-zJp">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_nav_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="buU-w9-W1F">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="42"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_nav_bg_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="buU-w9-W1F">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="30"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uF3-7e-nPQ">
-                                        <rect key="frame" x="593" y="0.0" width="87" height="42"/>
+                                        <rect key="frame" x="150" y="-6" width="87" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_gardelevel.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -558,7 +573,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-mf-i2Y">
-                                        <rect key="frame" x="689" y="0.0" width="112" height="42"/>
+                                        <rect key="frame" x="246" y="-6" width="112" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_bodycolor.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -568,14 +583,14 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhr-ac-uAT">
-                                        <rect key="frame" x="830" y="0.0" width="112" height="42"/>
+                                        <rect key="frame" x="430" y="0.0" width="112" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_videogallery.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoW-Bd-yD6">
-                                        <rect key="frame" x="812" y="0.0" width="190" height="42"/>
+                                        <rect key="frame" x="369" y="-6" width="190" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_spec_equip.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -585,7 +600,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-9i-MXQ">
-                                        <rect key="frame" x="944" y="0.0" width="79" height="42"/>
+                                        <rect key="frame" x="544" y="0.0" width="79" height="42"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="landing_nav_btn_share.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -593,12 +608,20 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Cx-8N-LCa"/>
+                                    <constraint firstAttribute="width" constant="568" id="syt-vK-pOO"/>
+                                </constraints>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="landing_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-go-1bl">
                                 <rect key="frame" x="583" y="71" width="302" height="85"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="VMp-is-zJp" firstAttribute="top" secondItem="nc9-rP-6Kr" secondAttribute="bottom" id="5kc-ge-gia"/>
+                            <constraint firstAttribute="trailing" secondItem="VMp-is-zJp" secondAttribute="trailing" id="xTs-8W-Ynn"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Landing" id="bGF-2d-I6K"/>
@@ -1935,8 +1958,8 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azl-x8-bNq">
-                                <rect key="frame" x="957" y="7" width="59" height="38"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azl-x8-bNq">
+                                <rect key="frame" x="0.0" y="0.0" width="59" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1945,20 +1968,40 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                     <segue destination="zYM-Q1-fTm" kind="modal" identifier="GotoLanding" modalTransitionStyle="crossDissolve" id="ali-Ts-cQn"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="intro_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YBl-gj-CoI">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YBl-gj-CoI">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="r4F-kp-Zvo"/>
+                                    <constraint firstAttribute="height" constant="320" id="vMb-b3-g67"/>
+                                </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="intro_logo_best.png" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-PZ-tJJ">
-                                <rect key="frame" x="91" y="294" width="842" height="179"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_logo_best_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="jL6-PZ-tJJ">
+                                <rect key="frame" x="60" y="106" width="449" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="449" id="Fht-DF-jAg"/>
+                                    <constraint firstAttribute="height" constant="107" id="kS2-gy-UzL"/>
+                                </constraints>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="intro_logo_city.png" translatesAutoresizingMaskIntoConstraints="NO" id="0p2-ef-un3">
-                                <rect key="frame" x="236" y="306" width="553" height="155"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_logo_city_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="0p2-ef-un3">
+                                <rect key="frame" x="99" y="99" width="370" height="121"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="121" id="8a4-gZ-OX8"/>
+                                    <constraint firstAttribute="width" constant="370" id="eJE-GS-Nx8"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="YBl-gj-CoI" secondAttribute="centerY" id="CTY-uB-X43"/>
+                            <constraint firstAttribute="centerY" secondItem="0p2-ef-un3" secondAttribute="centerY" id="VLk-OG-DZa"/>
+                            <constraint firstAttribute="centerY" secondItem="jL6-PZ-tJJ" secondAttribute="centerY" id="cmv-dh-yKg"/>
+                            <constraint firstAttribute="centerX" secondItem="0p2-ef-un3" secondAttribute="centerX" id="tqN-a1-sL1"/>
+                            <constraint firstAttribute="centerX" secondItem="jL6-PZ-tJJ" secondAttribute="centerX" id="u12-q3-Nm1"/>
+                            <constraint firstAttribute="centerX" secondItem="YBl-gj-CoI" secondAttribute="centerX" id="wmA-Qf-UE2"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
@@ -1982,8 +2025,8 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcH-9d-E9v">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcH-9d-E9v">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -1997,10 +2040,14 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                     <action selector="clickBack:" destination="ip1-oX-EFz" eventType="touchUpInside" id="LKf-YU-VoD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-Zk-sKW">
-                                <rect key="frame" x="869" y="732" width="138" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-Zk-sKW">
+                                <rect key="frame" x="452" y="295" width="109" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn_skip.png">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="5qh-wK-6tP"/>
+                                    <constraint firstAttribute="width" constant="109" id="eLX-u9-PpI"/>
+                                </constraints>
+                                <state key="normal" image="btn_skip_iphone.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2009,6 +2056,14 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mcH-9d-E9v" secondAttribute="trailing" id="3Ek-aW-ag3"/>
+                            <constraint firstAttribute="trailing" secondItem="xpF-Zk-sKW" secondAttribute="trailing" constant="7" id="ELZ-kC-7ft"/>
+                            <constraint firstItem="0eY-7H-5ne" firstAttribute="top" secondItem="mcH-9d-E9v" secondAttribute="bottom" id="UnJ-C9-nAy"/>
+                            <constraint firstItem="mcH-9d-E9v" firstAttribute="leading" secondItem="N6O-qS-umr" secondAttribute="leading" id="kts-JL-02U"/>
+                            <constraint firstItem="mcH-9d-E9v" firstAttribute="top" secondItem="CtH-SF-Mgz" secondAttribute="bottom" id="yT1-Nw-jOW"/>
+                            <constraint firstItem="0eY-7H-5ne" firstAttribute="top" secondItem="xpF-Zk-sKW" secondAttribute="bottom" constant="3" id="ydz-nb-Kfk"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lin-N9-9zK"/>
@@ -2032,8 +2087,8 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="b_landing_h1.png" width="376" height="45"/>
         <image name="b_landing_h2.png" width="606" height="85"/>
         <image name="btn_back.png" width="69" height="27"/>
-        <image name="btn_skip.png" width="138" height="16"/>
-        <image name="btn_switch.png" width="182" height="182"/>
+        <image name="btn_skip_iphone.png" width="109" height="13"/>
+        <image name="btn_switch_iphone.png" width="84" height="84"/>
         <image name="colorbody_car_01.png" width="857" height="321"/>
         <image name="colorbody_car_01_text.png" width="276" height="74"/>
         <image name="colorbody_nav_background.png" width="1024" height="109"/>
@@ -2074,12 +2129,12 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="gradelevel_landing.png" width="1045" height="374"/>
         <image name="gradelevel_text.png" width="347" height="27"/>
         <image name="gradelevel_txt_01.png" width="204" height="26"/>
-        <image name="intro_bg.jpg" width="1024" height="768"/>
-        <image name="intro_logo_best.png" width="842" height="179"/>
-        <image name="intro_logo_city.png" width="553" height="155"/>
-        <image name="landing_bg.jpg" width="1948" height="768"/>
+        <image name="intro_bg_iphone.jpg" width="568" height="320"/>
+        <image name="intro_logo_best_iphone.png" width="351" height="56"/>
+        <image name="intro_logo_city_iphone.png" width="264" height="74"/>
+        <image name="landing_bg_iphone.jpg" width="862" height="320"/>
         <image name="landing_logo.png" width="302" height="85"/>
-        <image name="landing_nav_bg.png" width="1024" height="42"/>
+        <image name="landing_nav_bg_iphone.png" width="568" height="30"/>
         <image name="landing_nav_btn_bodycolor.png" width="80" height="14"/>
         <image name="landing_nav_btn_gardelevel.png" width="84" height="14"/>
         <image name="landing_nav_btn_share.png" width="42" height="14"/>

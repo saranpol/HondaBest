@@ -7,7 +7,7 @@
 //
 
 #import "ViewTVC.h"
-
+#import "HBViewController.h"
 
 
 @implementation ViewTVC
@@ -33,12 +33,25 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
+#ifdef SKIP_INTRO
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self movieDone:nil];
+    return;
+}
+#endif
+
 - (void)setControlEnable {
     [mPlayer setControlStyle:MPMovieControlStyleFullscreen];
 }
 
 - (void)movieDone:(NSNotification*)notification {
     [self performSegueWithIdentifier:@"GotoViewIntro" sender:self];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    mPlayer.view.frame = mViewFrame.frame;
 }
 
 - (void)viewDidLoad

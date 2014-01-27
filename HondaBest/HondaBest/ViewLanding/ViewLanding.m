@@ -55,7 +55,11 @@
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                          CGRect r = mImageBG.frame;
-                         r.origin.x = -(r.size.width - self.view.frame.size.width);
+                         if(self.view.frame.size.width == 480){
+                             r.origin.x = -(r.size.width - self.view.frame.size.width) + 44;
+                         }else{
+                             r.origin.x = -(r.size.width - self.view.frame.size.width);
+                         }
                          [mImageBG setFrame:r];
                      }
                      completion:^(BOOL finished){
