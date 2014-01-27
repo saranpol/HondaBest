@@ -13,6 +13,7 @@
 @implementation ViewTVC
 
 @synthesize mPlayer;
+@synthesize mViewFrame;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,21 +24,44 @@
     return self;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [mPlayer stop];
+    [mPlayer.view removeFromSuperview];
+    self.mPlayer = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)setControlEnable {
+    [mPlayer setControlStyle:MPMovieControlStyleFullscreen];
+}
+
+- (void)movieDone:(NSNotification*)notification {
+    [self performSegueWithIdentifier:@"GotoViewIntro" sender:self];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test_VideoTransparent" ofType:@"mp4"];
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"sample_mpeg4" ofType:@"mp4"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"video_tvc" ofType:@"mp4"];
     self.mPlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:path]];
-    mPlayer.view.frame = CGRectMake(184, 200, 400, 300);
+    mPlayer.view.frame = mViewFrame.frame;
     [mPlayer.view setBackgroundColor:[UIColor clearColor]];
-    [self.view addSubview:mPlayer.view];
+    [mViewFrame addSubview:mPlayer.view];
     [mPlayer setControlStyle:MPMovieControlStyleNone];
-    [mPlayer setRepeatMode:MPMovieRepeatModeOne];
+    [mPlayer setRepeatMode:MPMovieRepeatModeNone];
     [mPlayer play];
+    [self performSelector:@selector(setControlEnable) withObject:nil afterDelay:1.0];
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(movieDone:)
+                                                 name:MPMoviePlayerPlaybackDidFinishNotification
+                                               object:mPlayer];
+
 }
 
 - (void)didReceiveMemoryWarning

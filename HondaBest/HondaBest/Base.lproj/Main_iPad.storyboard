@@ -28,7 +28,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clickStart:" destination="BYZ-38-t0r" eventType="touchDown" id="5ba-NG-Jh7"/>
-                                    <segue destination="pNb-3T-70T" kind="modal" modalTransitionStyle="crossDissolve" id="BJp-73-4n7"/>
+                                    <segue destination="ip1-oX-EFz" kind="modal" modalTransitionStyle="crossDissolve" id="57d-DN-qqV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2063" y="30"/>
+            <point key="canvasLocation" x="-3335" y="30"/>
         </scene>
         <!--View Interior - Interior-->
         <scene sceneID="Rbl-pF-mUu">
@@ -1947,7 +1947,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aa8-1T-EAy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-944" y="-990"/>
+            <point key="canvasLocation" x="-936" y="30"/>
         </scene>
         <!--ViewTVC-->
         <scene sceneID="G6w-9N-PUV">
@@ -1961,14 +1961,12 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VDO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nA-bZ-7Sm">
-                                <rect key="frame" x="463" y="118" width="36" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mcH-9d-E9v">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-FU-aVa">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqa-FU-aVa">
                                 <rect key="frame" x="43" y="31" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BACK">
@@ -1978,14 +1976,14 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                                     <action selector="clickBack:" destination="ip1-oX-EFz" eventType="touchUpInside" id="LKf-YU-VoD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-Zk-sKW">
-                                <rect key="frame" x="903" y="37" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-Zk-sKW">
+                                <rect key="frame" x="869" y="732" width="138" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="SKIP">
+                                <state key="normal" image="btn_skip.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zYM-Q1-fTm" kind="modal" modalTransitionStyle="crossDissolve" id="n43-vE-BRj"/>
+                                    <segue destination="pNb-3T-70T" kind="modal" identifier="GotoViewIntro" modalTransitionStyle="crossDissolve" id="6HG-fF-xxg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1994,10 +1992,13 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                     </view>
                     <navigationItem key="navigationItem" id="Lin-N9-9zK"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="mViewFrame" destination="mcH-9d-E9v" id="Odw-54-vVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcE-Zc-tLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-949" y="30"/>
+            <point key="canvasLocation" x="-2107" y="30"/>
         </scene>
     </scenes>
     <resources>
@@ -2010,6 +2011,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="b_landing_h1.png" width="376" height="45"/>
         <image name="b_landing_h2.png" width="606" height="85"/>
         <image name="btn_back.png" width="69" height="27"/>
+        <image name="btn_skip.png" width="138" height="16"/>
         <image name="btn_switch.png" width="182" height="182"/>
         <image name="colorbody_car_01.png" width="857" height="321"/>
         <image name="colorbody_car_01_text.png" width="276" height="74"/>
@@ -2102,8 +2104,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ali-Ts-cQn"/>
-        <segue reference="crD-ai-DsX"/>
         <segue reference="D2S-eB-Eeo"/>
+        <segue reference="crD-ai-DsX"/>
     </inferredMetricsTieBreakers>
 </document>

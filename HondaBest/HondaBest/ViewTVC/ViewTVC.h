@@ -12,6 +12,7 @@
 @interface ViewTVC : UIViewController
 
 @property (nonatomic, strong) MPMoviePlayerController *mPlayer;
+@property (nonatomic, strong) IBOutlet UIView *mViewFrame;
 
 - (IBAction)clickBack:(id)sender;
 
