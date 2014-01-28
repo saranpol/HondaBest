@@ -7,6 +7,7 @@
 //
 
 #import "ButtonMenu.h"
+#import "HBViewController.h"
 
 @implementation ButtonMenu
 @synthesize mLabel;
@@ -23,14 +24,23 @@
 
 - (id)initWithCoder:(NSCoder *)decoder {
     if (self = [super initWithCoder:decoder]) {
-        UIImage *m = [self.currentBackgroundImage stretchableImageWithLeftCapWidth:32 topCapHeight:0];
+        UIImage *m;
+        if(IDIOM == IPAD)
+            m = [self.currentBackgroundImage stretchableImageWithLeftCapWidth:32 topCapHeight:0];
+        else
+            m = [self.currentBackgroundImage stretchableImageWithLeftCapWidth:15 topCapHeight:0];
         [self setBackgroundImage:m forState:UIControlStateNormal];
         
         UIFont *f = [UIFont fontWithName:@"DBHelvethaicaX-78BdCondIt" size:self.titleLabel.font.pointSize];
         CGRect r = self.titleLabel.frame;
         r.size.height = self.frame.size.height;
-        r.origin.y = 6.0;
-        r.origin.x = r.origin.x - 2.0;
+        if(IDIOM == IPAD){
+            r.origin.y = 6.0;
+            r.origin.x = r.origin.x - 2.0;
+        }else{
+            r.origin.y = 2.5;
+            r.origin.x = r.origin.x - 0.97;
+        }
         
         
         self.mLabel = [[UILabel alloc] initWithFrame:r];
@@ -91,7 +101,11 @@
     UIView *v = [super hitTest:point withEvent:event];
     if(v == self){
         float x = point.x;
-        float y = 74 - point.y;
+        float y;
+        if(IDIOM == IPAD)
+            y = 74 - point.y;
+        else
+            y = 36 - point.y;
         if(x<=0)
             x=0.1;
         if(y<=0)

@@ -336,6 +336,7 @@
 		43A4F4751896F5C2008B712D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F4711896F5C2008B712D /* Default@2x.png */; };
 		43A4F47818970742008B712D /* btn_skip_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F47718970742008B712D /* btn_skip_iphone@2x.png */; };
 		43A4F47A18970A1C008B712D /* intro_bg_iphone@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F47918970A1C008B712D /* intro_bg_iphone@2x.jpg */; };
+		43A4F47C1898313D008B712D /* ViewMenu_iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F47B1898313D008B712D /* ViewMenu_iphone.xib */; };
 		43C7404C188EF1E0004D4E08 /* b_btn_360ex_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C73FC1188EF1E0004D4E08 /* b_btn_360ex_1.png */; };
 		43C7404D188EF1E0004D4E08 /* b_btn_360ex_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C73FC2188EF1E0004D4E08 /* b_btn_360ex_2.png */; };
 		43C7404E188EF1E0004D4E08 /* b_btn_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C73FC3188EF1E0004D4E08 /* b_btn_information.png */; };
@@ -988,6 +989,7 @@
 		43A4F4711896F5C2008B712D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		43A4F47718970742008B712D /* btn_skip_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_skip_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F47918970A1C008B712D /* intro_bg_iphone@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "intro_bg_iphone@2x.jpg"; sourceTree = "<group>"; };
+		43A4F47B1898313D008B712D /* ViewMenu_iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewMenu_iphone.xib; sourceTree = "<group>"; };
 		43C73FC1188EF1E0004D4E08 /* b_btn_360ex_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_btn_360ex_1.png; sourceTree = "<group>"; };
 		43C73FC2188EF1E0004D4E08 /* b_btn_360ex_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_btn_360ex_2.png; sourceTree = "<group>"; };
 		43C73FC3188EF1E0004D4E08 /* b_btn_information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b_btn_information.png; sourceTree = "<group>"; };
@@ -2464,6 +2466,7 @@
 				43D63E29186F5E670070530E /* ViewMenu.h */,
 				43D63E2A186F5E670070530E /* ViewMenu.m */,
 				43D63E2B186F5E670070530E /* ViewMenu.xib */,
+				43A4F47B1898313D008B712D /* ViewMenu_iphone.xib */,
 			);
 			path = ViewMenu;
 			sourceTree = "<group>";
@@ -3526,6 +3529,7 @@
 				435BD3D6188C34040057BFFA /* s_01_sidesrs.png in Resources */,
 				43A4F3F11896EF34008B712D /* e_intro_word_iphone@2x.png in Resources */,
 				435BD40C188C48C50057BFFA /* spec_dtandard_b_spec.png in Resources */,
+				43A4F47C1898313D008B712D /* ViewMenu_iphone.xib in Resources */,
 				4302C1EF18872975005223D8 /* popup_btn_close.png in Resources */,
 				43C740AB188EF1E0004D4E08 /* B-Exterior-popup_02@2x.jpg in Resources */,
 				43C74055188EF1E0004D4E08 /* b_btn_360ex_1@2x.png in Resources */,

@@ -26,6 +26,17 @@
 @synthesize mButtonT0;
 @synthesize mButtonInfo;
 
+static int B_MENU_W;
+static int B_MENU_WX;
+static int BW;
+static int EW;
+static int SW;
+static int TW;
+static int BWX;
+static int EWX;
+static int SWX;
+static int MENU_H;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,6 +53,30 @@
     
     HBViewController *vc = [HBViewController getVC];
     vc.mViewMenu = self;
+    
+    if(IDIOM == IPAD){
+        B_MENU_W = 112;
+        B_MENU_WX = (B_MENU_W-10);
+        BW = 400;
+        EW = 612;
+        SW = 629;
+        TW = 602;
+        BWX = (BW-10);
+        EWX = (EW-10);
+        SWX = (SW-10);
+        MENU_H = 74;
+    }else{
+        B_MENU_W = 55;
+        B_MENU_WX = (B_MENU_W-5);
+        BW = 195;
+        EW = 298;
+        SW = 306;
+        TW = 293;
+        BWX = (BW-5);
+        EWX = (EW-5);
+        SWX = (SW-5);
+        MENU_H = 36;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -76,25 +111,17 @@
     }
 }
 
-#define B_MENU_W 112
-#define B_MENU_WX (B_MENU_W-10)
-#define BW 400
-#define EW 612
-#define SW 629
-#define TW 602
-#define BWX (BW-10)
-#define EWX (EW-10)
-#define SWX (SW-10)
+
 
 
 
 - (void)hideAllMenu {
     float x = (self.view.frame.size.width - (B_MENU_WX+B_MENU_WX+B_MENU_WX+B_MENU_W))/2.0;
     self.mMenuState = MENU_STATE_HIDE_ALL;
-    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, 74)];
-    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, B_MENU_W, 74)];
-    [mViewS setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, 74)];
-    [mViewT setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, 74)];
+    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, MENU_H)];
+    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, B_MENU_W, MENU_H)];
+    [mViewS setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, MENU_H)];
+    [mViewT setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, MENU_H)];
 }
 
 - (void)hideAllButton0 {
@@ -107,40 +134,40 @@
 - (void)showMenuB {
     float x = (self.view.frame.size.width - (BWX+B_MENU_WX+B_MENU_WX+B_MENU_W))/2.0;
     self.mMenuState = MENU_STATE_SHOW_B;
-    [mViewB setFrame:CGRectMake(x, 0, BW, 74)];
-    [mViewE setFrame:CGRectMake(x+BWX, 0, B_MENU_W, 74)];
-    [mViewS setFrame:CGRectMake(x+BWX+B_MENU_WX, 0, B_MENU_W, 74)];
-    [mViewT setFrame:CGRectMake(x+BWX+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, 74)];
+    [mViewB setFrame:CGRectMake(x, 0, BW, MENU_H)];
+    [mViewE setFrame:CGRectMake(x+BWX, 0, B_MENU_W, MENU_H)];
+    [mViewS setFrame:CGRectMake(x+BWX+B_MENU_WX, 0, B_MENU_W, MENU_H)];
+    [mViewT setFrame:CGRectMake(x+BWX+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, MENU_H)];
 
     [mButtonB0 setHidden:NO];
 }
 - (void)showMenuE {
     float x = (self.view.frame.size.width - (B_MENU_WX+EWX+B_MENU_WX+B_MENU_W))/2.0;
     self.mMenuState = MENU_STATE_SHOW_E;
-    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, 74)];
-    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, EW, 74)];
-    [mViewS setFrame:CGRectMake(x+B_MENU_WX+EWX, 0, B_MENU_W, 74)];
-    [mViewT setFrame:CGRectMake(x+B_MENU_WX+EWX+B_MENU_WX, 0, B_MENU_W, 74)];
+    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, MENU_H)];
+    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, EW, MENU_H)];
+    [mViewS setFrame:CGRectMake(x+B_MENU_WX+EWX, 0, B_MENU_W, MENU_H)];
+    [mViewT setFrame:CGRectMake(x+B_MENU_WX+EWX+B_MENU_WX, 0, B_MENU_W, MENU_H)];
 
     [mButtonE0 setHidden:NO];
 }
 - (void)showMenuS {
     float x = (self.view.frame.size.width - (B_MENU_WX+B_MENU_WX+SWX+B_MENU_W))/2.0;
     self.mMenuState = MENU_STATE_SHOW_S;
-    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, 74)];
-    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, B_MENU_W, 74)];
-    [mViewS setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX, 0, SW, 74)];
-    [mViewT setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX+SWX, 0, B_MENU_W, 74)];
+    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, MENU_H)];
+    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, B_MENU_W, MENU_H)];
+    [mViewS setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX, 0, SW, MENU_H)];
+    [mViewT setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX+SWX, 0, B_MENU_W, MENU_H)];
 
     [mButtonS0 setHidden:NO];
 }
 - (void)showMenuT {
     float x = (self.view.frame.size.width - (B_MENU_WX+B_MENU_WX+B_MENU_WX+TW))/2.0;
     self.mMenuState = MENU_STATE_SHOW_T;
-    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, 74)];
-    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, B_MENU_W, 74)];
-    [mViewS setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, 74)];
-    [mViewT setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX+B_MENU_WX, 0, TW, 74)];
+    [mViewB setFrame:CGRectMake(x, 0, B_MENU_W, MENU_H)];
+    [mViewE setFrame:CGRectMake(x+B_MENU_WX, 0, B_MENU_W, MENU_H)];
+    [mViewS setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX, 0, B_MENU_W, MENU_H)];
+    [mViewT setFrame:CGRectMake(x+B_MENU_WX+B_MENU_WX+B_MENU_WX, 0, TW, MENU_H)];
 
     [mButtonT0 setHidden:NO];
 }

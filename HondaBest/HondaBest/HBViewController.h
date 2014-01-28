@@ -10,6 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 
 #define SKIP_INTRO
+#define IDIOM UI_USER_INTERFACE_IDIOM()
+#define IPAD UIUserInterfaceIdiomPad
 
 @class ViewMenu;
 @class SoundEffect;

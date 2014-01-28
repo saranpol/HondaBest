@@ -9,6 +9,7 @@
 #import "ViewTab.h"
 #import "ViewMenu.h"
 #import "ViewUtil.h"
+#import "HBViewController.h"
 
 @implementation ViewTab
 
@@ -31,22 +32,37 @@
     
     [self.tabBar setHidden:YES];
 
-    self.mViewMenu = [[ViewMenu alloc] initWithNibName:@"ViewMenu" bundle:nil];
+    if(IDIOM == IPAD)
+        self.mViewMenu = [[ViewMenu alloc] initWithNibName:@"ViewMenu" bundle:nil];
+    else
+        self.mViewMenu = [[ViewMenu alloc] initWithNibName:@"ViewMenu_iphone" bundle:nil];
     mViewMenu.mViewTab = self;
     
     CGRect f = mViewMenu.view.frame;
-    f.size.height = 74 + 37;
-    if(self.view.frame.size.height >= 768){
+    
+    if(IDIOM == IPAD){
+        f.size.height = 74 + 37;
         f.origin.y = 768 - f.size.height;
     }else{
+        f.size.height = 36 + 18;
         f.origin.y = 320 - f.size.height;
+        CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+        f.size.width = screenRect.size.height;
+        
     }
     [mViewMenu.view setFrame:f];
     [self.view addSubview:mViewMenu.view];
     
-    UIImage *btnBackImage = [UIImage imageNamed:@"btn_back.png"];
+    UIImage *btnBackImage;
+    if(IDIOM == IPAD){
+        btnBackImage = [UIImage imageNamed:@"btn_back.png"];
+        self.mButtonBack = [[UIButton alloc] initWithFrame:CGRectMake(25, 20, btnBackImage.size.width, btnBackImage.size.height)];
+    }else{
+        btnBackImage = [UIImage imageNamed:@"btn_back_iphone.png"];
+        self.mButtonBack = [[UIButton alloc] initWithFrame:CGRectMake(12, 10, btnBackImage.size.width, btnBackImage.size.height)];
+    }
     
-    self.mButtonBack = [[UIButton alloc] initWithFrame:CGRectMake(25, 20, btnBackImage.size.width, btnBackImage.size.height)];
+    
     [mButtonBack setImage:btnBackImage forState:UIControlStateNormal];
     [mButtonBack addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:mButtonBack];
