@@ -7,7 +7,7 @@
 //
 
 #import "ViewBodyColor.h"
-
+#import "HBViewController.h"
 
 @implementation ViewBodyColor
 
@@ -138,11 +138,18 @@
 }
 
 - (void)changeImageText:(int)car {
-    [mImageCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"colorbody_car_%02d.png", car]]];
-    [mImageText setImage:[UIImage imageNamed:[NSString stringWithFormat:@"colorbody_car_%02d_text.png", car]]];
+    NSString *iphone = @"_iphone";
+    if(IDIOM == IPAD)
+        iphone = @"";
+    [mImageCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"colorbody_car_%02d%@.png", car, iphone]]];
+    [mImageText setImage:[UIImage imageNamed:[NSString stringWithFormat:@"colorbody_car_%02d_text%@.png", car, iphone]]];
     [UIView animateWithDuration:0.3 animations:^{
         CGRect f = mImageBG.frame;
-        CGFloat x = -(car-1)*150;
+        CGFloat x;
+        if(IDIOM == IPAD)
+            x = -(car-1)*150;
+        else
+            x = -(car-1)*83;
         f.origin.x = x;
         [mImageBG setFrame:f];
     }];

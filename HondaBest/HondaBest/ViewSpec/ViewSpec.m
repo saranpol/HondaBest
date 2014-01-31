@@ -7,7 +7,7 @@
 //
 
 #import "ViewSpec.h"
-
+#import "HBViewController.h"
 
 @implementation ViewSpec
 
@@ -38,10 +38,16 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     CGSize s0 = mScrollView0.frame.size;
-    s0.height = 2367;
+    if(IDIOM == IPAD)
+        s0.height = 2367;
+    else
+        s0.height = 1300;
     [mScrollView0 setContentSize:s0];
     CGSize s1 = mScrollView1.frame.size;
-    s1.height = 1500;
+    if(IDIOM == IPAD)
+        s1.height = 1500;
+    else
+        s1.height = 850;
     [mScrollView1 setContentSize:s1];
 
 }
