@@ -250,7 +250,7 @@
 		43A4F3FE1896EF34008B712D /* gradelevel_car_01_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F33B1896EF34008B712D /* gradelevel_car_01_iphone@2x.png */; };
 		43A4F3FF1896EF34008B712D /* gradelevel_car_02_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F33C1896EF34008B712D /* gradelevel_car_02_iphone@2x.png */; };
 		43A4F4001896EF34008B712D /* gradelevel_car_03_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F33D1896EF34008B712D /* gradelevel_car_03_iphone@2x.png */; };
-		43A4F4011896EF34008B712D /* gradelevel_car_4_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F33E1896EF34008B712D /* gradelevel_car_4_iphone@2x.png */; };
+		43A4F4011896EF34008B712D /* gradelevel_car_04_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F33E1896EF34008B712D /* gradelevel_car_04_iphone@2x.png */; };
 		43A4F4021896EF34008B712D /* gradelevel_colorbody_background_iphone@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F33F1896EF34008B712D /* gradelevel_colorbody_background_iphone@2x.jpg */; };
 		43A4F4031896EF34008B712D /* gradelevel_detail_01_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3401896EF34008B712D /* gradelevel_detail_01_iphone@2x.png */; };
 		43A4F4041896EF34008B712D /* gradelevel_detail_02_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3411896EF34008B712D /* gradelevel_detail_02_iphone@2x.png */; };
@@ -903,7 +903,7 @@
 		43A4F33B1896EF34008B712D /* gradelevel_car_01_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_car_01_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F33C1896EF34008B712D /* gradelevel_car_02_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_car_02_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F33D1896EF34008B712D /* gradelevel_car_03_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_car_03_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F33E1896EF34008B712D /* gradelevel_car_4_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_car_4_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F33E1896EF34008B712D /* gradelevel_car_04_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_car_04_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F33F1896EF34008B712D /* gradelevel_colorbody_background_iphone@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gradelevel_colorbody_background_iphone@2x.jpg"; sourceTree = "<group>"; };
 		43A4F3401896EF34008B712D /* gradelevel_detail_01_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_detail_01_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3411896EF34008B712D /* gradelevel_detail_02_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gradelevel_detail_02_iphone@2x.png"; sourceTree = "<group>"; };
@@ -1899,7 +1899,7 @@
 				43A4F33B1896EF34008B712D /* gradelevel_car_01_iphone@2x.png */,
 				43A4F33C1896EF34008B712D /* gradelevel_car_02_iphone@2x.png */,
 				43A4F33D1896EF34008B712D /* gradelevel_car_03_iphone@2x.png */,
-				43A4F33E1896EF34008B712D /* gradelevel_car_4_iphone@2x.png */,
+				43A4F33E1896EF34008B712D /* gradelevel_car_04_iphone@2x.png */,
 				43A4F33F1896EF34008B712D /* gradelevel_colorbody_background_iphone@2x.jpg */,
 				43A4F3401896EF34008B712D /* gradelevel_detail_01_iphone@2x.png */,
 				43A4F3411896EF34008B712D /* gradelevel_detail_02_iphone@2x.png */,
@@ -3204,7 +3204,7 @@
 				43C74060188EF1E0004D4E08 /* exterior_03.jpg in Resources */,
 				43EC8D931885BE97007585A3 /* gradelevel_text@2x.png in Resources */,
 				43EC8D7B1885BE97007585A3 /* gradelevel_car_04.png in Resources */,
-				43A4F4011896EF34008B712D /* gradelevel_car_4_iphone@2x.png in Resources */,
+				43A4F4011896EF34008B712D /* gradelevel_car_04_iphone@2x.png in Resources */,
 				43A4F3CE1896EF34008B712D /* b_intro_word_iphone@2x.png in Resources */,
 				43A4F3A51896EF34008B712D /* exterior_03_iphone@2x.jpg in Resources */,
 				43EC8CD018846B81007585A3 /* colorbody_car_02_text.png in Resources */,

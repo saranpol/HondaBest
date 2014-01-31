@@ -8,6 +8,7 @@
 
 #import "ViewGradeLevelDetail.h"
 #import "CellGradeLevel.h"
+#import "HBViewController.h"
 
 @implementation ViewGradeLevelDetail
 
@@ -51,9 +52,12 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CellGradeLevel *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellGradeLevel" forIndexPath:indexPath];
-    [cell.mImageCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"gradelevel_car_%02d.png", (int)(indexPath.row+1)]]];
-    [cell.mImageInCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"gradelevel_detail_%02d.png", (int)(indexPath.row+1)]]];
-    [cell.mImageText setImage:[UIImage imageNamed:[NSString stringWithFormat:@"gradelevel_txt_%02d.png", (int)(indexPath.row+1)]]];
+    NSString *iphone = @"_iphone";
+    if(IDIOM == IPAD)
+        iphone = @"";
+    [cell.mImageCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"gradelevel_car_%02d%@.png", (int)(indexPath.row+1), iphone]]];
+    [cell.mImageInCar setImage:[UIImage imageNamed:[NSString stringWithFormat:@"gradelevel_detail_%02d%@.png", (int)(indexPath.row+1), iphone]]];
+    [cell.mImageText setImage:[UIImage imageNamed:[NSString stringWithFormat:@"gradelevel_txt_%02d%@.png", (int)(indexPath.row+1), iphone]]];
     return cell;
 }
 
