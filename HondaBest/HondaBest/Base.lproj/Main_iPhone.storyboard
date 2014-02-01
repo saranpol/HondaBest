@@ -1130,84 +1130,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="N27-px-5ga">
-                                <rect key="frame" x="0.0" y="92" width="1024" height="542"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jax-WQ-bPh">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1z-U3-9Mr">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="srW-eZ-wsZ">
-                                    <size key="itemSize" width="1024" height="768"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellPopupDetail" id="YVU-36-HmA" customClass="CellPopupDetail">
-                                        <rect key="frame" x="0.0" y="-224" width="1024" height="768"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B-Exterior-popup_01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D89-RE-Rvx">
-                                                    <rect key="frame" x="0.0" y="102" width="1024" height="522"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ข้อความ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNm-kP-nse">
-                                                    <rect key="frame" x="27" y="643" width="971" height="58"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <outlet property="mImage" destination="D89-RE-Rvx" id="aFu-bE-Jcj"/>
-                                            <outlet property="mLabel" destination="GNm-kP-nse" id="3ce-fZ-glf"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="ABc-dO-gcr" id="4Yy-o1-31n"/>
-                                    <outlet property="delegate" destination="ABc-dO-gcr" id="tNn-4y-DuV"/>
-                                </connections>
-                            </collectionView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_btn_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="nko-0h-rfM">
-                                <rect key="frame" x="25" y="334" width="35" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_btn_right.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-Nw-0Ae">
-                                <rect key="frame" x="964" y="334" width="35" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibV-Oq-VGs">
-                                <rect key="frame" x="-4" y="9" width="93" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="popup_btn_close.png">
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="N27-px-5ga">
+                                        <rect key="frame" x="0.0" y="38" width="568" height="226"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jax-WQ-bPh">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="srW-eZ-wsZ">
+                                            <size key="itemSize" width="568" height="320"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellPopupDetail" id="YVU-36-HmA" customClass="CellPopupDetail">
+                                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="B-Exterior-popup_01_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="D89-RE-Rvx">
+                                                            <rect key="frame" x="0.0" y="42" width="568" height="218"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ข้อความ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNm-kP-nse">
+                                                            <rect key="frame" x="15" y="266" width="539" height="24"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <connections>
+                                                    <outlet property="mImage" destination="D89-RE-Rvx" id="aFu-bE-Jcj"/>
+                                                    <outlet property="mLabel" destination="GNm-kP-nse" id="3ce-fZ-glf"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ABc-dO-gcr" id="4Yy-o1-31n"/>
+                                            <outlet property="delegate" destination="ABc-dO-gcr" id="tNn-4y-DuV"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5S-9v-WtH">
+                                        <rect key="frame" x="57" y="295" width="455" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.46274513006210327" green="0.46274513006210327" blue="0.46274513006210327" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="11" translatesAutoresizingMaskIntoConstraints="NO" id="sNK-vi-8gA">
+                                        <rect key="frame" x="115" y="288" width="338" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="pageIndicatorTintColor" red="0.87843143939971924" green="0.87843143939971924" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="2cQ-fG-WLq"/>
+                                    <constraint firstAttribute="height" constant="320" id="Frz-4W-Yr0"/>
+                                </constraints>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="popup_btn_left_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="nko-0h-rfM">
+                                <rect key="frame" x="0.0" y="118" width="35" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Ajc-fP-fbI"/>
+                                    <constraint firstAttribute="width" constant="35" id="tXZ-Hr-wYE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="popup_btn_right_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-Nw-0Ae">
+                                <rect key="frame" x="533" y="118" width="35" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="9cl-BI-Iy0"/>
+                                    <constraint firstAttribute="height" constant="65" id="Jr0-0X-IyU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibV-Oq-VGs">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="A6o-GW-epE"/>
+                                    <constraint firstAttribute="height" constant="41" id="e18-YG-Pcd"/>
+                                </constraints>
+                                <state key="normal" image="popup_btn_close_iphone.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clickClose:" destination="ABc-dO-gcr" eventType="touchUpInside" id="0dY-2b-eNh"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5S-9v-WtH">
-                                <rect key="frame" x="102" y="712" width="821" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.46274513006210327" green="0.46274513006210327" blue="0.46274513006210327" alpha="1" colorSpace="deviceRGB"/>
-                            </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="11" translatesAutoresizingMaskIntoConstraints="NO" id="sNK-vi-8gA">
-                                <rect key="frame" x="343" y="712" width="338" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="pageIndicatorTintColor" red="0.87843143939971924" green="0.87843143939971924" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="currentPageIndicatorTintColor" red="0.2941176593" green="0.5176470876" blue="0.76470595600000002" alpha="1" colorSpace="deviceRGB"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.098039224743843079" green="0.098039224743843079" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="K1z-U3-9Mr" secondAttribute="centerY" id="8HK-kN-kbg"/>
+                            <constraint firstItem="ibV-Oq-VGs" firstAttribute="leading" secondItem="JSi-QR-3Qy" secondAttribute="leading" id="D9g-xq-5m9"/>
+                            <constraint firstItem="Nsp-Nw-0Ae" firstAttribute="top" secondItem="FVo-OZ-fZe" secondAttribute="bottom" constant="118" id="Ole-fb-Kr7"/>
+                            <constraint firstItem="nko-0h-rfM" firstAttribute="leading" secondItem="JSi-QR-3Qy" secondAttribute="leading" id="cEg-Vm-iNT"/>
+                            <constraint firstAttribute="centerX" secondItem="K1z-U3-9Mr" secondAttribute="centerX" id="lPq-RP-igr"/>
+                            <constraint firstItem="nko-0h-rfM" firstAttribute="top" secondItem="ibV-Oq-VGs" secondAttribute="bottom" constant="77" id="mQ1-tD-52i"/>
+                            <constraint firstAttribute="trailing" secondItem="Nsp-Nw-0Ae" secondAttribute="trailing" id="pf3-QP-0Zp"/>
+                            <constraint firstItem="ibV-Oq-VGs" firstAttribute="top" secondItem="FVo-OZ-fZe" secondAttribute="bottom" id="y5Y-2e-tC5"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
@@ -2245,7 +2278,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         </scene>
     </scenes>
     <resources>
-        <image name="B-Exterior-popup_01.jpg" width="1024" height="522"/>
+        <image name="B-Exterior-popup_01_iphone.png" width="431" height="218"/>
         <image name="b_btn_360ex_1_iphone.png" width="78" height="52"/>
         <image name="b_btn_360ex_2_iphone.png" width="88" height="54"/>
         <image name="b_intro_bg_iphone.png" width="1" height="1"/>
@@ -2309,9 +2342,9 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="landing_nav_btn_videogallery.png" width="98" height="14"/>
         <image name="logocity_top_right_iphone.png" width="108" height="31"/>
         <image name="popup_bg_blue.png" width="1024" height="542"/>
-        <image name="popup_btn_close.png" width="38" height="38"/>
-        <image name="popup_btn_left.png" width="35" height="65"/>
-        <image name="popup_btn_right.png" width="35" height="65"/>
+        <image name="popup_btn_close_iphone.png" width="20" height="20"/>
+        <image name="popup_btn_left_iphone.png" width="16" height="31"/>
+        <image name="popup_btn_right_iphone.png" width="16" height="31"/>
         <image name="s_01_sidesrs.png" width="832" height="335"/>
         <image name="s_02_abs.png" width="832" height="335"/>
         <image name="s_06-2_camera.png" width="408" height="73"/>

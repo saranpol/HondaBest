@@ -8,6 +8,7 @@
 
 #import "ViewPopupDetail.h"
 #import "CellPopupDetail.h"
+#import "HBViewController.h"
 
 @implementation ViewPopupDetail
 
@@ -52,22 +53,25 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CellPopupDetail *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellPopupDetail" forIndexPath:indexPath];
 
+    NSString *iphone = @"_iphone.png";
+    if(IDIOM == IPAD)
+        iphone = @".jpg";
     if(mMode == MODE_EXTERIOR){
         switch (indexPath.row) {
             case 0:
-                [cell.mImage setImage:[UIImage imageNamed:@"B-Exterior-popup_01.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"B-Exterior-popup_01%@", iphone]]];
                 [cell.mLabel setText:@"กระจังหน้าดีไซน์พิเศษแบบแพลทินัม"];
                 break;
             case 1:
-                [cell.mImage setImage:[UIImage imageNamed:@"B-Exterior-popup_02.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"B-Exterior-popup_02%@", iphone]]];
                 [cell.mLabel setText:@"ล้ออัลลอยขนาด 16 นิ้ว ดีไซน์สปอร์ต"];
                 break;
             case 2:
-                [cell.mImage setImage:[UIImage imageNamed:@"B-Exterior-popup_03.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"B-Exterior-popup_03%@", iphone]]];
                 [cell.mLabel setText:@"เสาอากาศแบบครีบฉลาม (Shark Fin)"];
                 break;
             case 3:
-                [cell.mImage setImage:[UIImage imageNamed:@"B-Exterior-popup_04.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"B-Exterior-popup_04%@", iphone]]];
                 [cell.mLabel setText:@"ไฟท้ายดีไซน์พรีเมียม"];
                 break;
         }
@@ -82,24 +86,24 @@
 //                [cell.mLabel setText:@"ระบบเครื่องปรับอากาศอัตโนมัติพร้อมแผงควบคุมแบบสัมผัส"];
 //                break;
             case 0:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-03.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"02-B-Interior-popup-03%@", iphone]]];
                 [cell.mLabel setText:@"ที่วางแก้วน้ำบริเวณคอนโซลหน้า แผงข้างประตู และบริเวณพนักเท้าแขนด้านหลัง"];
                 break;
             case 1:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-04.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"02-B-Interior-popup-04%@", iphone]]];
                 [cell.mLabel setText:@"ลำโพง 8 ตำแหน่ง"];
                 break;
             case 2:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-05.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"02-B-Interior-popup-05%@", iphone]]];
                 [cell.mLabel setText:@"ช่องเชื่อมต่อ USB 2 ตำแหน่ง พร้อมช่องเชื่อมต่อ HDMI"];
                 break;
             case 3:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-06.jpg"]];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"02-B-Interior-popup-06%@", iphone]]];
                 [cell.mLabel setText:@"ช่องจ่ายไฟสำรองด้านหลัง 2 ตำแหน่ง"];
                 break;
             case 4:
-                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-07.jpg"]];
-                [cell.mLabel setText:@"ช่องเชื่อมต่อ USB 2 ตำแหน่ง พร้อมช่องเชื่อมต่อ HDMI"];
+                [cell.mImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"02-B-Interior-popup-07%@", iphone]]];
+                [cell.mLabel setText:@"ห้องสัมภาระด้านท้าย"];
                 break;
 //            case 7:
 //                [cell.mImage setImage:[UIImage imageNamed:@"02-B-Interior-popup-08.jpg"]];
