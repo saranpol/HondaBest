@@ -1134,7 +1134,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="N27-px-5ga">
+                                    <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="popup_bg_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="N27-px-5ga">
                                         <rect key="frame" x="0.0" y="38" width="568" height="226"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>

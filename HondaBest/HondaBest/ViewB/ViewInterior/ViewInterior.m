@@ -87,6 +87,12 @@
     [super viewWillAppear:animated];
     HBViewController *vc = [HBViewController getVC];
     [vc.mViewMenu.mButtonInfo setBackgroundImage:[UIImage imageNamed:@"b_btn_information.png"] forState:UIControlStateNormal];
+    if(IDIOM != IPAD){
+        CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+        CGRect nnn = vc.mViewMenu.mButtonInfo.frame;
+        nnn.origin.x = screenRect.size.height - (nnn.size.width + 15);
+        [vc.mViewMenu.mButtonInfo setFrame:nnn];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {

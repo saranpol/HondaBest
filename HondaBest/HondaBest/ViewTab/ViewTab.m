@@ -48,7 +48,6 @@
         f.origin.y = 320 - f.size.height;
         CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
         f.size.width = screenRect.size.height;
-        
     }
     [mViewMenu.view setFrame:f];
     [self.view addSubview:mViewMenu.view];
