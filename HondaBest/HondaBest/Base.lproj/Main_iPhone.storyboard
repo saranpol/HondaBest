@@ -105,16 +105,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1206" height="320"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuE-8c-DN4">
-                                <rect key="frame" x="12" y="10" width="69" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="btn_back_iphone.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clickBack:" destination="Udj-tS-OqD" eventType="touchUpInside" id="s6Y-ub-fWO"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSw-b0-rJw">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -223,6 +213,16 @@
                                     <constraint firstAttribute="width" constant="568" id="HwC-10-1ew"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuE-8c-DN4">
+                                <rect key="frame" x="12" y="10" width="69" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btn_back_iphone.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBack:" destination="Udj-tS-OqD" eventType="touchUpInside" id="s6Y-ub-fWO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -1787,39 +1787,60 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mpY-gz-Bwy">
-                                <rect key="frame" x="-945" y="0.0" width="1969" height="768"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-sG-8M4">
-                                <rect key="frame" x="760" y="23" width="231" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-Ex-KSe">
-                                <rect key="frame" x="77" y="95" width="376" height="45"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="QNu-Yd-s7A">
-                                <rect key="frame" x="77" y="152" width="606" height="85"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-S8-P8O">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWu-NJ-X3W">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="viq-0k-3tV">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mpY-gz-Bwy">
+                                        <rect key="frame" x="-562" y="0.0" width="1130" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-gj-W4Q">
-                                        <rect key="frame" x="191" y="322" width="643" height="75"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logocity_top_right_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="hPf-sG-8M4">
+                                        <rect key="frame" x="400" y="10" width="108" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_h1_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="9sA-Ex-KSe">
+                                        <rect key="frame" x="92" y="47" width="196" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_landing_h2_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="QNu-Yd-s7A">
+                                        <rect key="frame" x="92" y="78" width="334" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="O4A-ha-Ks5"/>
+                                    <constraint firstAttribute="width" constant="568" id="Rqn-UE-Rh3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MtW-S8-P8O">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="viq-0k-3tV">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_word_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="OfW-gj-W4Q">
+                                        <rect key="frame" x="98" y="126" width="372" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="irh-pp-wCw"/>
+                                    <constraint firstAttribute="width" constant="568" id="mdw-yb-NeJ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="OWu-NJ-X3W" secondAttribute="centerX" id="787-Yi-Lfh"/>
+                            <constraint firstAttribute="centerX" secondItem="MtW-S8-P8O" secondAttribute="centerX" id="jWT-Sx-ZfM"/>
+                            <constraint firstItem="OWu-NJ-X3W" firstAttribute="top" secondItem="yMd-bX-xZf" secondAttribute="bottom" id="kwr-tb-7Qc"/>
+                            <constraint firstItem="MtW-S8-P8O" firstAttribute="top" secondItem="yMd-bX-xZf" secondAttribute="bottom" id="xac-nf-a30"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="B" id="PSq-CY-J0P"/>
@@ -1847,39 +1868,60 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-Xy-9pf">
-                                <rect key="frame" x="0.0" y="0.0" width="1895" height="768"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVC-qx-ofI">
-                                <rect key="frame" x="760" y="23" width="231" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="0in-7h-aA4">
-                                <rect key="frame" x="54" y="111" width="816" height="104"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-dk-h4J">
-                                <rect key="frame" x="97" y="61" width="503" height="45"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-Eq-6lL">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4Z-th-0up">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Fy-di-sQb">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ElA-Xy-9pf">
+                                        <rect key="frame" x="0.0" y="0.0" width="841" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="VpD-O7-MUJ">
-                                        <rect key="frame" x="246" y="322" width="532" height="76"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="logocity_top_right_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVC-qx-ofI">
+                                        <rect key="frame" x="400" y="10" width="108" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_h2_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="0in-7h-aA4">
+                                        <rect key="frame" x="57" y="77" width="449" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_landing_h1_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="nU3-dk-h4J">
+                                        <rect key="frame" x="82" y="49" width="261" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="9nf-qd-YxO"/>
+                                    <constraint firstAttribute="height" constant="320" id="OSi-aF-0EM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAW-Eq-6lL">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Fy-di-sQb">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_intro_word_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="VpD-O7-MUJ">
+                                        <rect key="frame" x="130" y="126" width="308" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="1cy-Pa-Nrf"/>
+                                    <constraint firstAttribute="height" constant="320" id="tRg-Z3-oj8"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T4Z-th-0up" firstAttribute="top" secondItem="nzQ-51-N9F" secondAttribute="bottom" id="3BX-y2-2Pb"/>
+                            <constraint firstAttribute="centerX" secondItem="T4Z-th-0up" secondAttribute="centerX" id="5gg-7C-glC"/>
+                            <constraint firstItem="JAW-Eq-6lL" firstAttribute="top" secondItem="nzQ-51-N9F" secondAttribute="bottom" id="Fte-Ne-iHo"/>
+                            <constraint firstAttribute="centerX" secondItem="JAW-Eq-6lL" secondAttribute="centerX" id="NTK-2k-7mp"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="E" id="TOe-CD-h9g"/>
@@ -1907,39 +1949,60 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XwS-eB-lPE">
-                                <rect key="frame" x="-842" y="0.0" width="1866" height="768"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-Gz-7wO">
-                                <rect key="frame" x="760" y="23" width="231" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-6k-73o">
-                                <rect key="frame" x="85" y="53" width="358" height="46"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="eid-ae-qYU">
-                                <rect key="frame" x="39" y="106" width="846" height="109"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V6l-8Z-OMw">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nj-Qq-WTd">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nqa-Fg-6EU">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XwS-eB-lPE">
+                                        <rect key="frame" x="-270" y="0.0" width="838" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-Ca-eaV">
-                                        <rect key="frame" x="209" y="322" width="606" height="76"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logocity_top_right_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-Gz-7wO">
+                                        <rect key="frame" x="400" y="10" width="108" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_h1_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-6k-73o">
+                                        <rect key="frame" x="89" y="39" width="186" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_landing_h2_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="eid-ae-qYU">
+                                        <rect key="frame" x="63" y="68" width="443" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="219-2S-BNv"/>
+                                    <constraint firstAttribute="width" constant="568" id="yHb-G0-Iqd"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V6l-8Z-OMw">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nqa-Fg-6EU">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_intro_word_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="v6a-Ca-eaV">
+                                        <rect key="frame" x="110" y="126" width="349" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="24F-g2-Tjd"/>
+                                    <constraint firstAttribute="height" constant="320" id="kuF-rv-oWL"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="7Nj-Qq-WTd" secondAttribute="centerX" id="OqQ-1x-k1F"/>
+                            <constraint firstAttribute="centerX" secondItem="V6l-8Z-OMw" secondAttribute="centerX" id="PQS-bp-bYY"/>
+                            <constraint firstItem="V6l-8Z-OMw" firstAttribute="top" secondItem="2h8-Ae-hf2" secondAttribute="bottom" id="dkZ-6y-YRG"/>
+                            <constraint firstItem="7Nj-Qq-WTd" firstAttribute="top" secondItem="2h8-Ae-hf2" secondAttribute="bottom" id="qz7-ku-zFn"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="S" id="b1A-tG-tUH"/>
@@ -1967,39 +2030,60 @@ G-CON ปกป้องห้องโดยสารจากการชน�
                         <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mJD-ZA-aYB">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_h2.png" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-2X-LQe">
-                                <rect key="frame" x="70" y="553" width="634" height="90"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_h1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vmy-0r-mlL">
-                                <rect key="frame" x="70" y="493" width="573" height="47"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo_top_left.png" translatesAutoresizingMaskIntoConstraints="NO" id="7We-SU-ZdC">
-                                <rect key="frame" x="760" y="23" width="231" height="65"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ek-3S-CSY">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiy-XI-IgA">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="vd0-0O-3Hj">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_bg_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mJD-ZA-aYB">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_intro_word.png" translatesAutoresizingMaskIntoConstraints="NO" id="tED-m2-dYk">
-                                        <rect key="frame" x="241" y="322" width="542" height="76"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_h2_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-2X-LQe">
+                                        <rect key="frame" x="70" y="210" width="349" height="47"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_landing_h1_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vmy-0r-mlL">
+                                        <rect key="frame" x="70" y="182" width="288" height="23"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logocity_top_right_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="7We-SU-ZdC">
+                                        <rect key="frame" x="400" y="10" width="108" height="31"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="JDR-3G-X5S"/>
+                                    <constraint firstAttribute="width" constant="568" id="Lig-ZC-BKM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ek-3S-CSY">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="b_intro_bg_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="vd0-0O-3Hj">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="t_intro_word_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="tED-m2-dYk">
+                                        <rect key="frame" x="130" y="126" width="308" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="gOW-td-VKL"/>
+                                    <constraint firstAttribute="height" constant="320" id="vB7-xt-tR5"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="oiy-XI-IgA" secondAttribute="centerX" id="HiG-KF-pGv"/>
+                            <constraint firstItem="1ek-3S-CSY" firstAttribute="top" secondItem="wMA-p5-LT8" secondAttribute="bottom" id="KL9-9f-BYu"/>
+                            <constraint firstItem="oiy-XI-IgA" firstAttribute="top" secondItem="wMA-p5-LT8" secondAttribute="bottom" id="LJ8-I7-Nwa"/>
+                            <constraint firstAttribute="centerX" secondItem="1ek-3S-CSY" secondAttribute="centerX" id="dbc-3m-PFV"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="T" id="Sfl-Dv-8w3"/>
@@ -2150,12 +2234,11 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="B-Exterior-popup_01.jpg" width="1024" height="522"/>
         <image name="b_btn_360ex_1.png" width="148" height="101"/>
         <image name="b_btn_360ex_2.png" width="170" height="109"/>
-        <image name="b_intro_bg.png" width="1" height="768"/>
         <image name="b_intro_bg_iphone.png" width="1" height="1"/>
-        <image name="b_intro_word.png" width="643" height="75"/>
-        <image name="b_landing_bg.jpg" width="1969" height="768"/>
-        <image name="b_landing_h1.png" width="376" height="45"/>
-        <image name="b_landing_h2.png" width="606" height="85"/>
+        <image name="b_intro_word_iphone.png" width="372" height="44"/>
+        <image name="b_landing_bg_iphone.jpg" width="1129" height="320"/>
+        <image name="b_landing_h1_iphone.png" width="196" height="23"/>
+        <image name="b_landing_h2_iphone.png" width="334" height="44"/>
         <image name="btn_back_iphone.png" width="51" height="19"/>
         <image name="btn_skip_iphone.png" width="109" height="13"/>
         <image name="btn_switch_iphone.png" width="84" height="84"/>
@@ -2185,10 +2268,10 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_PaddleShift_paddleshift_btnUp.png" width="137" height="137"/>
         <image name="e_PaddleShift_paddleshift_mark.png" width="1024" height="768"/>
         <image name="e_PaddleShift_paddleshift_speed1.png" width="498" height="487"/>
-        <image name="e_intro_word.png" width="532" height="76"/>
-        <image name="e_landing_bg.jpg" width="1895" height="768"/>
-        <image name="e_landing_h1.png" width="503" height="45"/>
-        <image name="e_landing_h2.png" width="816" height="104"/>
+        <image name="e_intro_word_iphone.png" width="308" height="44"/>
+        <image name="e_landing_bg_iphone.jpg" width="841" height="320"/>
+        <image name="e_landing_h1_iphone.png" width="261" height="23"/>
+        <image name="e_landing_h2_iphone.png" width="449" height="57"/>
         <image name="exterior_01.jpg" width="1024" height="768"/>
         <image name="first_bg_iphone.jpg" width="568" height="320"/>
         <image name="gradelevel_arrow_left_iphone.png" width="16" height="31"/>
@@ -2210,7 +2293,6 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="landing_nav_btn_share.png" width="42" height="14"/>
         <image name="landing_nav_btn_spec_equip.png" width="190" height="14"/>
         <image name="landing_nav_btn_videogallery.png" width="98" height="14"/>
-        <image name="logo_top_left.png" width="231" height="65"/>
         <image name="logocity_top_right_iphone.png" width="108" height="31"/>
         <image name="popup_bg_blue.png" width="1024" height="542"/>
         <image name="popup_btn_close.png" width="38" height="38"/>
@@ -2223,10 +2305,10 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="s_07_g-force.png" width="830" height="334"/>
         <image name="s_08_isofix.png" width="832" height="335"/>
         <image name="s_cover_airbag.png" width="1024" height="768"/>
-        <image name="s_intro_word.png" width="606" height="76"/>
-        <image name="s_landing_bg.jpg" width="1866" height="768"/>
-        <image name="s_landing_h1.png" width="358" height="46"/>
-        <image name="s_landing_h2.png" width="846" height="109"/>
+        <image name="s_intro_word_iphone.png" width="349" height="44"/>
+        <image name="s_landing_bg_iphone.jpg" width="838" height="320"/>
+        <image name="s_landing_h1_iphone.png" width="186" height="23"/>
+        <image name="s_landing_h2_iphone.png" width="443" height="58"/>
         <image name="spec_dtandard_b_back_iphone.png" width="38" height="16"/>
         <image name="spec_dtandard_b_spec_a_iphone.png" width="121" height="29"/>
         <image name="spec_dtandard_b_spec_iphone.png" width="120" height="29"/>
@@ -2240,10 +2322,10 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="t_01_smartkey.png" width="832" height="335"/>
         <image name="t_02_light.png" width="832" height="335"/>
         <image name="t_03_start.png" width="832" height="335"/>
-        <image name="t_intro_word.png" width="542" height="76"/>
-        <image name="t_landing_bg.jpg" width="1024" height="768"/>
-        <image name="t_landing_h1.png" width="573" height="47"/>
-        <image name="t_landing_h2.png" width="634" height="90"/>
+        <image name="t_intro_word_iphone.png" width="308" height="43"/>
+        <image name="t_landing_bg_iphone.jpg" width="568" height="320"/>
+        <image name="t_landing_h1_iphone.png" width="288" height="23"/>
+        <image name="t_landing_h2_iphone.png" width="349" height="47"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
