@@ -39,12 +39,21 @@
     //[self.view addSubview:panoView];
     self.view = panoView;
     panoView.delegate = self;
-    [panoView setFrontImage:[UIImage imageNamed:@"interior_0.jpg"]
-                 rightImage:[UIImage imageNamed:@"interior_1.jpg"]
-                  backImage:[UIImage imageNamed:@"interior_2.jpg"]
-                  leftImage:[UIImage imageNamed:@"interior_3.jpg"]
-                   topImage:[UIImage imageNamed:@"interior_4.jpg"]
-                bottomImage:[UIImage imageNamed:@"interior_5.jpg"]];
+    if(IDIOM == IPAD){
+        [panoView setFrontImage:[UIImage imageNamed:@"interior_0.jpg"]
+                     rightImage:[UIImage imageNamed:@"interior_1.jpg"]
+                      backImage:[UIImage imageNamed:@"interior_2.jpg"]
+                      leftImage:[UIImage imageNamed:@"interior_3.jpg"]
+                       topImage:[UIImage imageNamed:@"interior_4.jpg"]
+                    bottomImage:[UIImage imageNamed:@"interior_5.jpg"]];
+    }else{
+        [panoView setFrontImage:[UIImage imageNamed:@"interior_0_iphone.jpg"]
+                     rightImage:[UIImage imageNamed:@"interior_1_iphone.jpg"]
+                      backImage:[UIImage imageNamed:@"interior_2_iphone.jpg"]
+                      leftImage:[UIImage imageNamed:@"interior_3_iphone.jpg"]
+                       topImage:[UIImage imageNamed:@"interior_4_iphone.jpg"]
+                    bottomImage:[UIImage imageNamed:@"interior_5_iphone.jpg"]];
+    }
     
 //    UILabel *hotspot1=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 25)];
 //    hotspot1.backgroundColor=[UIColor clearColor];
@@ -77,7 +86,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     HBViewController *vc = [HBViewController getVC];
-    [vc.mViewMenu.mButtonInfo setImage:[UIImage imageNamed:@"b_btn_information.png"] forState:UIControlStateNormal];
+    [vc.mViewMenu.mButtonInfo setBackgroundImage:[UIImage imageNamed:@"b_btn_information.png"] forState:UIControlStateNormal];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -759,20 +759,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="271"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exterior_01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exterior_01_iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ViS-sI-Ydo">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="TfE-Za-8g9"/>
+                                    <constraint firstAttribute="width" constant="568" id="y4l-VH-0d5"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-ST-wQ7">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlF-ST-wQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-3d-6hx">
-                                        <rect key="frame" x="22" y="533" width="148" height="101"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_1_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-3d-6hx">
+                                        <rect key="frame" x="85" y="230" width="78" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="8mC-ZB-3JN">
-                                        <rect key="frame" x="787" y="153" width="170" height="109"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="b_btn_360ex_2_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="8mC-ZB-3JN">
+                                        <rect key="frame" x="363" y="57" width="88" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdW-qI-h2t">
@@ -788,12 +792,22 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="568" id="wS7-rA-0WR"/>
+                                    <constraint firstAttribute="height" constant="320" id="yI6-if-dfe"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="naG-yl-Wpt" appends="YES" id="HcE-XH-Slt"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ViS-sI-Ydo" firstAttribute="top" secondItem="XCl-KO-Hyc" secondAttribute="bottom" id="MC0-aL-GJ9"/>
+                            <constraint firstAttribute="centerX" secondItem="wlF-ST-wQ7" secondAttribute="centerX" id="Yd3-gw-0Ah"/>
+                            <constraint firstAttribute="centerX" secondItem="ViS-sI-Ydo" secondAttribute="centerX" id="p1R-px-CYN"/>
+                            <constraint firstItem="wlF-ST-wQ7" firstAttribute="top" secondItem="XCl-KO-Hyc" secondAttribute="bottom" id="sdh-QK-9oe"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Exterior" id="Ryv-r0-OF9"/>
@@ -2232,8 +2246,8 @@ G-CON ปกป้องห้องโดยสารจากการชน�
     </scenes>
     <resources>
         <image name="B-Exterior-popup_01.jpg" width="1024" height="522"/>
-        <image name="b_btn_360ex_1.png" width="148" height="101"/>
-        <image name="b_btn_360ex_2.png" width="170" height="109"/>
+        <image name="b_btn_360ex_1_iphone.png" width="78" height="52"/>
+        <image name="b_btn_360ex_2_iphone.png" width="88" height="54"/>
         <image name="b_intro_bg_iphone.png" width="1" height="1"/>
         <image name="b_intro_word_iphone.png" width="372" height="44"/>
         <image name="b_landing_bg_iphone.jpg" width="1129" height="320"/>
@@ -2272,7 +2286,7 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_landing_bg_iphone.jpg" width="841" height="320"/>
         <image name="e_landing_h1_iphone.png" width="261" height="23"/>
         <image name="e_landing_h2_iphone.png" width="449" height="57"/>
-        <image name="exterior_01.jpg" width="1024" height="768"/>
+        <image name="exterior_01_iphone.jpg" width="568" height="320"/>
         <image name="first_bg_iphone.jpg" width="568" height="320"/>
         <image name="gradelevel_arrow_left_iphone.png" width="16" height="31"/>
         <image name="gradelevel_arrow_right_iphone.png" width="16" height="31"/>

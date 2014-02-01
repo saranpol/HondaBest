@@ -44,7 +44,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     HBViewController *vc = [HBViewController getVC];
-    [vc.mViewMenu.mButtonInfo setImage:[UIImage imageNamed:@"b_btn_information_black.png"] forState:UIControlStateNormal];
+    [vc.mViewMenu.mButtonInfo setBackgroundImage:[UIImage imageNamed:@"b_btn_information_black.png"] forState:UIControlStateNormal];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -95,7 +95,10 @@
     
     //NSLog(@"%f", p);
     NSInteger i = floorf(MAX_IMAGE_INDEX*p) + 1;
-    NSString *s = [NSString stringWithFormat:@"exterior_%02ld.jpg", (long)i];
+    NSString *iphone = @"_iphone";
+    if(IDIOM == IPAD)
+        iphone = @"";
+    NSString *s = [NSString stringWithFormat:@"exterior_%02ld%@.jpg", (long)i, iphone];
     [mImageRotate setImage:[UIImage imageNamed:s]];
 }
 
