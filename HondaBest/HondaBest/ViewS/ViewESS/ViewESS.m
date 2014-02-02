@@ -8,6 +8,7 @@
 
 #import "ViewESS.h"
 #import "CellFeature.h"
+#import "HBViewController.h"
 
 @implementation ViewESS
 
@@ -45,16 +46,23 @@
     
     switch (indexPath.row) {
         case 0:
-            [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess.png"]];
+            if(IDIOM == IPAD)
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess.png"]];
+            else
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess_iphone.png"]];
             if(cell.mPlayer && cell.mPlayer.view.superview)
                 [cell.mPlayer.view removeFromSuperview];
             [cell.mLabelDescription setText:@"Emergency Stop Signal (ESS)\nสัญญาณไฟฉุกเฉินอัตโนมัติขณะเบรกกะทันหัน\n\n"];
             break;
         case 1:
-            //[cell.mImageFeature setImage:[UIImage imageNamed:@"s_05_hillstart.png"]];
-            [cell.mImageFeature setImage:[UIImage imageNamed:@"S_07_hillstart_snap.png"]];
+            if(IDIOM == IPAD){
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_07_hillstart_snap.png"]];
+                [cell setupVideo:@"S_07_hillstart"];
+            }else{
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_07_hillstart_snap_iphone.png"]];
+                [cell setupVideo:@"S_07_hillstart"];
+            }
             [cell.mLabelDescription setText:@"Hill Start Assist (HSA)\nระบบช่วยการออกตัวขณะอยู่บนทางลาดชัน\n\n"];
-            [cell setupVideo:@"S_07_hillstart"];
             break;
     }
     return cell;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewRSR.h"
+#import "HBViewController.h"
 
 @implementation ViewRSR
 
@@ -52,7 +53,10 @@
 {
     [self resignFirstResponder];
     [super viewWillDisappear:animated];
-    [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs.png"]];
+    if(IDIOM == IPAD)
+        [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs.png"]];
+    else
+        [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs_iphone.png"]];
 }
 
 
@@ -64,7 +68,10 @@
         if(![mButtonGuide isHidden]){
             [self clickButtonGuide:nil];
         }
-        [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs_active.png"]];
+        if(IDIOM == IPAD)
+            [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs_active.png"]];
+        else
+            [mImageRSR setImage:[UIImage imageNamed:@"s_01_sidesrs_active_iphone.png"]];
     }
     
     if ( [super respondsToSelector:@selector(motionEnded:withEvent:)] )

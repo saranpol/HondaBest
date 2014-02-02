@@ -239,7 +239,6 @@
 		43A4F3F21896EF34008B712D /* e_landing_bg_iphone@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F32C1896EF34008B712D /* e_landing_bg_iphone@2x.jpg */; };
 		43A4F3F31896EF34008B712D /* e_landing_h1_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F32D1896EF34008B712D /* e_landing_h1_iphone@2x.png */; };
 		43A4F3F41896EF34008B712D /* e_landing_h2_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F32E1896EF34008B712D /* e_landing_h2_iphone@2x.png */; };
-		43A4F3F51896EF34008B712D /* .BridgeLabelsAndRatings in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3301896EF34008B712D /* .BridgeLabelsAndRatings */; };
 		43A4F3F61896EF34008B712D /* e_PaddleShift_coverhowto_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3311896EF34008B712D /* e_PaddleShift_coverhowto_iphone@2x.png */; };
 		43A4F3F71896EF34008B712D /* e_PaddleShift_paddleshift_btnDown_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3321896EF34008B712D /* e_PaddleShift_paddleshift_btnDown_iphone@2x.png */; };
 		43A4F3F81896EF34008B712D /* e_PaddleShift_paddleshift_btnUp_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3331896EF34008B712D /* e_PaddleShift_paddleshift_btnUp_iphone@2x.png */; };
@@ -302,13 +301,13 @@
 		43A4F4321896EF34008B712D /* spec_dtandard_bg_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3741896EF34008B712D /* spec_dtandard_bg_iphone@2x.png */; };
 		43A4F4331896EF34008B712D /* spec_dtandard_spec_detail_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3751896EF34008B712D /* spec_dtandard_spec_detail_iphone@2x.png */; };
 		43A4F4341896EF34008B712D /* spec_dtandard_spec_f_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3761896EF34008B712D /* spec_dtandard_spec_f_iphone@2x.png */; };
-		43A4F4351896EF34008B712D /* t_00_01_total_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3781896EF34008B712D /* t_00_01_total_iphone@2x.png */; };
-		43A4F4361896EF34008B712D /* t_00_02_audio_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3791896EF34008B712D /* t_00_02_audio_iphone@2x.png */; };
-		43A4F4371896EF34008B712D /* t_00_03_cruise_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37A1896EF34008B712D /* t_00_03_cruise_iphone@2x.png */; };
-		43A4F4381896EF34008B712D /* t_00_04_7speed_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37B1896EF34008B712D /* t_00_04_7speed_iphone@2x.png */; };
-		43A4F4391896EF34008B712D /* t_00_05_handsfree_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37C1896EF34008B712D /* t_00_05_handsfree_iphone@2x.png */; };
-		43A4F43A1896EF34008B712D /* t_00_06_sirieyes_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37D1896EF34008B712D /* t_00_06_sirieyes_iphone@2x.png */; };
-		43A4F43B1896EF34008B712D /* t_00_07_air_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37E1896EF34008B712D /* t_00_07_air_iphone@2x.png */; };
+		43A4F4351896EF34008B712D /* t_00_total_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3781896EF34008B712D /* t_00_total_iphone@2x.png */; };
+		43A4F4361896EF34008B712D /* t_02_audio_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3791896EF34008B712D /* t_02_audio_iphone@2x.png */; };
+		43A4F4371896EF34008B712D /* t_03_cruise_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37A1896EF34008B712D /* t_03_cruise_iphone@2x.png */; };
+		43A4F4381896EF34008B712D /* t_04_7speed_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37B1896EF34008B712D /* t_04_7speed_iphone@2x.png */; };
+		43A4F4391896EF34008B712D /* t_05_handsfree_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37C1896EF34008B712D /* t_05_handsfree_iphone@2x.png */; };
+		43A4F43A1896EF34008B712D /* t_06_sirieyes_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37D1896EF34008B712D /* t_06_sirieyes_iphone@2x.png */; };
+		43A4F43B1896EF34008B712D /* t_07_air_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37E1896EF34008B712D /* t_07_air_iphone@2x.png */; };
 		43A4F43C1896EF34008B712D /* t_01_smartkey_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F37F1896EF34008B712D /* t_01_smartkey_iphone@2x.png */; };
 		43A4F43D1896EF34008B712D /* t_02_light_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3801896EF34008B712D /* t_02_light_iphone@2x.png */; };
 		43A4F43E1896EF34008B712D /* t_03_start_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A4F3811896EF34008B712D /* t_03_start_iphone@2x.png */; };
@@ -893,7 +892,6 @@
 		43A4F32C1896EF34008B712D /* e_landing_bg_iphone@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "e_landing_bg_iphone@2x.jpg"; sourceTree = "<group>"; };
 		43A4F32D1896EF34008B712D /* e_landing_h1_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_landing_h1_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F32E1896EF34008B712D /* e_landing_h2_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_landing_h2_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F3301896EF34008B712D /* .BridgeLabelsAndRatings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .BridgeLabelsAndRatings; sourceTree = "<group>"; };
 		43A4F3311896EF34008B712D /* e_PaddleShift_coverhowto_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_coverhowto_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3321896EF34008B712D /* e_PaddleShift_paddleshift_btnDown_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_btnDown_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3331896EF34008B712D /* e_PaddleShift_paddleshift_btnUp_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "e_PaddleShift_paddleshift_btnUp_iphone@2x.png"; sourceTree = "<group>"; };
@@ -956,13 +954,13 @@
 		43A4F3741896EF34008B712D /* spec_dtandard_bg_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spec_dtandard_bg_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3751896EF34008B712D /* spec_dtandard_spec_detail_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spec_dtandard_spec_detail_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3761896EF34008B712D /* spec_dtandard_spec_f_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spec_dtandard_spec_f_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F3781896EF34008B712D /* t_00_01_total_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_01_total_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F3791896EF34008B712D /* t_00_02_audio_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_02_audio_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F37A1896EF34008B712D /* t_00_03_cruise_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_03_cruise_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F37B1896EF34008B712D /* t_00_04_7speed_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_04_7speed_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F37C1896EF34008B712D /* t_00_05_handsfree_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_05_handsfree_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F37D1896EF34008B712D /* t_00_06_sirieyes_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_06_sirieyes_iphone@2x.png"; sourceTree = "<group>"; };
-		43A4F37E1896EF34008B712D /* t_00_07_air_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_07_air_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F3781896EF34008B712D /* t_00_total_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_00_total_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F3791896EF34008B712D /* t_02_audio_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_02_audio_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F37A1896EF34008B712D /* t_03_cruise_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_03_cruise_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F37B1896EF34008B712D /* t_04_7speed_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_04_7speed_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F37C1896EF34008B712D /* t_05_handsfree_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_05_handsfree_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F37D1896EF34008B712D /* t_06_sirieyes_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_06_sirieyes_iphone@2x.png"; sourceTree = "<group>"; };
+		43A4F37E1896EF34008B712D /* t_07_air_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_07_air_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F37F1896EF34008B712D /* t_01_smartkey_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_01_smartkey_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3801896EF34008B712D /* t_02_light_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_02_light_iphone@2x.png"; sourceTree = "<group>"; };
 		43A4F3811896EF34008B712D /* t_03_start_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_03_start_iphone@2x.png"; sourceTree = "<group>"; };
@@ -1876,7 +1874,6 @@
 		43A4F32F1896EF34008B712D /* E_PaddleShift */ = {
 			isa = PBXGroup;
 			children = (
-				43A4F3301896EF34008B712D /* .BridgeLabelsAndRatings */,
 				43A4F3311896EF34008B712D /* e_PaddleShift_coverhowto_iphone@2x.png */,
 				43A4F3321896EF34008B712D /* e_PaddleShift_paddleshift_btnDown_iphone@2x.png */,
 				43A4F3331896EF34008B712D /* e_PaddleShift_paddleshift_btnUp_iphone@2x.png */,
@@ -1996,13 +1993,13 @@
 		43A4F3771896EF34008B712D /* T */ = {
 			isa = PBXGroup;
 			children = (
-				43A4F3781896EF34008B712D /* t_00_01_total_iphone@2x.png */,
-				43A4F3791896EF34008B712D /* t_00_02_audio_iphone@2x.png */,
-				43A4F37A1896EF34008B712D /* t_00_03_cruise_iphone@2x.png */,
-				43A4F37B1896EF34008B712D /* t_00_04_7speed_iphone@2x.png */,
-				43A4F37C1896EF34008B712D /* t_00_05_handsfree_iphone@2x.png */,
-				43A4F37D1896EF34008B712D /* t_00_06_sirieyes_iphone@2x.png */,
-				43A4F37E1896EF34008B712D /* t_00_07_air_iphone@2x.png */,
+				43A4F3781896EF34008B712D /* t_00_total_iphone@2x.png */,
+				43A4F3791896EF34008B712D /* t_02_audio_iphone@2x.png */,
+				43A4F37A1896EF34008B712D /* t_03_cruise_iphone@2x.png */,
+				43A4F37B1896EF34008B712D /* t_04_7speed_iphone@2x.png */,
+				43A4F37C1896EF34008B712D /* t_05_handsfree_iphone@2x.png */,
+				43A4F37D1896EF34008B712D /* t_06_sirieyes_iphone@2x.png */,
+				43A4F37E1896EF34008B712D /* t_07_air_iphone@2x.png */,
 				43A4F37F1896EF34008B712D /* t_01_smartkey_iphone@2x.png */,
 				43A4F3801896EF34008B712D /* t_02_light_iphone@2x.png */,
 				43A4F3811896EF34008B712D /* t_03_start_iphone@2x.png */,
@@ -3072,7 +3069,7 @@
 				43E57754187F706700B11E81 /* intro_logo_city.png in Resources */,
 				43A4F41E1896EF34008B712D /* s_02_abs_iphone@2x.png in Resources */,
 				433DC88A188D98DF00EAFE79 /* t_00_total.png in Resources */,
-				43A4F43B1896EF34008B712D /* t_00_07_air_iphone@2x.png in Resources */,
+				43A4F43B1896EF34008B712D /* t_07_air_iphone@2x.png in Resources */,
 				43A4F3BD1896EF34008B712D /* exterior_27_iphone@2x.jpg in Resources */,
 				433DC8A8188D98DF00EAFE79 /* t_landing_h1@2x.png in Resources */,
 				43EC8D951885BE97007585A3 /* gradelevel_txt_02@2x.png in Resources */,
@@ -3088,7 +3085,7 @@
 				43C74072188EF1E0004D4E08 /* exterior_21.jpg in Resources */,
 				43A4F42E1896EF34008B712D /* spec_dtandard_b_standard_a_iphone@2x.png in Resources */,
 				43EC8D851885BE97007585A3 /* gradelevel_txt_03.png in Resources */,
-				43A4F4371896EF34008B712D /* t_00_03_cruise_iphone@2x.png in Resources */,
+				43A4F4371896EF34008B712D /* t_03_cruise_iphone@2x.png in Resources */,
 				433DC89E188D98DF00EAFE79 /* t_04_advanced@2x.png in Resources */,
 				43C740C2188EF1E0004D4E08 /* 02-B-Interior-popup-01@2x.jpg in Resources */,
 				43A4F4101896EF34008B712D /* 01-landing-08_iphone@2x.png in Resources */,
@@ -3427,7 +3424,7 @@
 				43E5774B187F706700B11E81 /* e_landing_bg@2x.jpg in Resources */,
 				4302C1EB18872975005223D8 /* btn_back.png in Resources */,
 				43C7406F188EF1E0004D4E08 /* exterior_18.jpg in Resources */,
-				43A4F4391896EF34008B712D /* t_00_05_handsfree_iphone@2x.png in Resources */,
+				43A4F4391896EF34008B712D /* t_05_handsfree_iphone@2x.png in Resources */,
 				435BD410188C48C50057BFFA /* spec_dtandard_b_standard_detail.png in Resources */,
 				43A4F39E1896EF34008B712D /* 02-B-Interior-popup-07_iphone@2x.png in Resources */,
 				43A4F3F91896EF34008B712D /* e_PaddleShift_paddleshift_SteeringWheel_iphone@2x.png in Resources */,
@@ -3449,7 +3446,7 @@
 				43C7406E188EF1E0004D4E08 /* exterior_17.jpg in Resources */,
 				43E57743187F706700B11E81 /* e_01_i_vtec@2x.png in Resources */,
 				435BD419188C48C50057BFFA /* spec_dtandard_b_standard_a@2x.png in Resources */,
-				43A4F4351896EF34008B712D /* t_00_01_total_iphone@2x.png in Resources */,
+				43A4F4351896EF34008B712D /* t_00_total_iphone@2x.png in Resources */,
 				43C7407F188EF1E0004D4E08 /* exterior_34.jpg in Resources */,
 				43EC8DB91885C0A8007585A3 /* landing_nav_btn_spec_equip@2x.png in Resources */,
 				43A4F3DB1896EF34008B712D /* colorbody_car_05_iphone@2x.png in Resources */,
@@ -3458,7 +3455,6 @@
 				435BD3EE188C34040057BFFA /* s_08_isofix@2x.png in Resources */,
 				43A4F44D1896EF34008B712D /* logocity_top_right_iphone@2x.png in Resources */,
 				43A4F3A31896EF34008B712D /* exterior_01_iphone@2x.jpg in Resources */,
-				43A4F3F51896EF34008B712D /* .BridgeLabelsAndRatings in Resources */,
 				43EC8DAB1885C0A8007585A3 /* landing_bg.jpg in Resources */,
 				43A4F42D1896EF34008B712D /* spec_dtandard_b_spec_iphone@2x.png in Resources */,
 				433DC8A5188D98DF00EAFE79 /* t_11_navigation@2x.png in Resources */,
@@ -3509,7 +3505,7 @@
 				43A4F3FC1896EF34008B712D /* gradelevel_arrow_left_iphone@2x.png in Resources */,
 				435BD40E188C48C50057BFFA /* spec_dtandard_b_standard.png in Resources */,
 				43EC8D901885BE97007585A3 /* gradelevel_detail_03@2x.png in Resources */,
-				43A4F4381896EF34008B712D /* t_00_04_7speed_iphone@2x.png in Resources */,
+				43A4F4381896EF34008B712D /* t_04_7speed_iphone@2x.png in Resources */,
 				43C74063188EF1E0004D4E08 /* exterior_06.jpg in Resources */,
 				43A4F40E1896EF34008B712D /* intro_logo_best_iphone@2x.png in Resources */,
 				43C740AE188EF1E0004D4E08 /* interior_0.jpg in Resources */,
@@ -3575,7 +3571,7 @@
 				435BD3A8188C1F110057BFFA /* e_PaddleShift_paddleshift_speed3.png in Resources */,
 				43C740A7188EF1E0004D4E08 /* B-Exterior-popup_02.jpg in Resources */,
 				43C74076188EF1E0004D4E08 /* exterior_25.jpg in Resources */,
-				43A4F4361896EF34008B712D /* t_00_02_audio_iphone@2x.png in Resources */,
+				43A4F4361896EF34008B712D /* t_02_audio_iphone@2x.png in Resources */,
 				433DC894188D98DF00EAFE79 /* t_10_fueldisplay.png in Resources */,
 				435BD3E8188C34040057BFFA /* s_03_vsa@2x.png in Resources */,
 				43A4F3E71896EF34008B712D /* colorbody_nav_btn_06_iphone@2x.png in Resources */,
@@ -3600,7 +3596,7 @@
 				43EC8DBA1885C0A8007585A3 /* landing_nav_btn_videogallery@2x.png in Resources */,
 				43EC8D7C1885BE97007585A3 /* gradelevel_colorbody_background.jpg in Resources */,
 				43C74085188EF1E0004D4E08 /* exterior_04@2x.jpg in Resources */,
-				43A4F43A1896EF34008B712D /* t_00_06_sirieyes_iphone@2x.png in Resources */,
+				43A4F43A1896EF34008B712D /* t_06_sirieyes_iphone@2x.png in Resources */,
 				43A4F4511896EF34008B712D /* popup_btn_right_iphone@2x.png in Resources */,
 				43C740C8188EF1E0004D4E08 /* 02-B-Interior-popup-07@2x.jpg in Resources */,
 				43C74077188EF1E0004D4E08 /* exterior_26.jpg in Resources */,

@@ -8,6 +8,7 @@
 
 #import "ViewABS.h"
 #import "CellFeature.h"
+#import "HBViewController.h"
 
 @implementation ViewABS
 
@@ -45,17 +46,26 @@
     
     switch (indexPath.row) {
         case 0:{
-            //[cell.mImageFeature setImage:[UIImage imageNamed:@"s_02_abs.png"]];
-            [cell.mImageFeature setImage:[UIImage imageNamed:@"S_02_ABS_snap.png"]];
             [cell.mLabelDescription setText:@"ระบบเบรกป้องกันล้อล็อก ABS ช่วยให้สามารถควบคุมการบังคับพวงมาลัยเมื่อต้องเบรกกะทันหัน\nพร้อมระบบกระจายแรงเบรก EBD เพิ่มประสิทธิภาพการเบรกให้มีความสมดุลมากขึ้น\n\n"];
-            [cell setupVideo:@"S_02_ABS"];
+            if(IDIOM == IPAD){
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_02_ABS_snap.png"]];
+                [cell setupVideo:@"S_02_ABS"];
+            }else{
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_02_ABS_snap_iphone.png"]];
+                [cell setupVideo:@"S_02_ABS"];
+            }
             break;
         }
         case 1:
-            //[cell.mImageFeature setImage:[UIImage imageNamed:@"s_03_vsa.png"]];
-            [cell.mImageFeature setImage:[UIImage imageNamed:@"S_03_VSA_snap.png"]];
             [cell.mLabelDescription setText:@"Vehicle Stability Assist (VSA) ระบบช่วยควบคุมการทรงตัวขณะเข้าโค้ง\nเพิ่มการยึดเกาะถนน มั่นคงทุกการขับเคลื่อน\n\n"];
-            [cell setupVideo:@"S_03_VSA"];
+            if(IDIOM == IPAD){
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_03_VSA_snap.png"]];
+                [cell setupVideo:@"S_03_VSA"];
+            }else{
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_03_VSA_snap_iphone.png"]];
+                [cell setupVideo:@"S_03_VSA"];
+            }
+            
             break;
     }
     return cell;
