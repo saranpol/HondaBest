@@ -52,7 +52,7 @@
                 [cell setupVideo:@"S_02_ABS"];
             }else{
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_02_ABS_snap_iphone.png"]];
-                [cell setupVideo:@"S_02_ABS"];
+                [cell setupVideo:@"S_02_ABS_iphone"];
             }
             break;
         }
@@ -63,7 +63,7 @@
                 [cell setupVideo:@"S_03_VSA"];
             }else{
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_03_VSA_snap_iphone.png"]];
-                [cell setupVideo:@"S_03_VSA"];
+                [cell setupVideo:@"S_03_VSA_iphone"];
             }
             
             break;

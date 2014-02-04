@@ -1837,19 +1837,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-9P-0wT">
-                                        <rect key="frame" x="111" y="64" width="347" height="140"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_bg_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQo-9P-0wT">
+                                        <rect key="frame" x="120" y="58" width="328" height="133"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_speed1.png" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-nx-IAz">
-                                        <rect key="frame" x="187" y="-48" width="498" height="487"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="e_PaddleShift_paddleshift_speed1_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="J3W-nx-IAz">
+                                        <rect key="frame" x="149" y="-15" width="208" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_SteeringWheel_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xtc-mG-mUY">
-                                        <rect key="frame" x="111" y="64" width="347" height="140"/>
+                                        <rect key="frame" x="108" y="57" width="349" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_mark.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-Oe-5AK">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="e_PaddleShift_paddleshift_mark_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="pOU-Oe-5AK">
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -2567,12 +2567,12 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="e_05_econ_iphone.png" width="347" height="140"/>
         <image name="e_06_ecocoaching_iphone.png" width="347" height="140"/>
         <image name="e_PaddleShift_coverhowto_iphone.png" width="568" height="320"/>
-        <image name="e_PaddleShift_paddleshift_SteeringWheel_iphone.png" width="347" height="140"/>
-        <image name="e_PaddleShift_paddleshift_bg.png" width="787" height="318"/>
+        <image name="e_PaddleShift_paddleshift_SteeringWheel_iphone.png" width="347" height="139"/>
+        <image name="e_PaddleShift_paddleshift_bg_iphone.png" width="327" height="132"/>
         <image name="e_PaddleShift_paddleshift_btnDown_iphone.png" width="56" height="56"/>
         <image name="e_PaddleShift_paddleshift_btnUp_iphone.png" width="56" height="56"/>
-        <image name="e_PaddleShift_paddleshift_mark.png" width="1024" height="768"/>
-        <image name="e_PaddleShift_paddleshift_speed1.png" width="498" height="487"/>
+        <image name="e_PaddleShift_paddleshift_mark_iphone.png" width="568" height="320"/>
+        <image name="e_PaddleShift_paddleshift_speed1_iphone.png" width="207" height="202"/>
         <image name="e_intro_word_iphone.png" width="308" height="44"/>
         <image name="e_landing_bg_iphone.jpg" width="841" height="320"/>
         <image name="e_landing_h1_iphone.png" width="261" height="23"/>

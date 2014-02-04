@@ -46,12 +46,13 @@
     
     switch (indexPath.row) {
         case 0:
-            if(IDIOM == IPAD)
-                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess.png"]];
-            else
-                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess_iphone.png"]];
-            if(cell.mPlayer && cell.mPlayer.view.superview)
-                [cell.mPlayer.view removeFromSuperview];
+            if(IDIOM == IPAD){
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess_snap.png"]];
+                [cell setupVideo:@"S_04_ess"];
+            }else{
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess_snap_iphone.png"]];
+                [cell setupVideo:@"S_04_ess_iphone"];
+            }
             [cell.mLabelDescription setText:@"Emergency Stop Signal (ESS)\nสัญญาณไฟฉุกเฉินอัตโนมัติขณะเบรกกะทันหัน\n\n"];
             break;
         case 1:
@@ -60,7 +61,7 @@
                 [cell setupVideo:@"S_07_hillstart"];
             }else{
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_07_hillstart_snap_iphone.png"]];
-                [cell setupVideo:@"S_07_hillstart"];
+                [cell setupVideo:@"S_07_hillstart_iphone"];
             }
             [cell.mLabelDescription setText:@"Hill Start Assist (HSA)\nระบบช่วยการออกตัวขณะอยู่บนทางลาดชัน\n\n"];
             break;
