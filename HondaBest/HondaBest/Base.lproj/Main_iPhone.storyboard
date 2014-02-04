@@ -1063,10 +1063,10 @@
             </objects>
             <point key="canvasLocation" x="458" y="937"/>
         </scene>
-        <!--View Controller - BackCamera-->
+        <!--View Camera - BackCamera-->
         <scene sceneID="zeM-37-nfs">
             <objects>
-                <viewController id="tdK-Om-oJZ" sceneMemberID="viewController">
+                <viewController id="tdK-Om-oJZ" customClass="ViewCamera" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U3b-5f-VGb"/>
                         <viewControllerLayoutGuide type="bottom" id="E9a-ht-1AX"/>
@@ -1083,22 +1083,51 @@
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_06_camera_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="TQz-IE-Cab">
-                                        <rect key="frame" x="111" y="58" width="347" height="140"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="S_06_rearcamera_iphone.png" translatesAutoresizingMaskIntoConstraints="NO" id="BTB-8l-31G">
+                                        <rect key="frame" x="104" y="59" width="360" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="380" translatesAutoresizingMaskIntoConstraints="NO" id="OHI-mx-8Un">
-                                        <rect key="frame" x="94" y="204" width="380" height="58"/>
+                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="380" translatesAutoresizingMaskIntoConstraints="NO" id="OHI-mx-8Un">
+                                        <rect key="frame" x="94" y="13" width="380" height="58"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <string key="text">Multi-angle Rearview Camera กล้องส่องภาพด้านหลัง ปรับมุมมองได้ 3 ระดับ ช่วยเพิ่มทัศนวิสัยในการถอย โดยสามารถเลือกดูมุมกล้องที่แตกต่างกันได้ทั้งแบบ 130 องศา 180 องศา และมุมมองจากด้านบน</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_06-2_camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="glA-5K-8oa">
-                                        <rect key="frame" x="308" y="473" width="408" height="73"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjO-Wk-uvc">
+                                        <rect key="frame" x="186" y="201" width="58" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="S_06_rearcamera_view_btn_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="S_06_rearcamera_view_bta_iphone.png"/>
+                                        <connections>
+                                            <action selector="click1:" destination="tdK-Om-oJZ" eventType="touchUpInside" id="9ji-N8-rkC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ur-gC-EVI">
+                                        <rect key="frame" x="251" y="201" width="58" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="S_06_rearcamera_view_btn_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="S_06_rearcamera_view_bta_iphone.png"/>
+                                        <connections>
+                                            <action selector="click2:" destination="tdK-Om-oJZ" eventType="touchUpInside" id="ufO-og-AHc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thp-T1-UDn">
+                                        <rect key="frame" x="315" y="201" width="58" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="S_06_rearcamera_view_btn_iphone.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="S_06_rearcamera_view_bta_iphone.png"/>
+                                        <connections>
+                                            <action selector="click3:" destination="tdK-Om-oJZ" eventType="touchUpInside" id="f4J-XG-ibQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1115,6 +1144,12 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="BackCamera" id="o5a-ae-zcQ"/>
+                    <connections>
+                        <outlet property="mButton1" destination="gjO-Wk-uvc" id="K66-r0-0kk"/>
+                        <outlet property="mButton2" destination="4ur-gC-EVI" id="KUQ-0s-veJ"/>
+                        <outlet property="mButton3" destination="Thp-T1-UDn" id="xQ4-Mf-y3W"/>
+                        <outlet property="mImage" destination="BTB-8l-31G" id="lBx-WY-kB7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpv-HV-J4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2537,6 +2572,9 @@ G-CON ปกป้องห้องโดยสารจากการชน�
     </scenes>
     <resources>
         <image name="B-Exterior-popup_01_iphone.png" width="431" height="218"/>
+        <image name="S_06_rearcamera_iphone.png" width="360" height="180"/>
+        <image name="S_06_rearcamera_view_bta_iphone.png" width="58" height="34"/>
+        <image name="S_06_rearcamera_view_btn_iphone.png" width="58" height="34"/>
         <image name="b_btn_360ex_1_iphone.png" width="78" height="52"/>
         <image name="b_btn_360ex_2_iphone.png" width="88" height="54"/>
         <image name="b_intro_bg_iphone.png" width="1" height="1"/>
@@ -2605,8 +2643,6 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="popup_btn_right_iphone.png" width="16" height="31"/>
         <image name="s_01_sidesrs_iphone.png" width="347" height="140"/>
         <image name="s_02_abs_iphone.png" width="347" height="140"/>
-        <image name="s_06-2_camera.png" width="408" height="73"/>
-        <image name="s_06_camera_iphone.png" width="347" height="140"/>
         <image name="s_07_g-force_iphone.png" width="347" height="139"/>
         <image name="s_08_isofix_iphone.png" width="347" height="140"/>
         <image name="s_cover_airbag_iphone.png" width="568" height="320"/>

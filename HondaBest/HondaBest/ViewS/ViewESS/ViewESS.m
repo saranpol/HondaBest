@@ -55,6 +55,13 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CellFeature *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellFeature" forIndexPath:indexPath];
+    static CGRect imageFeatureRect;
+    static BOOL imageFeatureRectSet = NO;
+    
+    if(!imageFeatureRectSet){
+        imageFeatureRect = cell.mImageFeature.frame;
+        imageFeatureRectSet = YES;
+    }
     
     switch (indexPath.row) {
         case 0:
@@ -62,6 +69,7 @@
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_04_ess_snap.png"]];
                 [cell setupVideo:@"S_04_ess"];
             }else{
+                [cell.mImageFeature setFrame:imageFeatureRect];
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_04_ess_snap_iphone.png"]];
                 [cell setupVideo:@"S_04_ess_iphone"];
             }
@@ -72,6 +80,7 @@
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_07_hillstart_snap.png"]];
                 [cell setupVideo:@"S_07_hillstart"];
             }else{
+                [cell.mImageFeature setFrame:CGRectMake(111, 58, 351, 145)];
                 [cell.mImageFeature setImage:[UIImage imageNamed:@"S_07_hillstart_snap_iphone.png"]];
                 [cell setupVideo:@"S_07_hillstart_iphone"];
             }

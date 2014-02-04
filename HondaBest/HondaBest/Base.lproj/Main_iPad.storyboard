@@ -887,10 +887,10 @@
             </objects>
             <point key="canvasLocation" x="1380" y="1949"/>
         </scene>
-        <!--View Controller - BackCamera-->
+        <!--View Camera - BackCamera-->
         <scene sceneID="zeM-37-nfs">
             <objects>
-                <viewController id="tdK-Om-oJZ" sceneMemberID="viewController">
+                <viewController id="tdK-Om-oJZ" customClass="ViewCamera" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U3b-5f-VGb"/>
                         <viewControllerLayoutGuide type="bottom" id="E9a-ht-1AX"/>
@@ -903,10 +903,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_06_camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="TQz-IE-Cab">
-                                <rect key="frame" x="96" y="130" width="832" height="335"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="930" translatesAutoresizingMaskIntoConstraints="NO" id="OHI-mx-8Un">
                                 <rect key="frame" x="47" y="522" width="930" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -916,15 +912,54 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="s_06-2_camera.png" translatesAutoresizingMaskIntoConstraints="NO" id="glA-5K-8oa">
-                                <rect key="frame" x="308" y="473" width="408" height="73"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="S_06_rearcamera.png" translatesAutoresizingMaskIntoConstraints="NO" id="P5p-ur-m1P">
+                                <rect key="frame" x="92" y="121" width="850" height="425"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vv5-T8-z8E">
+                                <rect key="frame" x="303" y="469" width="127" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="S_06_rearcamera_view_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="S_06_rearcamera_view_bta.png"/>
+                                <connections>
+                                    <action selector="click1:" destination="tdK-Om-oJZ" eventType="touchUpInside" id="H33-6z-NVc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIe-xT-pRE">
+                                <rect key="frame" x="444" y="469" width="127" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="S_06_rearcamera_view_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="S_06_rearcamera_view_bta.png"/>
+                                <connections>
+                                    <action selector="click2:" destination="tdK-Om-oJZ" eventType="touchUpInside" id="6VL-hG-CCo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEc-s9-Lps">
+                                <rect key="frame" x="584" y="469" width="127" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="S_06_rearcamera_view_btn.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="S_06_rearcamera_view_bta.png"/>
+                                <connections>
+                                    <action selector="click3:" destination="tdK-Om-oJZ" eventType="touchUpInside" id="D2g-ss-Tj3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="BackCamera" id="o5a-ae-zcQ"/>
+                    <connections>
+                        <outlet property="mButton1" destination="Vv5-T8-z8E" id="Z3O-00-k5p"/>
+                        <outlet property="mButton2" destination="TIe-xT-pRE" id="eeB-Gg-D4B"/>
+                        <outlet property="mButton3" destination="hEc-s9-Lps" id="uc7-hS-CFE"/>
+                        <outlet property="mImage" destination="P5p-ur-m1P" id="oyf-zQ-WJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wpv-HV-J4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2003,6 +2038,9 @@ G-CON ปกป้องห้องโดยสารจากการชน�
     </scenes>
     <resources>
         <image name="B-Exterior-popup_01.jpg" width="1024" height="522"/>
+        <image name="S_06_rearcamera.png" width="850" height="425"/>
+        <image name="S_06_rearcamera_view_bta.png" width="127" height="74"/>
+        <image name="S_06_rearcamera_view_btn.png" width="127" height="74"/>
         <image name="b_btn_360ex_1.png" width="148" height="101"/>
         <image name="b_btn_360ex_2.png" width="170" height="109"/>
         <image name="b_intro_bg.png" width="1" height="768"/>
@@ -2071,8 +2109,6 @@ G-CON ปกป้องห้องโดยสารจากการชน�
         <image name="popup_btn_right.png" width="35" height="65"/>
         <image name="s_01_sidesrs.png" width="832" height="335"/>
         <image name="s_02_abs.png" width="832" height="335"/>
-        <image name="s_06-2_camera.png" width="408" height="73"/>
-        <image name="s_06_camera.png" width="832" height="335"/>
         <image name="s_07_g-force.png" width="830" height="334"/>
         <image name="s_08_isofix.png" width="832" height="335"/>
         <image name="s_cover_airbag.png" width="1024" height="768"/>
