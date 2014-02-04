@@ -40,6 +40,18 @@
     return 2;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    for (CellFeature *cell in [mCollectionView visibleCells]) {
+        [cell.mPlayer.view setHidden:YES];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [mCollectionView reloadData];
+}
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CellFeature *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellFeature" forIndexPath:indexPath];
@@ -47,10 +59,10 @@
     switch (indexPath.row) {
         case 0:
             if(IDIOM == IPAD){
-                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess_snap.png"]];
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_04_ess_snap.png"]];
                 [cell setupVideo:@"S_04_ess"];
             }else{
-                [cell.mImageFeature setImage:[UIImage imageNamed:@"s_04_ess_snap_iphone.png"]];
+                [cell.mImageFeature setImage:[UIImage imageNamed:@"S_04_ess_snap_iphone.png"]];
                 [cell setupVideo:@"S_04_ess_iphone"];
             }
             [cell.mLabelDescription setText:@"Emergency Stop Signal (ESS)\nสัญญาณไฟฉุกเฉินอัตโนมัติขณะเบรกกะทันหัน\n\n"];
@@ -72,10 +84,11 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     uint page = scrollView.contentOffset.x / mCollectionView.frame.size.width;
     [mPageControl setCurrentPage:page];
-    for (CellFeature *cell in [mCollectionView visibleCells]) {
-        if(cell.mPlayer)
-            [cell.mPlayer.view setHidden:NO];
-    }
+//    for (CellFeature *cell in [mCollectionView visibleCells]) {
+//        if(cell.mPlayer)
+//            [cell.mPlayer.view setHidden:NO];
+//    }
+    [mCollectionView reloadData];
 }
 
 

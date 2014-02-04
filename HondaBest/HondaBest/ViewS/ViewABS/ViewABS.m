@@ -40,6 +40,18 @@
     return 2;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    for (CellFeature *cell in [mCollectionView visibleCells]) {
+        [cell.mPlayer.view setHidden:YES];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [mCollectionView reloadData];
+}
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CellFeature *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellFeature" forIndexPath:indexPath];
@@ -74,14 +86,16 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     uint page = scrollView.contentOffset.x / mCollectionView.frame.size.width;
     [mPageControl setCurrentPage:page];
-    for (CellFeature *cell in [mCollectionView visibleCells]) {
-        [cell.mPlayer.view setHidden:NO];
-    }
+//    for (CellFeature *cell in [mCollectionView visibleCells]) {
+//        [cell.mPlayer.view setHidden:NO];
+//    }
+    [mCollectionView reloadData];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     for (CellFeature *cell in [mCollectionView visibleCells]) {
-        [cell.mPlayer.view setHidden:YES];
+        if(cell.mPlayer)
+            [cell.mPlayer.view setHidden:YES];
     }
 }
 
