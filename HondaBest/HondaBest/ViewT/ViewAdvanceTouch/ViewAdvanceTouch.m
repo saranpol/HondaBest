@@ -36,6 +36,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [mCollectionView reloadData];
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return 8;
 }
@@ -54,20 +60,26 @@
             [cell.mLabelDescription setText:@"ระบบเครื่องเสียงหน้าจอสัมผัสขนาด 7 นิ้ว\nแบบ Advanced Touch\n\n"];
             break;
         case 1:
-            [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_05_hondalink%@.png", iphone]]];
+            //[cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_05_hondalink%@.png", iphone]]];
+            [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"T_ipod_snap%@.png", iphone]]];
             [cell.mLabelDescription setText:@"HondaLink Application\n*เฉพาะ Smart Phone บางรุ่น\n\n"];
+            [cell setupVideo:[NSString stringWithFormat:@"T_ipod%@", iphone]];
             break;
         case 2:
-            [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_06_hdmi%@.png", iphone]]];
+            //[cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_06_hdmi%@.png", iphone]]];
+            [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"T_hdmi_snap%@.png", iphone]]];
             [cell.mLabelDescription setText:@"HDMI\nรองรับการเชื่อมต่อภาพ และเสียงผ่าน HDMI\n\n"];
+            [cell setupVideo:[NSString stringWithFormat:@"T_hdmi%@", iphone]];
             break;
         case 3:
             [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_07_handsFee%@.png", iphone]]];
             [cell.mLabelDescription setText:@"Hands Free Telephone\nหน้าจอแสดงผลการเชื่อมต่อโทรศัพท์ไร้สาย\n\n"];
             break;
         case 4:
-            [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_08_siri%@.png", iphone]]];
-             [cell.mLabelDescription setText:@"Siri Eyes Free Mode\nรองรับระบบสั่งการด้วยเสียง Siri *สำหรับ iPhone รุ่น 4s ขึ้นไป\n\n"];
+            //[cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_08_siri%@.png", iphone]]];
+            [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"T_siri_snap%@.png", iphone]]];
+            [cell.mLabelDescription setText:@"Siri Eyes Free Mode\nรองรับระบบสั่งการด้วยเสียง Siri *สำหรับ iPhone รุ่น 4s ขึ้นไป\n\n"];
+            [cell setupVideo:[NSString stringWithFormat:@"T_siri%@", iphone]];
             break;
         case 5:
             [cell.mImageFeature setImage:[UIImage imageNamed:[NSString stringWithFormat:@"t_09_ipod%@.png", iphone]]];
@@ -88,6 +100,17 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     uint page = scrollView.contentOffset.x / mCollectionView.frame.size.width;
     [mPageControl setCurrentPage:page];
+    [mCollectionView reloadData];
 }
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    for (CellFeature *cell in [mCollectionView visibleCells]) {
+        if(cell.mPlayer)
+            [cell.mPlayer.view setHidden:YES];
+    }
+}
+
+
 
 @end
